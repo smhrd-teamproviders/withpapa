@@ -8,5 +8,6 @@
 </head>
 <body>
 	<!-- 시작 화면 -->
+	<a href="searchresult">검색 결과</a>
 </body>
 </html>
