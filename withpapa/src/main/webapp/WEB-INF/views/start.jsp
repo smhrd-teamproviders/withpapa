@@ -15,7 +15,7 @@
 		}
 	};
 </script>
-<link href="${path}/resources/css/main.css" rel="stylesheet"/> 
+<link href="${path}/resources/css/start.css" rel="stylesheet"/> 
 <style type="text/css">
 #banner_online {
 	height: 350px;
