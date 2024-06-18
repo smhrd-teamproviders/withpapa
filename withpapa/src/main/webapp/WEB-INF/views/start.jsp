@@ -79,22 +79,27 @@
 	display: none;
 }
 
-.delbtn {
-	border: none;
-	background-color: rgba(0, 0, 0, 0);
+.indexicongroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.indexicon{
-			width:40px;
-			text-align:center;
+.indexicon {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
 }
-.indexicongroup{
-			margin:
+.indexicongroup a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Ensure the text color is inherited */
 }
 .indexicongroup span {
-			display:block;
-			font-size:13px;
-			color:#282828;
+  margin-top: 5px; /* Adjust spacing as needed */
+}
+.indexicongroup:nth-of-type(3) span {
+  margin-top: -10px; /* Adjust margin as needed for 과학 */
+}
+.indexicongroup:nth-of-type(5) span {
+  margin-top: 10px; /* Adjust margin as needed for 역사 */
 }
 
 </style>
@@ -201,27 +206,27 @@
 			<div class="category">
 
 				<button type="button" class="delbtn">
-					<img src="resources/img/free-icon-font-palette-3917248.png" width="45"><br>미술<input
+					<img src="resources/img/미술.png" width="45"><br>미술<input
 						type="checkbox" />
 				</button>
 				<button type="button" class="delbtn">
-					<img src="resources/img/free-icon-cooking-5507905.png" width="45"><br>요리<input
+					<img src="resources/img/요리.png" width="45"><br>요리<input
 						type="checkbox" />
 				</button>
 				<button type="button" class="delbtn">
-					<img src="resources/img/free-icon-microscope-883348.png" width="45"><br>과학<input
+					<img src="resources/img/현미경3.png" width="45"><br>과학<input
 						type="checkbox" />
 				</button>
 				<button type="button" class="delbtn">
-					<img src="resources/img/free-icon-sports-2553695.png" width="45"><br>운동<input
+					<img src="resources/img/운동.png" width="45"><br>운동<input
 						type="checkbox" />
 				</button>
 				<button type="button" class="delbtn">
-					<img src="resources/img/free-icon-sejong-the-great-5789257.png" width="45"><br>역사<input
+					<img src="resources/img/역사.png" width="45"><br>역사<input
 						type="checkbox" />
 				</button>
 				<button type="button" class="delbtn">
-					<img src="resources/img/free-icon-tree-2298405.png" width="45"><br>생태<input
+					<img src="resources/img/생태.png" width="45"><br>생태<input
 						type="checkbox" />
 				</button>
 
@@ -294,6 +299,8 @@
 		});
 	</script>
 	
+	<script src="./start.js"></script>
+
 
 
 	
