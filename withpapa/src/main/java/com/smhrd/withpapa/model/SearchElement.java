@@ -1,13 +1,15 @@
 package com.smhrd.withpapa.model;
 
+import java.util.List;
+
 public class SearchElement {
 	
 	private String progNm;
 	private String placeDistrict;
-	private String progType;
+	private List<String> progType;
 	private String progDayStart;
 	private String progDayEnd;
-	public SearchElement(String progNm, String placeDistrict, String progType, String progDayStart, String progDayEnd) {
+	public SearchElement(String progNm, String placeDistrict, List<String> progType, String progDayStart, String progDayEnd) {
 		super();
 		this.progNm = progNm;
 		this.placeDistrict = placeDistrict;
@@ -30,10 +32,10 @@ public class SearchElement {
 	public void setPlaceDistrict(String placeDistrict) {
 		this.placeDistrict = placeDistrict;
 	}
-	public String getProgType() {
+	public List<String> getProgType() {
 		return progType;
 	}
-	public void setProgType(String progType) {
+	public void setProgType(List<String> progType) {
 		this.progType = progType;
 	}
 	public String getProgDayStart() {
@@ -48,11 +50,4 @@ public class SearchElement {
 	public void setProgDayEnd(String progDayEnd) {
 		this.progDayEnd = progDayEnd;
 	}
-	
-	
-	
-	
-	
-	
-	
 }

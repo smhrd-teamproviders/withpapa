@@ -6,9 +6,18 @@ public class ProgramInfo {
 	// 이 클래스는 뒤에 만들 프로그램 상세 정보 클래스인
 	// ProgramInfoPlus의 상위 클래스가 된다 - 상속 사용할 예정
 	
-	
-	
 	private String progId;
-	
+	private String progType;
+	private String progNm;
+	private String progDayStart;
+	private String progDayEnd;
+	private String progTmStart;
+	private String progTmEnd;
+	private String progReptTf;
+	private int progReptDow;
+	private String progCost;
+	private String progUrl;
+	private String placeId;
+	private String progContent;
 	
 }

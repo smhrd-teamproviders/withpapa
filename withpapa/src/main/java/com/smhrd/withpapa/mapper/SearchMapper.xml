@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smhrd.withpapa.mapper.SearchMapper">
+	<select id="searchResult" parameterType="com.smhrd.withpapa.model.SearchElement">
+		select prog_type, prog_nm, place_district, img_nm
+		from tb_prog, tb_
+		
+		select prog_type, prog_nm
+		from tb_prog
+		where 
+		
+		
+	</select>
+	<select id="searchTbProg">
+		select prog_id, prog_type, prog_nm
+		from tb_program
+		where prog_nm like '%#{progNm}%'
+		and prog_type	
+	</select>
+</mapper>
