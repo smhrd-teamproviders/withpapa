@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+div img {
+    position: relative;
+    width: 900px;
+    height: 500px;
+    border: 2px solid #fff;
+    border-radius: 13px;
+    box-shadow: 0px 4px 7px 0px;
+    cursor: pointer;
+    margin: 150px;
+    transition: 400ms;
+    top: -394px;
+}
+
+.modal-button{
+	position:relative;
+	width:70%;
+}
+.modal-button img {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+}
+.search {
+    position: relative;
+    width: 650px;
+    margin: auto;
+  }
+  
+  input {
+    width: 100%;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  
+  .magnifer {  /* 돋보기 */
+    position : absolute;
+    width: 0px;
+    top: 4px;
+    right: 12px;
+    margin: 0;
+
+  }
+
+  .dRjYpx {
+    width: 100%;
+    position: relative;
+    top: -519px;
+    left: -319px;
+}
+.dRjYpx .title {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+
+.dRjYpx .new-tag {
+    width: fit-content;
+    font-size: 12px;
+    font-weight: 800;
+    color: rgb(241, 88, 103);
+    background-color: rgb(249, 232, 234);
+    padding: 4px 6px 3px;
+    border-radius: 20px;
+    word-break: keep-all;
+}
+
+.dRjYpx h3 {
+    font-size: 17px;
+    font-weight: 700;
+    min-width: 60%;
+    width: fit-content;
+}
+.limited-text-lines-1, .limited-text-lines-2 {
+    word-break: break-all;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.limited-text-lines-1 {
+    -webkit-line-clamp: 1;
+}
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+}
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+blockquote, dd, dl, figure, h1, h2, h3, h4, h5, h6, hr, p, pre {
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.dRjYpx .description {
+    position: relative;
+    margin-top: 6px;
+    margin-bottom: 2px;
+    font-size: 15px;
+    top: 18px;
+    left: -109px;
+}
+.limited-text-lines-2 {
+    -webkit-line-clamp: 2;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+}
+사용자 에이전트 스타일시트
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: currentColor;
+}

@@ -43,6 +43,8 @@
   .ducks { /* 오리 */
     text-align: center;
     transform: translate(0%, 80%);
+    position: relative;
+    left: 465px;
   }
 
   .delbtn{
