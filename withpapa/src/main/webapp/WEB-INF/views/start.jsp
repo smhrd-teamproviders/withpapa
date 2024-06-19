@@ -6,6 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js">
 	window.onload = function() {
 		for (var i = 0; i < document.getElementsByTagName('input').length; i++) {
@@ -210,8 +211,7 @@
 						type="checkbox" />
 				</button>
 				<button type="button" class="delbtn">
-					<img src="resources/img/요리.png" width="45"><br>요리<input
-						type="checkbox" />
+					<img src="resources/img/요리.png" width="45"><br>요리<input type="checkbox"/>
 				</button>
 				<button type="button" class="delbtn">
 					<img src="resources/img/현미경3.png" width="45"><br>과학<input
@@ -299,7 +299,7 @@
 		});
 	</script>
 	
-	<script src="./start.js"></script>
+	<script src="start.js"></script>
 
 
 
