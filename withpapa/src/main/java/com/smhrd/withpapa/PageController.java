@@ -18,5 +18,9 @@ public class PageController {
       return "searchresult";
    }
    
+   @RequestMapping(value="/programinfo", method=RequestMethod.GET)
+   public String programinfo() {
+	   return "programinfo";
+   }
    
 }
