@@ -11,6 +11,8 @@
   	top: 100%;
     text-align: center;
     font-size: 15px;
+    position:relative;
+    top:-70px;
     font-weight: 300;
     line-height:10px;
     margin: auto;
@@ -29,6 +31,7 @@
     width: 650px;
     margin: auto;
     display:flex;
+    top:-76px;
   }
   
   input {
@@ -53,7 +56,10 @@
   }
   .ducks { /* 오리 */
     text-align: center;
-    transform: translate(46%, 80%);
+    transform: translate(47%, 80%);
+    position:relative;
+    margin: auto;
+    justify-content:center;
   }
   .category
   {
@@ -295,9 +301,11 @@ ul, ol, li, dl, dt, dd {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+    margin:auto;
+    top:-27px;
 }
 div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code, pre {
-    display: block;
+     display: block;
     position: relative;
 }  
 
