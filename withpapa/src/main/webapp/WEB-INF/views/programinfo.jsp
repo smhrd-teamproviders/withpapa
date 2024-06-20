@@ -135,19 +135,19 @@
             </button>
             <!-- Add other buttons here -->
             <button type="button" class="delbtn">
-                <img src="${path}/resources/img/free-icon-cooking-5507905.png" width="45"><br>요리<input type="checkbox" />
+                <img src="${progType}/resources/img/free-icon-cooking-5507905.png" width="45"><br>요리<input type="checkbox" />
             </button>
             <button type="button" class="delbtn">
-                <img src="${path}/resources/img/free-icon-microscope-883348.png" width="45"><br>과학<input type="checkbox" />
+                <img src="${progType}/resources/img/free-icon-microscope-883348.png" width="45"><br>과학<input type="checkbox" />
             </button>
             <button type="button" class="delbtn">
-                <img src="${path}/resources/img/free-icon-sports-2553695.png" width="45"><br>운동<input type="checkbox" />
+                <img src="${progType}/resources/img/free-icon-sports-2553695.png" width="45"><br>운동<input type="checkbox" />
             </button>
             <button type="button" class="delbtn">
-                <img src="${path}/resources/img/free-icon-sejong-the-great-5789257.png" width="45"><br>역사<input type="checkbox" />
+                <img src="${progType}/resources/img/free-icon-sejong-the-great-5789257.png" width="45"><br>역사<input type="checkbox" />
             </button>
             <button type="button" class="delbtn">
-                <img src="${path}/resources/img/free-icon-tree-2298405.png" width="45"><br>생태<input type="checkbox" />
+                <img src="${progType}/resources/img/free-icon-tree-2298405.png" width="45"><br>생태<input type="checkbox" />
             </button>
         </div>
         <p>
@@ -158,34 +158,34 @@
 </div>
     
 <div class="title">
-    <h2>도자기 만들기</h2>
+    <h2>${progNm}</h2> <!-- 값 넘어오면 ${progNm} 쓰기 -->
 </div>
 
 <!-- 평범한 버튼 -->
-<button class="placehomepage">바로가기</button>
+<button class="placehomepage" href = "${progUrl}">바로가기</button>
     
 <div class="place">
-    <img src="" alt="">
+    <img src="${imgNm }" alt="">
 </div> 
       
 <div class="placeinfo">
-    <a>일정 |</a>
+    <a>일정 | </a> 
     <br>
-    <a>운영시간 |</a>
+    <a>운영시간 | </a> ${progTmStart}<a>~</a>${progTmEnd}
     <br>
-    <a>장소 |</a>
+    <a>장소 | </a> ${placeNm}
 </div>
 
 <div class="placeinfo2">
-    <a>연락처 |</a>
+    <a>연락처 | </a>${placePhoneNo}
     <br>
-    <a>비용 |</a>
+    <a>비용 | </a>${progCost}
     <br>
-    <a>주소 |</a>
+    <a>주소 | </a> ${placeAddress}
 </div>
 
 <div class="placeinfo3">
-    체험 내용 : 
+    <a>체험 내용 :</a> #{progContent} 
 </div>
 
 <!-- 지도 화면 -->
