@@ -19,90 +19,77 @@
 <link href="${path}/resources/css/start.css" rel="stylesheet"/> 
 <style type="text/css">
 #banner_online {
-	height: 350px;
-	width: 475px;
-	border: 1px solid black;
-	box-shadow: 3px 3px 7px 1px grey;
-	background-color: white;
-	z-index: 9999;
-	margin-left: 14%;
-	margin-top: -12%;
-	display: none;
-	position: absolute;
+     height: 500px;
+     width: 450px;
+     border: 1px solid black;
+     box-shadow: 3px 3px 7px 1px rgb(255, 253, 253);
+     background-color: white;
+     z-index: 9999;
+     margin-left: 10%;
+     margin-top: -7%;
+     display: none;
+     position: fixed;
 }
-
+        
 #banner_online h2 {
-	text-align: center;
-	font-size: 17px;
-	margin-bottom: 10px;
+     text-align: center;
+     font-size: 17px;
+     margin-bottom: 10px;
 }
-
+        
 #banner_online p .second {
-	margin-left: 6px;
+     margin-left: 6px;
 }
-
+        
 .pop_content {
-	font-size: 13px;
-	margin-left: 20px;
+     font-size: 13px;
+     margin-left: 20px;
 }
-
+        
 #banner_online_how {
-	height: 78px;
-	width: 444px;
-	margin-left: 28px;
-	border: 1px solid #82bf77;
-	margin-top: 22px;
+ 	 height: 78px;
+     width: 444px;
+     margin-left: 28px;
+     border: 1px solid #82bf77;
+     margin-top: 22px;
 }
-
+        
 #banner_online_how h3 {
-	font-size: 12px;
-	margin-left: 6px;
-	margin-top: 16px;
+     font-size: 12px;
+     margin-left: 6px;
+     margin-top: 16px;
 }
-
+        
 #close_button {
-	float: right;
-	margin-top: -3px;
+     float: right;
+     margin-top: -3px;
 }
-
+        
 .p_bottom {
-	margin-left: 30px;
+      margin-left: 30px;
 }
-
+        
 #modal {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.5);
-	top: 0;
-	left: 0;
-	z-index: 99;
-	display: none;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      top: 0;
+      left: 0;
+      z-index: 99;
+      display: none;
 }
-
-.indexicongroup {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+        
+.delbtn {
+      border: none;
+      background-color: rgba(0, 0, 0, 0);
 }
-.indexicon {
-  width: 100px; /* Adjust size as needed */
-  height: auto;
+        
+      #search{
+      display :flex;
+      width: 500px;
+      margin: auto;
 }
-.indexicongroup a {
-  text-decoration: none; /* Remove underline */
-  color: inherit; /* Ensure the text color is inherited */
-}
-.indexicongroup span {
-  margin-top: 5px; /* Adjust spacing as needed */
-}
-.indexicongroup:nth-of-type(3) span {
-  margin-top: -10px; /* Adjust margin as needed for 과학 */
-}
-.indexicongroup:nth-of-type(5) span {
-  margin-top: 10px; /* Adjust margin as needed for 역사 */
-}
-
 </style>
 </head>
 <body>
@@ -119,58 +106,17 @@
           </div>
          </div>
          
-         
          <div class="search">
 		<input type="text" placeholder="어디로 놀러 가볼까요?">
-		<button type="button" id="openPop" class="magnifer">
-			<img
-				src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png"
-				width="30px">
-		</button>
+		
+		
+		<!-- 돋보기 버튼 -->
+
+    	<a href="#" class="modal-button" id="openModalButton">
+        <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" alt="돋보기 이미지">
+    	</a>
 		</div>
 		
-		<div class='row my-3'>
-        <div class = "col-12 col-md-6 d-flex justify-content-around pr-md-0 mb-3 pt-3">
-         <div class = "text-center indexicongroup"> 
-             <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-                 <img src="resources/img/미술.png" border="0" alt="" class="indexicon">
-                <span >미술</span>
-             </a>
-             </div>
-             <div class = "text-center indexicongroup"> 
-             <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-                 <img src="resources/img/요리.png" border="0" alt="" class="indexicon">
-                 <span >요리</span>
-                 </a>
-             </div>
-             <div class = "text-center indexicongroup"> 
-             <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-                 <img src="resources/img/현미경3.png" border="0" alt="" class="indexicon">
-                 <span >과학</span>
-             </a>
-             </div>
-             <div class = "text-center indexicongroup">
-             <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-                 <img src="resources/img/운동.png" border="0" alt="" class="indexicon">
-                 <span >운동</span>
-             </a>
-             </div>
-             <div class = "text-center indexicongroup">
-             <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-                 <img src="resources/img/역사.png" border="0" alt="" class="indexicon">
-                 <span >역사</span>
-            
-             </a>
-             </div>
-             <div class = "text-center indexicongroup">
-             <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-                 <img src="resources/img/생태.png" border="0" alt="" class="indexicon">
-                 <span >생태</span>
-             </a>
-             </div>
-        </div>
-     </div>
-	
 		<div id="modal"></div>
         <div id="banner_online">
 		<div id="close_button" style="cursor: pointer;">
@@ -238,11 +184,52 @@
 
 		</div>
 	</div>
-		<br>
-
 		
+		
+		<!-- 카테고리 화면 -->
+		<div class='row my-3'>
+        <div class = "col-12 col-md-6 d-flex justify-content-around pr-md-0 mb-3 pt-3">
+         <div class = "text-center indexicongroup"> 
+             <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
+                 <img src="resources/img/미술.png" border="0" alt="" class="indexicon">
+                <span >미술</span>
+             </a>
+             </div>
+             <div class = "text-center indexicongroup"> 
+             <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
+                 <img src="resources/img/요리.png" border="0" alt="" class="indexicon">
+                 <span >요리</span>
+                 </a>
+             </div>
+             <div class = "text-center indexicongroup"> 
+             <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
+                 <img src="resources/img/현미경3.png" border="0" alt="" class="indexicon">
+                 <span >과학</span>
+             </a>
+             </div>
+             <div class = "text-center indexicongroup">
+             <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
+                 <img src="resources/img/운동.png" border="0" alt="" class="indexicon">
+                 <span >운동</span>
+             </a>
+             </div>
+             <div class = "text-center indexicongroup">
+             <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
+                 <img src="resources/img/역사.png" border="0" alt="" class="indexicon">
+                 <span >역사</span>
+            
+             </a>
+             </div>
+             <div class = "text-center indexicongroup">
+             <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
+                 <img src="resources/img/생태.png" border="0" alt="" class="indexicon">
+                 <span >생태</span>
+             </a>
+             </div>
+        </div>
+     </div>
 	
-        
+        <!-- 지도 화면  -->
          <div class="center_map_area">
             <div id="center_map" class="map_area" style="width: 30rem; height: 26rem; transform: scale(1);">
                     <ul class="map">
@@ -277,27 +264,28 @@
           </div>
           
          
-    <footer>
-        <p style="text-align: center;">COPYRIGHT (C) 2024 WITHPAPA, ALL RIGHTS RESERVED</p>
-    </footer>
+    <div id='wrapper'>
+      <footer>COPYRIGHT (C) 2024 WITHPAPA, ALL RIGHTS RESERVED</footer>
+      </div>
     
     <script type="text/javascript">
-		$(document).ready(function() {
-			$("#openPop").click(function() {
-				$("#banner_online").show();
-			});
-
-			$("#openModalPop").click(function() {
-				$("#banner_online").fadeIn();
-				$("#modal").fadeIn();
-			});
-
-			$("#close_button").click(function() {
-				$("#banner_online").fadeOut();
-				$("#modal").fadeOut();
-			});
-		});
-	</script>
+        $(document).ready(function() {
+            $("#openModalButton").click(function(event) {
+                event.preventDefault(); // Prevent the default link behavior
+                $("#banner_online").fadeIn();
+                $("#modal").fadeIn();
+    
+                // Execute your custom function
+                myCustomFunction();
+            });
+    
+            $("#close_button").click(function() {
+                $("#banner_online").fadeOut();
+                $("#modal").fadeOut();
+            });
+        });
+    
+    </script>  
 	
 	<script src="start.js"></script>
 

@@ -4,6 +4,7 @@
     text-align: center;
     font-size: 70px;
     font-family: "Fredoka One";
+    margin: auto;
   }
   
   .subtitle{
@@ -12,17 +13,27 @@
     font-size: 15px;
     font-weight: 300;
     line-height:10px;
-    
+    margin: auto;
   }
+
+  #wrapper{
+    margin: auto;
+    min-height: 100%;
+    position: relative;
+    text-align: center;
+    top:120px;
+  }
+
   .search {
     position: relative;
     width: 650px;
     margin: auto;
+    display:flex;
   }
   
   input {
     width: 100%;
-    border: 1px solid #bbb;
+    border: 1px solid #d3d3d3;
     border-radius: 8px;
     padding: 10px 12px;
     font-size: 14px;
@@ -33,7 +44,7 @@
     width: 0px;
     top: 4px;
     right: 12px;
-    margin: 0;
+    margin: auto;
 
   }
   footer{
@@ -42,10 +53,13 @@
   }
   .ducks { /* 오리 */
     text-align: center;
-    transform: translate(0%, 80%);
-    position: relative;
-    left: 465px;
-    margin : auto;
+    transform: translate(46%, 80%);
+  }
+  .category
+  {
+    display: block;
+    align-items: center;
+    margin: auto;
   }
 
   .delbtn{
@@ -60,25 +74,23 @@ ul, ol, li, dl, dt, dd {
 }
 
 .center_map_area {
-        
-			justify-content:center;
-            width: 400px;
-            height: 400px;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 44%;
+    top: 105%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+}
 
-            position: absolute;
-            left : 43%;
-            top: 105%;
-
-            /*margin: -250px -250px;*/
-            transform: translate(-50%,-50%);
-            
-        } 
 .center_map_area .area_box {
   position: absolute;
   left: 70%;
   top: 60%;
   transform: translate(-50%, -50%);
   transition: all .3s;
+  margin: auto;
 }
 
 .center_map_area .map_area01 
@@ -151,77 +163,16 @@ ul, ol, li, dl, dt, dd {
   transform: translate(2%, 40%);
 }
 
-div.pop_content{
-  white-space: nowrap;
-  overflow: auto;
-}
-
-  
-.scrollMenu{
-   display:inline-block; 
-   width:100px;
-   line-height:50px;
-  }
-  
-.text-center, .center-text {
-    text-align: center;
-    display: block;
-}
-.left-text, .center-text, .right-text, .text-center, .text-right, .text-left {
-    display: block;
-}
-.text-center {
-    text-align: center;
-}
-@media (min-width: 768px) {
-    .pt-md-3, .py-md-3 {
-        padding-top: 1rem;
-    }
-}
-@media (min-width: 768px) {
-    .pl-md-0, .px-md-0 {
-        padding-left: 2;
-    }
-}
-.justify-content-around {
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-}
-.d-flex {
-    display: -ms-flexbox ;
-    display: flex;
-}
-@media (min-width: 768px) {
-    .col-md-6 {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-}
-.col-12 {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code, pre {
-    display: block;
-    position: relative;
-}  
-
 /* 모달 배경 */
+
+
 #modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
   display: none; /* 기본적으로 숨김 */
   z-index: 999;
 }
@@ -229,8 +180,8 @@ div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code
 /* 배너 스타일 */
 #banner_online {
   position: fixed;
-  top: 103%;
-  left: 36%;
+  top: 69.5%;
+  left: 40%;
   transform: translate(-50%, -50%);
   background: white;
   padding: 20px;
@@ -254,16 +205,21 @@ div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code
   text-align: right;
 }
 
- .pop_content {
+.pop_content {
+  flex: 1;
   padding: 20px;
-  background-color: #ffffff; /* 흰색 배경 */
-  border: 1px solid #ffffff; /* 테두리 색상 설정 */
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 5px;
+  margin-right: 20px;
 }
-.category {
+
+.my-3 {
   display: flex;
   flex-wrap: wrap; /* 필터 버튼들이 자동으로 줄 바꿈되도록 설정 */
-  justify-content: space-between;
+  width : 1000px;
+  margin: auto;
+  
 }
 .delbtn {
   display: flex;
@@ -289,6 +245,85 @@ div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code
   margin: 5px;
 }
 
+.delbtn img {
+  margin-bottom: 5px;
+}
+
+  
+  .text-center, .center-text {
+    text-align: center;
+    display: block;
+}
+.left-text, .center-text, .right-text, .text-center, .text-right, .text-left {
+    display: block;
+}
+.text-center {
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .pt-md-3, .py-md-3 {
+        padding-top: 1rem;
+    }
+}
+@media (min-width: 768px) {
+    .pl-md-0, .px-md-0 {
+        padding-left: 2;
+    }
+}
+.justify-content-around {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+.d-flex {
+    display: -ms-flexbox;
+    display: flex;
+}
+@media (min-width: 768px) {
+    .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+.col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code, pre {
+    display: block;
+    position: relative;
+}  
+
+.indexicongroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.indexicon {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+}
+.indexicongroup a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Ensure the text color is inherited */
+}
+.indexicongroup span {
+  margin-top: 5px; /* Adjust spacing as needed */
+}
+.indexicongroup:nth-of-type(3) span {
+  margin-top: -10px; /* Adjust margin as needed for 과학 */
+}
+.indexicongroup:nth-of-type(5) span {
+  margin-top: 10px; /* Adjust margin as needed for 역사 */
+}
+
 /* All Device */
 /*모든 해상도를 위한 공통 코드를 작성한다. 모든 해상도에서 이 코드가 실행됨.*/
 
@@ -309,4 +344,3 @@ div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code
 @media all and (min-width:1025px) {
 /*    사용자 해상도가 1025px 이상일 때 이 코드가 실행됨. 1025px 이상의 랩탑 또는 데스크톱에 대응하는 코드를 작성한다.*/
 }
-
