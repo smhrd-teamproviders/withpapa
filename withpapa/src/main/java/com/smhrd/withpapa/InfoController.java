@@ -1,5 +1,10 @@
 package com.smhrd.withpapa;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -7,6 +12,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.smhrd.withpapa.converter.ImageToBase64;
 import com.smhrd.withpapa.model.ProgramInfo;
 import com.smhrd.withpapa.service.InfoService;
 
@@ -18,7 +24,7 @@ public class InfoController {
 	
 	@RequestMapping(value="/info/programinfo")
 	public String programInfo(@RequestParam("progId")String progId,
-						      Model model) {
+						      Model model) throws IOException {
 		ProgramInfo prog = service.programInfo(progId);
 		
 		String progReptDayStart = prog.getProgReptDayStart();
@@ -61,14 +67,64 @@ public class InfoController {
 		}
 		
 		// progTmStart, progTmEnd - view에서 보여주는 값 변경
-		int viewHourTmStart = Integer.parseInt(progTmStart.substring(0, 2));
-		String viewMinTmStart = progTmStart.substring(2);
+		int viewHourTmStart=0;
+		int viewHourTmEnd =0;
+		String viewMinTmStart="";
+		String viewMinTmEnd ="";
 		
-		int viewHourTmEnd = Integer.parseInt(progTmEnd.substring(0, 2));
-		String viewMinTmEnd = progTmEnd.substring(2);
-		  progTime = viewHourTmStart +":" + viewMinTmStart + " ~ " + viewHourTmEnd + ":" + viewMinTmEnd;
+		System.out.println(progTmStart != null);
+		if(!progTmStart.equals("")) {
+		 viewHourTmStart = Integer.parseInt(progTmStart.substring(0, 2));
+		 viewMinTmStart = progTmStart.substring(2);
+		}
+		if(!progTmEnd.equals("")) {
+		 viewHourTmEnd = Integer.parseInt(progTmEnd.substring(0, 2));
+		 viewMinTmEnd = progTmEnd.substring(2);
+		}
+		
+		if(progTmStart.equals("") && progTmEnd.equals("")) {
+			progTime = "-";
+		}else {
+	         String viewTmStart = viewHourTmStart + ":" + viewMinTmStart;
+	         String viewTmEnd = viewHourTmEnd + ":" + viewMinTmEnd;
+	         
+	         if(viewHourTmStart == 0) {
+	            viewTmStart = "";
+	         }
+	         if(viewHourTmEnd == 0) {
+	            viewTmEnd = "";
+	         }
+	         progTime = viewTmStart + " ~ " + viewTmEnd;
+		}
 		
 		
+		String imgPathRoot = "C:\\Users\\smhrd\\git\\withpapa\\withpapa\\src\\main\\webapp\\resources\\img\\img_type\\";
+		
+		String imgProgType = prog.getProgType();
+		
+		String imgPath = imgPathRoot + imgProgType +".png";
+		File imgFile = new File(imgPath);
+		
+		ImageToBase64 converter = new ImageToBase64();
+		String imgBase64String = converter.convert(imgFile);
+		
+		System.out.println(imgBase64String);
+		prog.setProgType(imgBase64String);
+		
+				
+		String progPathRoot = "C:\\Users\\smhrd\\git\\withpapa\\withpapa\\src\\main\\webapp\\resources\\img\\img_program\\";
+		
+		String progProgImg = prog.getImgNm();
+		
+		String progPath = progPathRoot + progProgImg +".png";
+		File progFile = new File(progPath);
+		
+		String imgBase64String2 = converter.convert(progFile);
+		
+		System.out.println(imgBase64String2);
+		prog.setImgNm(imgBase64String2);
+		
+				
 		model.addAttribute("progNm", prog.getProgNm());
 		model.addAttribute("progType", prog.getProgType());
 		model.addAttribute("progDayStart", prog.getProgDayStart());
@@ -94,7 +150,8 @@ public class InfoController {
 		model.addAttribute("progPeriod", progPeriod);
 		model.addAttribute("progTime", progTime);
 		return "programinfo";
-						
+					
 	}
+	
 	
 }

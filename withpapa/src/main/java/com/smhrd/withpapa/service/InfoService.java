@@ -13,8 +13,7 @@ public class InfoService {
 	@Autowired
 	InfoMapper mapper;
 	
-	public ProgramInfo programInfo(String progId) {
-		System.out.println("서비스: "+progId);
+	public ProgramInfo programInfo(String progId) {	
 		return mapper.programInfo(progId);
 			
 	}
