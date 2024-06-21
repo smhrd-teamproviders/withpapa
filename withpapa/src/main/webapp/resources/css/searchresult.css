@@ -1,26 +1,26 @@
 @charset "UTF-8";
 
 .title {
-    height : 200px;
+    height: 200px;
     text-align: center;
     position: relative;
-    left: -100px;
+    left: -82px;
     margin: auto;
-    top: -1650px;
+    top: -1744px;
 }
-
 .location {
-  height : 200px;
-  text-align: center;
-  position: relative;
-  left: -115px;
-  margin: auto;
-  top: -1820px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    left: -96px;
+    margin: auto;
+    top: -1903px;
 }
 .search {
     position: relative;
     width: 650px;
     margin: auto;
+    display:flex;
   }
 
 input {
@@ -29,7 +29,6 @@ input {
     border-radius: 8px;
     padding: 10px 12px;
     font-size: 14px;
-    margin: auto;
 }
   
 .magnifer {  /* 돋보기 */
@@ -132,6 +131,52 @@ input {
     transform : scale(1.03)
 }    
 
+
+.categorytype img {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #fff;
+  position: relative;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  top: -1650px;
+  left: -206px;
+}
+
+.categorytype img:hover{
+  filter : grayscale(1);
+  transform : scale(1.03)
+}    
+
+@media (min-width: 768px) {
+    .pt-md-3, .py-md-3 {
+        padding-top: 1rem;
+    }
+}
+@media (min-width: 768px) {
+    .pl-md-0, .px-md-0 {
+        padding-left: 2;
+    }
+}
+.justify-content-around {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+.d-flex {
+    display: -ms-flexbox;
+    display: flex;
+}
+@media (min-width: 768px) {
+    .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
 
 .mappart {
     background-color: #b1bac4;

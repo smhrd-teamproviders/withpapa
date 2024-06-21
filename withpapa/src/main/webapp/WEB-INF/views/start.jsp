@@ -18,76 +18,92 @@
 <link href="${path}/resources/css/start.css" rel="stylesheet"/> 
 <style type="text/css">
 #banner_online {
-     height: 500px;
-     width: 450px;
-     border: 1px solid black;
-     box-shadow: 3px 3px 7px 1px rgb(255, 253, 253);
-     background-color: white;
-     z-index: 9999;
-     margin-left: 10%;
-     margin-top: -7%;
-     display: none;
-     position: fixed;
+        height: 500px;
+        width: 450px;
+        border: 1px solid black;
+        box-shadow: 3px 3px 7px 1px rgb(255, 253, 253);
+        background-color: white;
+        z-index: 100;
+        margin: auto;
+        display: none;
+        position: absolute;
+        top: 80%;
+        left: 48%;
+        transform : translate(-50%,-50%);
+        padding:20px;
+        overflow-y:auto;
 }
-        
+    
+    
 #banner_online h2 {
-     text-align: center;
-     font-size: 17px;
-     margin-bottom: 10px;
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 10px;
 }
-        
+            
 #banner_online p .second {
-     margin-left: 6px;
+    margin-left: 6px;
 }
-        
+            
 .pop_content {
-     font-size: 13px;
-     margin-left: 20px;
+    font-size: 13px;
+    margin-left: 20px;
 }
-        
+            
 #banner_online_how {
- 	 height: 78px;
-     width: 444px;
-     margin-left: 28px;
-     border: 1px solid #82bf77;
-     margin-top: 22px;
+    height: 78px;
+    width: 444px;
+    margin-left: 28px;
+    border: 1px solid #82bf77;
+    margin-top: 22px;
 }
-        
+            
 #banner_online_how h3 {
-     font-size: 12px;
-     margin-left: 6px;
-     margin-top: 16px;
+    font-size: 12px;
+    margin-left: 6px;
+    margin-top: 16px;
 }
-        
+            
 #close_button {
-     float: right;
-     margin-top: -3px;
+    float: right;
+    margin-top: -3px;
+    cursor: pointer;
 }
-        
+            
 .p_bottom {
-      margin-left: 30px;
+    margin-left: 30px;
 }
-        
+            
 #modal {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      top: 0;
-      left: 0;
-      z-index: 99;
-      display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    top: 100px;
+    left: 0;
+    z-index: 99;
+    display: none;               
 }
-        
+
+.modal-open {
+    overflow: hidden;
+}
+
+.category{
+    display: flex;
+  	text-align: center;
+    margin: auto;
+}
+            
 .delbtn {
-      border: none;
-      background-color: rgba(0, 0, 0, 0);
-}
-        
-      #search{
-      display :flex;
-      width: 500px;
-      margin: auto;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+ }
+            
+#search{
+    display :flex;
+    width: 500px;
+    margin: auto;
 }
 </style>
 </head>
@@ -105,7 +121,7 @@
           </div>
          </div>
          
-         <div class="search">
+        <div class="search">
 		<input type="text" placeholder="어디로 놀러 가볼까요?">
 		
 		
@@ -127,51 +143,51 @@
 			</p>
 			
 				<div class="scrollMenu"></div>
-				<label>거제시<input type="checkbox" /></label>
-				<label>거창군<input type="checkbox" /></label>
-				<label>고성군<input type="checkbox" /></label>
-				<label>김해시<input type="checkbox" /></label>
-				<label>남해군<input type="checkbox" /></label>
-				<label>밀양시<input type="checkbox" /></label>
-				<label>사천시<input type="checkbox" /></label>
-				<label>산청군<input type="checkbox" /></label>
-				<label>양산시<input type="checkbox" /></label>
-				<label>의령군<input type="checkbox" /></label>
-				<label>진주시<input type="checkbox" /></label>
-				<label>창녕군<input type="checkbox" /></label>
-				<label>창원시<input type="checkbox" /></label>
-				<label>통영시<input type="checkbox" /></label>
-				<label>하동군<input type="checkbox" /></label>
-				<label>함안군<input type="checkbox" /></label>
-				<label>함양군<input type="checkbox" /></label>
-				<label>합천군<input type="checkbox" /></label>
-	
-			<p>
+				<button class="mappart">거제시</button>
+           	 	<button class="mappart">거창군</button>
+            	<button class="mappart">고성군</button>
+            	<button class="mappart">김해시</button>
+            	<button class="mappart">남해군</button>
+            	<button class="mappart">밀양시</button>
+            	<button class="mappart">사천시</button>
+            	<button class="mappart">산청군</button>
+            	<button class="mappart">양산시</button>
+            	<button class="mappart">의령군</button>
+            	<button class="mappart">진주시</button>
+            	<button class="mappart">창녕군</button>
+            	<button class="mappart">창원시</button>
+            	<button class="mappart">통영시</button>
+            	<button class="mappart">하동군</button>
+            	<button class="mappart">함안군</button>
+            	<button class="mappart">함양군</button>
+            	<button class="mappart">합천군</button>
+				<p>
 				<img src="resources/img/category.png"> 유형 선택
-			</P>
+				</P>
+				
 			<div class="category">
 
 				<button type="button" class="delbtn">
-					<img src="resources/img/미술.png" width="45"><br>미술<input
+					<img src="resources/img/palette (1).png" width="45"><br>미술<input
 						type="checkbox" />
 				</button>
 				<button type="button" class="delbtn">
-					<img src="resources/img/요리.png" width="45"><br>요리<input type="checkbox"/>
+					<img src="resources/img/cooking (1).png" width="45"><br>요리<input type="checkbox"/>
 				</button>
 				<button type="button" class="delbtn">
-					<img src="resources/img/현미경3.png" width="45"><br>과학<input
+					<img src="resources/img/science (1).png" width="45"><br>과학<input
 						type="checkbox" />
 				</button>
 				<button type="button" class="delbtn">
-					<img src="resources/img/운동.png" width="45"><br>운동<input
+					<img src="resources/img/runner (1).png" width="45"><br>체육<input
 						type="checkbox" />
 				</button>
 				<button type="button" class="delbtn">
-					<img src="resources/img/역사.png" width="45"><br>역사<input
+					<img src="resources/img/hanbok (1).png" width="45"><br>역사<input
 						type="checkbox" />
 				</button>
 				<button type="button" class="delbtn">
-					<img src="resources/img/생태.png" width="45"><br>생태<input
+					<img src="resources/img/landscape (1).png" width="45"><br>생태<input
 						type="checkbox" />
 				</button>
 
@@ -190,38 +206,38 @@
         <div class = "col-12 col-md-6 d-flex justify-content-around pr-md-0 mb-3 pt-3">
          <div class = "text-center indexicongroup"> 
              <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-                 <img src="resources/img/미술.png" border="0" alt="" class="indexicon">
+                 <img src="resources/img/palette (1).png" border="0" alt="" class="indexicon">
                 <span >미술</span>
              </a>
              </div>
              <div class = "text-center indexicongroup"> 
              <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-                 <img src="resources/img/요리.png" border="0" alt="" class="indexicon">
+                 <img src="resources/img/cooking (1).png" border="0" alt="" class="indexicon">
                  <span >요리</span>
                  </a>
              </div>
              <div class = "text-center indexicongroup"> 
              <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-                 <img src="resources/img/현미경3.png" border="0" alt="" class="indexicon">
+                 <img src="resources/img/science (1).png" border="0" alt="" class="indexicon">
                  <span >과학</span>
              </a>
              </div>
              <div class = "text-center indexicongroup">
              <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-                 <img src="resources/img/운동.png" border="0" alt="" class="indexicon">
-                 <span >운동</span>
+                 <img src="resources/img/runner (1).png" border="0" alt="" class="indexicon">
+                 <span >체육</span>
              </a>
              </div>
              <div class = "text-center indexicongroup">
              <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-                 <img src="resources/img/역사.png" border="0" alt="" class="indexicon">
+                 <img src="resources/img/hanbok (1).png" border="0" alt="" class="indexicon">
                  <span >역사</span>
             
              </a>
              </div>
              <div class = "text-center indexicongroup">
              <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-                 <img src="resources/img/생태.png" border="0" alt="" class="indexicon">
+                 <img src="resources/img/landscape (1).png" border="0" alt="" class="indexicon">
                  <span >생태</span>
              </a>
              </div>
@@ -272,6 +288,7 @@
         $(document).ready(function() {
             $("#openModalButton").click(function(event) {
                 event.preventDefault(); // Prevent the default link behavior
+                $("body").css("modal-open");
                 $("#banner_online").fadeIn();
                 $("#modal").fadeIn();
     
@@ -282,10 +299,18 @@
             $("#close_button").click(function() {
                 $("#banner_online").fadeOut();
                 $("#modal").fadeOut();
+                $("body").css("modal-open");
             });
-        });
-    
-    </script>  
+
+            $("#modal").click(function(event) {
+                if (event.target.id === "modal") {
+                    $("#banner_online").fadeOut();
+                    $("#modal").fadeOut();
+                     $("body").css("modal-open"); // 스크롤 복원
+        }
+    });
+});
+</script>
 	
 	<script src="start.js"></script>
 

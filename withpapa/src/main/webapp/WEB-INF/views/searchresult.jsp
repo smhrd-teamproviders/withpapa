@@ -17,81 +17,95 @@
 <meta charset="UTF-8">
 <head>
 <style type="text/css">
-    #banner_online {
-        height: 500px;
-        width: 450px;
-        border: 1px solid black;
-        box-shadow: 3px 3px 7px 1px rgb(255, 253, 253);
-        background-color: white;
-        z-index: 9999;
-        margin: auto;
-        display: none;
-        position: relative;
-        top: 253px;
-        left: 211px;
+
+#banner_online {
+    height: 501px;
+    width: 488px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 7px 1px rgb(255, 253, 253);
+    background-color: white;
+    z-index: 100;
+    margin: auto;
+    display: none;
+    position: absolute;
+    top: 43%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    overflow-y: auto;
 }
 
-        #banner_online h2 {
-            text-align: center;
-            font-size: 17px;
-            margin-bottom: 10px;
-        }
+#banner_online h2 {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
         
-        #banner_online p .second {
-            margin-left: 6px;
-        }
+#banner_online p .second {
+    margin-left: 6px;
+}
         
-        .pop_content {
-            font-size: 13px;
-            margin-left: 20px;
-        }
+.pop_content {
+    font-size: 13px;
+    margin-left: 20px;
+}
         
-        #banner_online_how {
-            height: 78px;
-            width: 444px;
-            margin-left: 28px;
-            border: 1px solid #82bf77;
-            margin-top: 22px;
-        }
+#banner_online_how {
+    height: 78px;
+    width: 444px;
+    margin-left: 28px;
+    border: 1px solid #82bf77;
+    margin-top: 22px;
+}
         
-        #banner_online_how h3 {
-            font-size: 12px;
-            margin-left: 6px;
-            margin-top: 16px;
-        }
+#banner_online_how h3 {
+    font-size: 12px;
+    margin-left: 6px;
+    margin-top: 16px;
+}
         
-        #close_button {
-            float: right;
-            margin-top: -3px;
-        }
+#close_button {
+    float: right;
+    margin-top: -3px;
+    cursor:pointer;
+}
         
-        .p_bottom {
-            margin-left: 30px;
-        }
+.p_bottom {
+    margin-left: 30px;
+}
         
-        #modal {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            background: rgb(255, 255, 255);
-            top: -100px;
-            left: 0;
-            z-index: 99;
-            display: none;
-            margin: auto;
-        }
+#modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255,0);
+    top: -100px;
+    left: 0;
+    z-index: 99;
+    display: none;
+    margin: auto;
+}
         
-        .delbtn {
-            border: none;
-            background-color: rgba(0, 0, 0, 0);
-        }
+.modal-open{
+	overflow:hidden;
+}
+.category {
+    display: flex;
+  	text-align: center;
+    margin: auto;
+}
         
-        #search{
-            display :flex;
-            width: 500px;
-            margin: auto;
-        }
-        </style>
+.delbtn {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+        
+#search{
+    display :flex;
+    width: 500px;
+    margin: auto;
+}
+</style>
 </head>
 <body>
 	<!-- 검색 결과 화면 -->
@@ -106,7 +120,7 @@
     </div>
 
     <div id="modal"></div>
-<div id="banner_online">
+	<div id="banner_online">
     <div id="close_button" style="cursor: pointer;">
         <img src="${path}/resources/img/close_cross.png" alt="Close">
     </div>
@@ -144,23 +158,23 @@
             <!-- Add other buttons here -->
         </button>
         <button type="button" class="delbtn">
-            <img src="${path}/resources/img/요리.png" width="45"><br>요리<input
+            <img src="${path}/resources/img/palette (1).png" width="45"><br>요리<input
                 type="checkbox" />
         </button>
         <button type="button" class="delbtn">
-            <img src="${path}/resources/img/현미경3.png" width="45"><br>과학<input
+            <img src="${path}/resources/img/science (1).png" width="45"><br>과학<input
                 type="checkbox" />
         </button>
         <button type="button" class="delbtn">
-            <img src="${path}/resources/img/운동.png" width="45"><br>운동<input
+            <img src="${path}/resources/img/runner (1).png" width="45"><br>체육<input
                 type="checkbox" />
         </button>
         <button type="button" class="delbtn">
-            <img src="${path}/resources/img/역사.png" width="45"><br>역사<input
+            <img src="${path}/resources/img/hanbok (1).png" width="45"><br>역사<input
                 type="checkbox" />
         </button>
         <button type="button" class="delbtn">
-            <img src="${path}/resources/img/생태.png" width="45"><br>생태<input
+            <img src="${path}/resources/img/landscape (1).png" width="45"><br>생태<input
                 type="checkbox" />
         </button>
 
@@ -171,7 +185,8 @@
         </p>
         <input type="date" />
     </div>
-</div>
+	</div>
+
 
 <div class = "place">
     <img src="" alt ="">
@@ -182,6 +197,10 @@
     <br>
     <img src="" alt ="">
   </div> 
+  
+  <div class = "categorytype">
+  <img src="미술.png" alt ="">
+    </div>
 
   <div class="title">
     <h2>도자기 만들기</h2>
@@ -193,27 +212,35 @@
 
 
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $("#openModalButton").click(function(event) {
-            event.preventDefault(); // Prevent the default link behavior
-            $("#banner_online").fadeIn();
-            $("#modal").fadeIn();
+ <script type="text/javascript">
+        $(document).ready(function() {
+            $("#openModalButton").click(function(event) {
+                event.preventDefault(); // Prevent the default link behavior
+                $("body").css("modal-open");
+                $("#banner_online").fadeIn();
+                $("#modal").fadeIn();
+    
+                // Execute your custom function
+                myCustomFunction();
+            });
+    
+            $("#close_button").click(function() {
+                $("#banner_online").fadeOut();
+                $("#modal").fadeOut();
+                $("body").css("modal-open");
+            });
 
-            // Execute your custom function
-            myCustomFunction();
-        });
-
-        $("#close_button").click(function() {
-            $("#banner_online").fadeOut();
-            $("#modal").fadeOut();
-        });
+            $("#modal").click(function(event) {
+                if (event.target.id === "modal") {
+                    $("#banner_online").fadeOut();
+                    $("#modal").fadeOut();
+                    $("body").css("modal-open"); // 스크롤 복원
+        }
     });
+});
+</script>
 
-</script>  
-
-</body>
-</html>
+<script src="searchresult.js"></script>
 
 </body>
 </html>

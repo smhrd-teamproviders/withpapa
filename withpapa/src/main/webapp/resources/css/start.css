@@ -7,7 +7,7 @@
     margin: auto;
   }
   
-  .subtitle{
+.subtitle{
   	top: 100%;
     text-align: center;
     font-size: 15px;
@@ -18,7 +18,7 @@
     margin: auto;
   }
 
-  #wrapper{
+#wrapper{
     margin: auto;
     min-height: 100%;
     position: relative;
@@ -26,7 +26,7 @@
     top:120px;
   }
 
-  .search {
+.search {
     position: relative;
     width: 650px;
     margin: auto;
@@ -34,7 +34,7 @@
     top:-76px;
   }
   
-  input {
+input {
     width: 100%;
     border: 1px solid #d3d3d3;
     border-radius: 8px;
@@ -42,7 +42,7 @@
     font-size: 14px;
   }
   
-  .magnifer {  /* 돋보기 */
+.magnifer {  /* 돋보기 */
     position : absolute;
     width: 0px;
     top: 4px;
@@ -50,25 +50,24 @@
     margin: auto;
 
   }
-  footer{
+footer{
     position : relative;
     transform : translateY(2200%);
   }
-  .ducks { /* 오리 */
+.ducks { /* 오리 */
     text-align: center;
     transform: translate(47%, 80%);
     position:relative;
     margin: auto;
     justify-content:center;
-  }
-  .category
-  {
-    display: block;
-    align-items: center;
-    margin: auto;
-  }
+}
 
-  .delbtn{
+.category{
+    display: fixed;
+  	text-align: center;
+    margin: auto;
+}
+ .delbtn{
     border:none;
     background-color: rgba(0, 0, 0, 0);
 }
@@ -169,36 +168,22 @@ ul, ol, li, dl, dt, dd {
   transform: translate(2%, 40%);
 }
 
-/* 모달 배경 */
-
-
-#modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: none; /* 기본적으로 숨김 */
-  z-index: 999;
-}
-
-/* 배너 스타일 */
 #banner_online {
-  position: fixed;
+  position: relative;
   top: 69.5%;
   left: 40%;
   transform: translate(-50%, -50%);
   background: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgb(255, 255, 255);
   display: none; /* 기본적으로 숨김 */
   z-index: 1000;
   width: 80%;
   max-width: 600px;
   max-height: 80%;
   overflow-y: auto;
+  margin: auto;
 }
 
 #banner_online {
@@ -219,16 +204,8 @@ ul, ol, li, dl, dt, dd {
   border-radius: 5px;
   margin-right: 20px;
 }
-
-.my-3 {
-  display: flex;
-  flex-wrap: wrap; /* 필터 버튼들이 자동으로 줄 바꿈되도록 설정 */
-  width : 1000px;
-  margin: auto;
-  
-}
 .delbtn {
-  display: flex;
+  display: nowrap;
   flex-direction: column;
   align-items: center;
   margin: 10px;

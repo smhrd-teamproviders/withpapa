@@ -19,7 +19,7 @@
     z-index: 9999;
     margin: auto;
     display: none;
-    position: relative;
+    position: absolute;
     top: 253px;
     left: 211px;
 }
@@ -131,23 +131,23 @@
         </p>
         <div class="category">
             <button type="button" class="delbtn">
-                <img src="${path}/resources/img/free-icon-font-palette-3917248.png" width="45" alt="미술"><br>미술<input type="checkbox" />
+                <img src="${path}/resources/img/palette (1).png" width="45" alt="미술"><br>미술<input type="checkbox" />
             </button>
             <!-- Add other buttons here -->
             <button type="button" class="delbtn">
-                <img src="${progType}/resources/img/free-icon-cooking-5507905.png" width="45"><br>요리<input type="checkbox" />
+                <img src="${progType}/resources/img/cooking (1).png" width="45"><br>요리<input type="checkbox" />
             </button>
             <button type="button" class="delbtn">
-                <img src="${progType}/resources/img/free-icon-microscope-883348.png" width="45"><br>과학<input type="checkbox" />
+                <img src="${progType}/resources/img/science (1).png" width="45"><br>과학<input type="checkbox" />
             </button>
             <button type="button" class="delbtn">
-                <img src="${progType}/resources/img/free-icon-sports-2553695.png" width="45"><br>운동<input type="checkbox" />
+                <img src="${progType}/resources/img/runner (1).png" width="45"><br>체육<input type="checkbox" />
             </button>
             <button type="button" class="delbtn">
-                <img src="${progType}/resources/img/free-icon-sejong-the-great-5789257.png" width="45"><br>역사<input type="checkbox" />
+                <img src="${progType}/resources/img/hanbok (1).png" width="45"><br>역사<input type="checkbox" />
             </button>
             <button type="button" class="delbtn">
-                <img src="${progType}/resources/img/free-icon-tree-2298405.png" width="45"><br>생태<input type="checkbox" />
+                <img src="${progType}/resources/img/landscape (1).png" width="45"><br>생태<input type="checkbox" />
             </button>
         </div>
         <p>
@@ -205,6 +205,33 @@
 </script>
 
 <script type="text/javascript">
-    $(document).ready(function() {
-        $("#openModalButton").click(function(event) {
-            event.preventDefault(); // Prevent the default
+        $(document).ready(function() {
+            $("#openModalButton").click(function(event) {
+                event.preventDefault(); // Prevent the default link behavior
+                $("body").css("modal-open");
+                $("#banner_online").fadeIn();
+                $("#modal").fadeIn();
+    
+                // Execute your custom function
+                myCustomFunction();
+            });
+    
+            $("#close_button").click(function() {
+                $("#banner_online").fadeOut();
+                $("#modal").fadeOut();
+                $("body").css("modal-open");
+            });
+
+            $("#modal").click(function(event) {
+                if (event.target.id === "modal") {
+                    $("#banner_online").fadeOut();
+                    $("#modal").fadeOut();
+                    $("body").css("modal-open"); // 스크롤 복원
+        }
+    });
+});
+</script>
+
+<script src = "searchbutton.js"></script>
+</body>
+</html>
