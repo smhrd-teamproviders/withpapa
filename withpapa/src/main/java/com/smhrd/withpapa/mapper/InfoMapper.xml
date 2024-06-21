@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smhrd.withpapa.mapper.InfoMapper">
+ <select id="programInfo" resultType="com.smhrd.withpapa.model.ProgramInfo"> 
+	 		select  pr.prog_nm, pr.prog_type, pr.prog_day_start, pr.prog_day_end, pr.prog_rept_day_start,
+	 				pr.prog_rept_day_end,
+	 				pr.prog_rept_tf, pr.prog_rept_dow, pr.prog_cost, pr.prog_url, pr.prog_content,
+	 				pr.prog_tm_start, pr.prog_tm_end, 
+	 				pl.place_nm, pl.place_address, pl.place_phone_no, pl.place_latitd, 
+	 				pl.place_longtd, img.img_nm 
+			from tb_program pr, tb_place pl, tb_img img
+						where pr.place_id = pl.place_id
+						and pr.prog_id = img.prog_id
+						and pr.prog_id = #{prog_id}
+	</select>
+
+	
+
+
+</mapper>
