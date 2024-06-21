@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <c:set var="path" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html>
@@ -20,10 +21,9 @@
     margin: auto;
     display: none;
     position: absolute;
-    top: 253px;
-    left: 211px;
+    top: 43%;
+    left: 48%;
 }
-
 #banner_online h2 {
     text-align: center;
     font-size: 17px;
@@ -125,13 +125,13 @@
         <button class="mappart">함안군</button>
         <button class="mappart">함양군</button>
         <button class="mappart">합천군</button>
-        <!-- Add other checkboxes here -->
+
         <p>
             <img src="${path}/resources/img/category.png" alt="category"> 유형 선택
         </p>
         <div class="category">
             <button type="button" class="delbtn">
-                <img src="${path}/resources/img/palette (1).png" width="45" alt="미술"><br>미술<input type="checkbox" />
+                <img src="${progType}/resources/img/palette (1).png" width="45" alt="미술"><br>미술<input type="checkbox" />
             </button>
             <!-- Add other buttons here -->
             <button type="button" class="delbtn">
@@ -151,7 +151,7 @@
             </button>
         </div>
         <p>
-            <img src="date.png" alt="date"> 날짜 선택
+            <img src="resources/img/date.png" alt="date"> 날짜 선택
         </p>
         <input type="date" />
     </div>
@@ -185,7 +185,7 @@
 </div>
 
 <div class="placeinfo3">
-    <a>체험 내용 :</a> #{progContent} 
+    <a>체험 내용 :</a> ${progContent} 
 </div>
 
 <!-- 지도 화면 -->
