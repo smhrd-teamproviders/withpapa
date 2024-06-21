@@ -138,7 +138,7 @@
      <button class="mappart">합천군</button>
 
     <p>
-      <img src="${path}/resources/img/img_searchbox/category.png" alt="category"> 유형 선택
+       <img src="${path}/resources/img/img_searchbox/category.png" alt="category"> 유형 선택
      </p>
   <div class="category">
      <button type="button" class="delbtn">
@@ -146,30 +146,30 @@
      </button>
             
      <button type="button" class="delbtn">
-        <img src="${progType}/resources/img/img_type/요리.png" width="45"><br>요리<input type="checkbox" />
+       <img src="${progType}/resources/img/img_type/요리.png" width="45"><br>요리<input type="checkbox" />
      </button>
      <button type="button" class="delbtn">
-        <img src="${progType}/resources/img/img_type/과학.png" width="45"><br>과학<input type="checkbox" />
+       <img src="${progType}/resources/img/img_type/과학.png" width="45"><br>과학<input type="checkbox" />
      </button>
      <button type="button" class="delbtn">
-        <img src="${progType}/resources/img/img_type/체육.png" width="45"><br>체육<input type="checkbox" />
+       <img src="${progType}/resources/img/img_type/체육.png" width="45"><br>체육<input type="checkbox" />
      </button>
      <button type="button" class="delbtn">
-        <img src="${progType}/resources/img/img_type/역사.png" width="45"><br>역사<input type="checkbox" />
+       <img src="${progType}/resources/img/img_type/역사.png" width="45"><br>역사<input type="checkbox" />
      </button>
      <button type="button" class="delbtn">
-        <img src="${progType}/resources/img/img_type/생태.png" width="45"><br>생태<input type="checkbox" />
+       <img src="${progType}/resources/img/img_type/생태.png" width="45"><br>생태<input type="checkbox" />
      </button>
      </div>
     <p>
-        <img src="resources/img/img_type/date.png"> 날짜 선택
+       <img src="resources/img/img_type/date.png"> 날짜 선택
     </p>
        <input type="date" />
     </div>
     </div>
     
   <div class="title">
-    <h2>${progNm}</h2> <!-- 값 넘어오면 ${progNm} 쓰기 -->
+       <h2>${progNm}</h2> <!-- 값 넘어오면 ${progNm} 쓰기 -->
     </div>
 
 <!-- 평범한 버튼 -->
@@ -180,23 +180,23 @@
     </div> 
       
   <div class="placeinfo">
-    <a>일정 | </a> 
-    <br>
-    <a>운영시간 | </a> ${progTmStart}<a>~</a>${progTmEnd}
-    <br>
-    <a>장소 | </a> ${placeNm}
+      <a>일정 | </a> 
+      <br>
+      <a>운영시간 | </a> ${progTmStart}<a>~</a>${progTmEnd}
+      <br>
+      <a>장소 | </a> ${placeNm}
    </div>
 
   <div class="placeinfo2">
-    <a>연락처 | </a>${placePhoneNo}
-    <br>
-    <a>비용 | </a>${progCost}
-    <br>
-    <a>주소 | </a> ${placeAddress}
+      <a>연락처 | </a>${placePhoneNo}
+      <br>
+      <a>비용 | </a>${progCost}
+      <br>
+      <a>주소 | </a> ${placeAddress}
    </div>
 
   <div class="placeinfo3">
-    <a>체험 내용 :</a> ${progContent} 
+      <a>체험 내용 :</a> ${progContent} 
   </div>
 
 <!-- 지도 화면 -->

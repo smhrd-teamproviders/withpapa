@@ -21,7 +21,7 @@
     width: 650px;
     margin: auto;
     display:flex;
-  }
+}
 
 input {
     width: 100%;
@@ -42,7 +42,7 @@ input {
 
 
   /* 배너 스타일 */
-  #banner_online {
+#banner_online {
     position: relative;
     top: 69.5%;
     left: 40%;
@@ -58,56 +58,54 @@ input {
     max-height: 80%;
     overflow-y: auto;
     margin: auto;
-  }
+}
   
-  #banner_online {
+#banner_online {
     display: flex;
     justify-content: space-between; /* 요소들 사이의 간격을 최대화하기 위해 */
     align-items: flex-start; /* 세로 정렬 기준을 맞춤 */
-  }
+}
   
-  #close_button {
+#close_button {
     text-align: right;
-  }
+}
   
-  .pop_content {
+.pop_content {
     flex: 1;
     padding: 20px;
     background-color: #ffffff;
     border: 1px solid #ffffff;
     border-radius: 5px;
     margin-right: 20px;
-  }
-  .delbtn {
+}
+
+.delbtn {
     display: nowrap;
     flex-direction: column;
     align-items: center;
     margin: 10px;
     text-align: center;
-  }
-  .delbtn img {
-    width: 45px;
-  }
+}
   
-  .scrollMenu {
+.delbtn img {
+    width: 45px;
+}
+  
+.scrollMenu {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-  }
+}
   
-  .scrollMenu label {
+.scrollMenu label {
     display: flex;
     align-items: center;
     gap: 5px;
     margin: 5px;
-  }
+}
   
-  .delbtn img {
+.delbtn img {
     margin-bottom: 5px;
-  }
-
-.place{
-
 }
 
 .place img {
@@ -186,14 +184,14 @@ input {
 /* Tablet &amp; Desktop Device */
 @media all and (min-width:768px) {
     /*    사용자 해상도가 768px 이상일 때 이 코드가 실행됨. 테블릿과 데스크톱의 공통 코드를 작성한다.*/
-    }
+}
         
     /* Tablet Device */
     @media all and (min-width:768px) and (max-width:1024px) {
     /*    사용자 해상도가 768px 이상이고 1024px 이하일 때 이 코드가 실행됨. 아이패드 또는 비교적 작은 해상도의 랩탑이나 데스크톱에 대응하는 코드를 작성한다.*/
-    }
+}
         
     /* Desktop Device */
     @media all and (min-width:1025px) {
     /*    사용자 해상도가 1025px 이상일 때 이 코드가 실행됨. 1025px 이상의 랩탑 또는 데스크톱에 대응하는 코드를 작성한다.*/
-    }
+}

@@ -138,9 +138,9 @@
 		<img src="resources/img/img_searchbox/close_cross.png">
 	  </div>
 	<div class="pop_content">
-		 <p>
-		  <img src="resources/img/img_searchbox/location.png"> 지역
-	     </p>
+		<p>
+		<img src="resources/img/img_searchbox/location.png"> 지역
+	    </p>
 			
 	<div class="scrollMenu"></div>
 		 <button class="mappart">거제시</button>
