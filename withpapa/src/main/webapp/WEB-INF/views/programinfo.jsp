@@ -17,12 +17,16 @@
     border: 1px solid black;
     box-shadow: 3px 3px 7px 1px rgb(255, 253, 253);
     background-color: white;
-    z-index: 9999;
+    z-index: 100;
     margin: auto;
     display: none;
     position: absolute;
     top: 43%;
     left: 48%;
+    transform : translate (-50%,-50%);
+    padding : 20px;
+    overflow-y : auto;
+    
 }
 #banner_online h2 {
     text-align: center;
@@ -64,17 +68,23 @@
 }
         
 #modal {
-    position: relative;
+    position: fixed;
     width: 100%;
     height: 100%;
-    background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255 , 0);
     top: -100px;
     left: 0;
     z-index: 99;
     display: none;
+    
+}
+
+.category{
+    display: flex;
+  	text-align: center;
     margin: auto;
 }
-        
+
 .delbtn {
     border: none;
     background-color: rgba(0, 0, 0, 0);
@@ -96,6 +106,8 @@
         <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" alt="돋보기 이미지">
     </a>
 </div>
+
+
 
 <div id="modal"></div>
 <div id="banner_online">
@@ -131,7 +143,7 @@
         </p>
         <div class="category">
             <button type="button" class="delbtn">
-                <img src="${progType}/resources/img/palette (1).png" width="45" alt="미술"><br>미술<input type="checkbox" />
+                <img src="${progType}/resources/img/palette (1).png" width="45"><br>미술<input type="checkbox" />
             </button>
             <!-- Add other buttons here -->
             <button type="button" class="delbtn">

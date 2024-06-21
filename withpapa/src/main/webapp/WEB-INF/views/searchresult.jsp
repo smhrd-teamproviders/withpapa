@@ -118,7 +118,12 @@
             <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" alt="돋보기 이미지">
         </a>
     </div>
-
+    
+    <form action="info/Programinfo">
+   <input type="text" name="progId">
+   <input type="submit">
+   </form>
+	<!-- 돋보기 눌렀을 때 나오는 모달 창 -->
     <div id="modal"></div>
 	<div id="banner_online">
     <div id="close_button" style="cursor: pointer;">
@@ -147,18 +152,18 @@
         <button class="mappart">함안군</button>
         <button class="mappart">함양군</button>
         <button class="mappart">합천군</button>
-        <!-- Add other checkboxes here -->
+        
         <p>
             <img src="${path}/resources/img/category.png" alt="category"> 유형 선택
         </p>
         <div class="category">
             <button type="button" class="delbtn">
-                <img src="${path}/resources/img/free-icon-font-palette-3917248.png" width="45" alt="미술"><br>미술<input type="checkbox" />
+                <img src="${path}/resources/img/palette (1).png" width="45"><br>미술<input type="checkbox" />
             </button>
             <!-- Add other buttons here -->
         </button>
         <button type="button" class="delbtn">
-            <img src="${path}/resources/img/palette (1).png" width="45"><br>요리<input
+            <img src="${path}/resources/img/cooking (1).png" width="45"><br>요리<input
                 type="checkbox" />
         </button>
         <button type="button" class="delbtn">
@@ -187,8 +192,8 @@
     </div>
 	</div>
 
-
-<div class = "place">
+	<!-- 장소 사진 -->
+  <div class = "place">
     <img src="" alt ="">
     <br>
     <img src="" alt ="">
@@ -198,14 +203,15 @@
     <img src="" alt ="">
   </div> 
   
+  <!-- 카테고리 유형 -->
   <div class = "categorytype">
   <img src="미술.png" alt ="">
     </div>
-
+  <!-- 체험장소 이름 -->
   <div class="title">
     <h2>도자기 만들기</h2>
     </div>
-
+  <!-- 체험장소 -->
   <div class = "location">
     <a>경상남도 거창군</a>
   </div>

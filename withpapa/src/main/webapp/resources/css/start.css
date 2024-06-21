@@ -287,12 +287,19 @@ div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code
 }  
 
 .indexicongroup {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
 }
+
+
 .indexicon {
   width: 100px; /* Adjust size as needed */
+  height: auto;
+}
+
+.indexicon1 {
+  width: 50px; /* Adjust size as needed */
   height: auto;
 }
 .indexicongroup a {
