@@ -89,7 +89,7 @@
     overflow: hidden;
 }
 
-.category{
+.category {
     display: flex;
   	text-align: center;
     margin: auto;
@@ -100,7 +100,7 @@
     background-color: rgba(0, 0, 0, 0);
  }
             
-#search{
+#search {
     display :flex;
     width: 500px;
     margin: auto;
@@ -168,42 +168,42 @@
 	<div class="category">
     <div class="text-center indexicongroup"> 
     <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-         <img src="resources/img/img_type/art.png" border="0" alt="" class="indexicon1">
+         <img src="resources/img/img_type/미술.png" border="0" alt="" class="indexicon1">
          <span>미술</span>
         </a>
         </div>  
 
     <div class="text-center indexicongroup"> 
     <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-         <img src="resources/img/img_type/cooking.png" border="0" alt="" class="indexicon1">
+         <img src="resources/img/img_type/요리.png" border="0" alt="" class="indexicon1">
          <span>요리</span>
         </a>
         </div>
 
     <div class="text-center indexicongroup"> 
     <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-         <img src="resources/img/img_type/science.png" border="0" alt="" class="indexicon1">
+         <img src="resources/img/img_type/과학.png" border="0" alt="" class="indexicon1">
          <span>과학</span>
         </a>
         </div>
 
     <div class="text-center indexicongroup">
     <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-         <img src="resources/img/img_type/pe.png" border="0" alt="" class="indexicon1">
+         <img src="resources/img/img_type/체육.png" border="0" alt="" class="indexicon1">
          <span>체육</span>
         </a>
         </div>
 
     <div class="text-center indexicongroup">
     <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-         <img src="resources/img/img_type/history.png" border="0" alt="" class="indexicon1">
+         <img src="resources/img/img_type/역사.png" border="0" alt="" class="indexicon1">
          <span>역사</span>
         </a>
         </div>
 
     <div class="text-center indexicongroup">
     <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-         <img src="resources/img/img_type/nature.png" border="0" alt="" class="indexicon1">
+         <img src="resources/img/img_type/생태.png" border="0" alt="" class="indexicon1">
          <span>생태</span>
         </a>
         </div>
@@ -221,37 +221,37 @@
     <div class = "col-12 col-md-6 d-flex justify-content-around pr-md-0 mb-3 pt-3">
     <div class = "text-center indexicongroup"> 
     <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-         <img src="resources/img/img_type/art.png" border="0" alt="" class="indexicon">
+         <img src="resources/img/img_type/미술.png" border="0" alt="" class="indexicon">
             <span>미술</span>
          </a>
      </div>
     <div class = "text-center indexicongroup"> 
         <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-          <img src="resources/img/img_type/cooking.png" border="0" alt="" class="indexicon">
+          <img src="resources/img/img_type/요리.png" border="0" alt="" class="indexicon">
             <span>요리</span>
          </a>
      </div>
     <div class = "text-center indexicongroup"> 
     <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-          <img src="resources/img/img_type/science.png" border="0" alt="" class="indexicon">
+          <img src="resources/img/img_type/과학.png" border="0" alt="" class="indexicon">
             <span>과학</span>
           </a>
      </div>
       <div class = "text-center indexicongroup">
           <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-          <img src="resources/img/img_type/pe.png" border="0" alt="" class="indexicon">
+          <img src="resources/img/img_type/체육.png" border="0" alt="" class="indexicon">
             <span>체육</span>
           </a>
      </div>
     <div class = "text-center indexicongroup">
           <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-          <img src="resources/img/img_type/history.png" border="0" alt="" class="indexicon">
+          <img src="resources/img/img_type/역사.png" border="0" alt="" class="indexicon">
             <span>역사</span>
           </a>
      </div>
     <div class = "text-center indexicongroup">
           <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-          <img src="resources/img/img_type/nature.png" border="0" alt="" class="indexicon">
+          <img src="resources/img/img_type/생태.png" border="0" alt="" class="indexicon">
             <span>생태</span>
           </a>
      </div>

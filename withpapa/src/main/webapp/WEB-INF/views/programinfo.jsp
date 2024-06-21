@@ -78,7 +78,7 @@
     
 }
 
-.category{
+.category {
     display: flex;
   	text-align: center;
     margin: auto;
@@ -142,23 +142,23 @@
      </p>
   <div class="category">
      <button type="button" class="delbtn">
-       <img src="${progType}/resources/img/img_type/art.png" width="45"><br>미술<input type="checkbox" />
+       <img src="${progType}/resources/img/img_type/미술.png" width="45"><br>미술<input type="checkbox" />
      </button>
             
      <button type="button" class="delbtn">
-        <img src="${progType}/resources/img/img_type/cooking.png" width="45"><br>요리<input type="checkbox" />
+        <img src="${progType}/resources/img/img_type/요리.png" width="45"><br>요리<input type="checkbox" />
      </button>
      <button type="button" class="delbtn">
-        <img src="${progType}/resources/img/img_type/science.png" width="45"><br>과학<input type="checkbox" />
+        <img src="${progType}/resources/img/img_type/과학.png" width="45"><br>과학<input type="checkbox" />
      </button>
      <button type="button" class="delbtn">
-        <img src="${progType}/resources/img/img_type/pe.png" width="45"><br>체육<input type="checkbox" />
+        <img src="${progType}/resources/img/img_type/체육.png" width="45"><br>체육<input type="checkbox" />
      </button>
      <button type="button" class="delbtn">
-        <img src="${progType}/resources/img/img_type/history.png" width="45"><br>역사<input type="checkbox" />
+        <img src="${progType}/resources/img/img_type/역사.png" width="45"><br>역사<input type="checkbox" />
      </button>
      <button type="button" class="delbtn">
-        <img src="${progType}/resources/img/img_type/nature.png" width="45"><br>생태<input type="checkbox" />
+        <img src="${progType}/resources/img/img_type/생태.png" width="45"><br>생태<input type="checkbox" />
      </button>
      </div>
     <p>
@@ -243,6 +243,6 @@
          });
  </script>
 
-  <script src = "searchbutton.js"></script>
+ <script src = "searchbutton.js"></script>
 </body>
 </html>
