@@ -112,11 +112,11 @@
 <div id="modal"></div>
 <div id="banner_online">
     <div id="close_button">
-        <img src="${path}/resources/img/close_cross.png" alt="Close">
+        <img src="${path}/resources/img/img_searchbox/close_cross.png" alt="Close">
     </div>
     <div class="pop_content">
         <p>
-            <img src="${path}/resources/img/location.png" alt="location"> 지역
+            <img src="${path}/resources/img/img_searchbox/location.png" alt="location"> 지역
         </p>
         <div class="scrollMenu"></div>
         <button class="mappart">거제시</button>
@@ -139,31 +139,31 @@
         <button class="mappart">합천군</button>
 
         <p>
-            <img src="${path}/resources/img/category.png" alt="category"> 유형 선택
+            <img src="${path}/resources/img/img_searchbox/category.png" alt="category"> 유형 선택
         </p>
         <div class="category">
             <button type="button" class="delbtn">
-                <img src="${progType}/resources/img/palette (1).png" width="45"><br>미술<input type="checkbox" />
+                <img src="${progType}/resources/img/img_type/art.png" width="45"><br>미술<input type="checkbox" />
             </button>
             <!-- Add other buttons here -->
             <button type="button" class="delbtn">
-                <img src="${progType}/resources/img/cooking (1).png" width="45"><br>요리<input type="checkbox" />
+                <img src="${progType}/resources/img/img_type/cooking.png" width="45"><br>요리<input type="checkbox" />
             </button>
             <button type="button" class="delbtn">
-                <img src="${progType}/resources/img/science (1).png" width="45"><br>과학<input type="checkbox" />
+                <img src="${progType}/resources/img/img_type/science.png" width="45"><br>과학<input type="checkbox" />
             </button>
             <button type="button" class="delbtn">
-                <img src="${progType}/resources/img/runner (1).png" width="45"><br>체육<input type="checkbox" />
+                <img src="${progType}/resources/img/img_type/pe.png" width="45"><br>체육<input type="checkbox" />
             </button>
             <button type="button" class="delbtn">
-                <img src="${progType}/resources/img/hanbok (1).png" width="45"><br>역사<input type="checkbox" />
+                <img src="${progType}/resources/img/img_type/history.png" width="45"><br>역사<input type="checkbox" />
             </button>
             <button type="button" class="delbtn">
-                <img src="${progType}/resources/img/landscape (1).png" width="45"><br>생태<input type="checkbox" />
+                <img src="${progType}/resources/img/img_type/nature.png" width="45"><br>생태<input type="checkbox" />
             </button>
         </div>
         <p>
-            <img src="resources/img/date.png" alt="date"> 날짜 선택
+            <img src="resources/img/img_type/date.png"> 날짜 선택
         </p>
         <input type="date" />
     </div>

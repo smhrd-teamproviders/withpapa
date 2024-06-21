@@ -110,7 +110,7 @@
 <body>
 	<!-- 상단 화면 -->
 	<div class="ducks">
-            <img src="resources/img/KakaoTalk_20240613_193751220.png" alt="papaducks" width="100px">
+            <img src="resources/img/img_logo/logo_duck.png" alt="papaducks" width="100px">
         </div>
         <div class="main">
             <div class="title">
@@ -135,11 +135,11 @@
 		<div id="modal"></div>
         <div id="banner_online">
 		<div id="close_button" style="cursor: pointer;">
-			<img src="resources/img/close_cross.png">
+			<img src="resources/img/img_searchbox/close_cross.png">
 		</div>
 		<div class="pop_content">
 			<p>
-				<img src="resources/img/location.png"> 지역
+				<img src="resources/img/img_searchbox/location.png"> 지역
 			</p>
 			
 				<div class="scrollMenu"></div>
@@ -162,48 +162,48 @@
             	<button class="mappart">함양군</button>
             	<button class="mappart">합천군</button>
 				<p>
-				<img src="resources/img/category.png"> 유형 선택
+				<img src="resources/img/img_searchbox/category.png"> 유형 선택
 				</P>
 				
 			<div class="category">
                 <div class="text-center indexicongroup"> 
                     <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-                        <img src="resources/img/palette (1).png" border="0" alt="" class="indexicon1">
+                        <img src="resources/img/img_type/art.png" border="0" alt="" class="indexicon1">
                         <span>미술</span>
                     </a>
                 
 
             <div class="text-center indexicongroup"> 
                 <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-                   <img src="resources/img/cooking (1).png" border="0" alt="" class="indexicon1">
+                   <img src="resources/img/img_type/cooking.png" border="0" alt="" class="indexicon1">
                    <span>요리</span>
                 </a>
             </div>
 
             <div class="text-center indexicongroup"> 
                 <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-                   <img src="resources/img/science (1).png" border="0" alt="" class="indexicon1">
+                   <img src="resources/img/img_type/science.png" border="0" alt="" class="indexicon1">
                    <span>과학</span>
                 </a>
             </div>
 
             <div class="text-center indexicongroup">
                 <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-                   <img src="resources/img/runner (1).png" border="0" alt="" class="indexicon1">
-                   <span>운동</span>
+                   <img src="resources/img/img_type/pe.png" border="0" alt="" class="indexicon1">
+                   <span>체육</span>
                 </a>
             </div>
 
             <div class="text-center indexicongroup">
                 <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-                   <img src="resources/img/hanbok (1).png" border="0" alt="" class="indexicon1">
+                   <img src="resources/img/img_type/history.png" border="0" alt="" class="indexicon1">
                    <span>역사</span>
                 </a>
             </div>
 
             <div class="text-center indexicongroup">
                 <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-                    <img src="resources/img/landscape (1).png" border="0" alt="" class="indexicon1">
+                    <img src="resources/img/img_type/nature.png" border="0" alt="" class="indexicon1">
                  <span>생태</span>
              </a>
              </div>
@@ -211,7 +211,7 @@
         </div>
             </div>
        <p>
-         <img src="date.png" alt="date"> 날짜 선택
+         <img src="resources/img/img_type/date.png"> 날짜 선택
        </p>
             <input type="date" />
         </div>
@@ -222,37 +222,37 @@
     <div class = "col-12 col-md-6 d-flex justify-content-around pr-md-0 mb-3 pt-3">
     <div class = "text-center indexicongroup"> 
        <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-         <img src="resources/img/palette (1).png" border="0" alt="" class="indexicon">
+         <img src="resources/img/img_type/art.png" border="0" alt="" class="indexicon">
             <span>미술</span>
           </a>
      </div>
      <div class = "text-center indexicongroup"> 
         <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-          <img src="resources/img/cooking (1).png" border="0" alt="" class="indexicon">
+          <img src="resources/img/img_type/cooking.png" border="0" alt="" class="indexicon">
             <span>요리</span>
           </a>
      </div>
       <div class = "text-center indexicongroup"> 
         <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-          <img src="resources/img/science (1).png" border="0" alt="" class="indexicon">
+          <img src="resources/img/img_type/science.png" border="0" alt="" class="indexicon">
             <span>과학</span>
           </a>
      </div>
       <div class = "text-center indexicongroup">
           <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-          <img src="resources/img/runner (1).png" border="0" alt="" class="indexicon">
+          <img src="resources/img/img_type/pe.png" border="0" alt="" class="indexicon">
             <span>체육</span>
           </a>
      </div>
       <div class = "text-center indexicongroup">
           <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-          <img src="resources/img/hanbok (1).png" border="0" alt="" class="indexicon">
+          <img src="resources/img/img_type/history.png" border="0" alt="" class="indexicon">
             <span>역사</span>
           </a>
      </div>
        <div class = "text-center indexicongroup">
           <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
-          <img src="resources/img/landscape (1).png" border="0" alt="" class="indexicon">
+          <img src="resources/img/img_type/nature.png" border="0" alt="" class="indexicon">
             <span>생태</span>
           </a>
      </div>
@@ -265,28 +265,28 @@
            <ul class="map">
               <li class="area_box map_area01">
                   <!-- Image Map Generated by http://www.image-map.net/ -->
-              <img src = "resources/img//경상남도 지도 거창군1.png" usemap="#image-map">
+              <img src = "resources/img/img_district/경상남도 지도 거창군1.png" usemap="#image-map">
     
                <map name="image-map">
                <area target="_blank" alt="거창군" title="거창군" href="https://www.geochang.go.kr/" coords="180,108,83,44" shape="rect">
                  </map>
-                     <li class="area_box map_area02"><img src="resources/img//경상남도 합천군 색.png" alt="합천군"></li>
-                     <li class="area_box map_area03"><img src="resources/img//경상남도 지도 창녕군.png" alt="창녕군"></li>
-                     <li class="area_box map_area04"><img src="resources/img//경상남도 지도 밀양시.png" alt="밀양시"></li>
-                     <li class="area_box map_area05"><img src="resources/img//경상남도 지도 양산시.png" alt="양산시"></li>
-                     <li class="area_box map_area06"><img src="resources/img//경상남도 함양군 색.png" alt="함양군"></li>
-                     <li class="area_box map_area07"><img src="resources/img//경상남도 지도 산청군 색.png" alt="산청군"></li>
-                     <li class="area_box map_area08"><img src="resources/img//경상남도 지도 의령군.png" alt="의령군"></li>
-                     <li class="area_box map_area09"><img src="resources/img//경상남도 지도 함안군.png" alt="함안군"></li>
-                     <li class="area_box map_area10"><img src="resources/img//경상남도 지도 창원시1.png" alt="창원시"></li>
-                     <li class="area_box map_area11"><img src="resources/img//경상남도 지도 김해시.png" alt="김해시"></li>
-                     <li class="area_box map_area12"><img src="resources/img//경상남도 지도 하동군.png" alt="하동군"></li>
-                     <li class="area_box map_area13"><img src="resources/img//경상남도 지도 진주시.png" alt="진주시"></li>
-                     <li class="area_box map_area14"><img src="resources/img//경상남도 지도 사천시.png" alt="사천시"></li>
-                     <li class="area_box map_area15"><img src="resources/img//경상남도 지도 고성군.png" alt="고성군"></li>
-                     <li class="area_box map_area16"><img src="resources/img//경상남도 지도 남해군.png" alt="남해군"></li>
-                     <li class="area_box map_area17"><img src="resources/img//경상남도 지도 통영시.png" alt="통영시"></li>
-                     <li class="area_box map_area18"><img src="resources/img//경상남도 지도 거제시.png" alt="거제시"></li>
+                     <li class="area_box map_area02"><img src="resources/img/img_district/경상남도 합천군 색.png" alt="합천군"></li>
+                     <li class="area_box map_area03"><img src="resources/img/img_district/경상남도 지도 창녕군.png" alt="창녕군"></li>
+                     <li class="area_box map_area04"><img src="resources/img/img_district/경상남도 지도 밀양시.png" alt="밀양시"></li>
+                     <li class="area_box map_area05"><img src="resources/img/img_district/경상남도 지도 양산시.png" alt="양산시"></li>
+                     <li class="area_box map_area06"><img src="resources/img/img_district/경상남도 함양군 색.png" alt="함양군"></li>
+                     <li class="area_box map_area07"><img src="resources/img/img_district/경상남도 지도 산청군 색.png" alt="산청군"></li>
+                     <li class="area_box map_area08"><img src="resources/img/img_district/경상남도 지도 의령군.png" alt="의령군"></li>
+                     <li class="area_box map_area09"><img src="resources/img/img_district/경상남도 지도 함안군.png" alt="함안군"></li>
+                     <li class="area_box map_area10"><img src="resources/img/img_district/경상남도 지도 창원시1.png" alt="창원시"></li>
+                     <li class="area_box map_area11"><img src="resources/img/img_district/경상남도 지도 김해시.png" alt="김해시"></li>
+                     <li class="area_box map_area12"><img src="resources/img/img_district/경상남도 지도 하동군.png" alt="하동군"></li>
+                     <li class="area_box map_area13"><img src="resources/img/img_district/경상남도 지도 진주시.png" alt="진주시"></li>
+                     <li class="area_box map_area14"><img src="resources/img/img_district/경상남도 지도 사천시.png" alt="사천시"></li>
+                     <li class="area_box map_area15"><img src="resources/img/img_district/경상남도 지도 고성군.png" alt="고성군"></li>
+                     <li class="area_box map_area16"><img src="resources/img/img_district/경상남도 지도 남해군.png" alt="남해군"></li>
+                     <li class="area_box map_area17"><img src="resources/img/img_district/경상남도 지도 통영시.png" alt="통영시"></li>
+                     <li class="area_box map_area18"><img src="resources/img/img_district/경상남도 지도 거제시.png" alt="거제시"></li>
 					
        </ul>
        </div>
