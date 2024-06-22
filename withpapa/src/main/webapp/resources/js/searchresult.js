@@ -1,3 +1,7 @@
+/**
+ *
+ */
+ 
 // 모달 및 배너 표시 함수
 function showBanner() {
   document.getElementById('modal').style.display = 'block';

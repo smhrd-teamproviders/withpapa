@@ -192,26 +192,26 @@
 
 	<!-- 장소 사진 -->
   <div class = "place">
-    <img src="" alt ="">
+    <img src="data:image/jpg;base64,${result.imgNm}">
     <br>
-    <img src="" alt ="">
+    <img src="data:image/jpg;base64,${result.imgNm}">
     <br>
-    <img src="" alt ="">
+    <img src="data:image/jpg;base64,${result.imgNm}">
     <br>
-    <img src="" alt ="">
+    <img src="data:image/jpg;base64,${result.imgNm}">
     </div> 
   
   <!-- 카테고리 유형 -->
   <div class = "categorytype">
-       <img src="미술.png" alt ="">
+       <img src="data:image/jpg;base64,${result.progType}">
     </div>
   <!-- 체험장소 이름 -->
   <div class="title">
-    <h2>도자기 만들기</h2>
+    <h2>${result.progNm}</h2>
     </div>
-  <!-- 체험장소 -->
+  <!-- 체험지역 -->
   <div class = "location">
-    <a>경상남도 거창군</a>
+    <a>${result.placeDistrict}</a>
     </div>
 
 
@@ -244,7 +244,7 @@
         });
    </script>
 
-  <script src="searchresult.js"></script>
+  <script src = "searchresult.js"></script>
 
 </body>
 </html>

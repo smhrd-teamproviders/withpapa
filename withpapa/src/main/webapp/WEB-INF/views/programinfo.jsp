@@ -4,10 +4,19 @@
 <c:set var="path" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
 <link rel="stylesheet" href="${path}/resources/css/programinfo.css">
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js">
+        window.onload = function() {
+            for (var i = 0; i < document.getElementsByTagName('input').length; i++) {
+                if (document.getElementsByTagName('input')[i].getAttribute('type') == 'checkbox') {
+                    document.getElementsByTagName('input')[i].checked = true;
+                }
+            }
+        };
+</script>
+<meta charset="UTF-8">
+<head>
 <style type="text/css">
 /* CSS 코드 */
 #banner_online {
@@ -110,7 +119,7 @@
 
   <div id="modal"></div>
   <div id="banner_online">
-  <div id="close_button">
+  <div id="close_button" style = "cursur: pointer;">
      <img src="${path}/resources/img/img_searchbox/close_cross.png" alt="Close">
    </div>
   <div class="pop_content">
@@ -166,31 +175,42 @@
      </button>
      
     </div>
+    </div>
     <p>
        <img src="resources/img/img_type/date.png"> 날짜 선택
     </p>
        <input type="date" />
     </div>
+    
+    <!-- 카테고리 유형 -->
+  <div class = "categorytype">
+       <img src="data:image/jpg;base64,${result.progType}">
     </div>
     
+    <!-- 체험장소 이름 -->
   <div class="title">
-       <h2>${progNm}</h2> <!-- 값 넘어오면 ${progNm} 쓰기 -->
+       <h2>도자기만들기</h2> <!-- 값 넘어오면 ${progNm} 쓰기 -->
+    </div>
+    
+    <!-- 체험지역 -->
+  <div class = "location">
+    <a>${result.placeDistrict}ㅇㄹㅇㄹ</a>
     </div>
 
-<!-- 평범한 버튼 -->
-    <button class="placehomepage" href = "${progUrl}">바로가기</button>
+    <!-- 평범한 버튼 -->
+       <button onclick = "location.href = ${progUrl}" class = "placehomepage">바로가기</button>
     
   <div class="place">
        <img src="${imgNm }" alt="">
     </div> 
       
   <div class="placeinfo">
-      <a>일정 | </a> 
+      <a>일정 | </a> ${progperiod}
       <br>
       <a>운영시간 | </a> ${progTmStart}<a>~</a>${progTmEnd}
       <br>
       <a>장소 | </a> ${placeNm}
-   </div>
+    </div>
 
   <div class="placeinfo2">
       <a>연락처 | </a>${placePhoneNo}
@@ -198,11 +218,11 @@
       <a>비용 | </a>${progCost}
       <br>
       <a>주소 | </a> ${placeAddress}
-   </div>
+    </div>
 
   <div class="placeinfo3">
       <a>체험 내용 :</a> ${progContent} 
-  </div>
+    </div>
 
 <!-- 지도 화면 -->
   <div id="map" style="width:480px;height:280px;"></div>
@@ -218,7 +238,7 @@
 
     // 지도를 생성한다 
     var map = new kakao.maps.Map(mapContainer, mapOption); 
- </script>
+    </script>
 
  <script type="text/javascript">
         $(document).ready(function() {
@@ -249,5 +269,6 @@
  </script>
 
  <script src = "searchbutton.js"></script>
+ 
 </body>
 </html>

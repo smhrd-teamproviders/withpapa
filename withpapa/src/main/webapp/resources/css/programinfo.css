@@ -13,7 +13,16 @@
     position: relative;
     width: 650px;
     margin: auto;
-  }
+}
+
+.location {
+    height: 200px;
+    text-align: center;
+    position: relative;
+    left: -96px;
+    margin: auto;
+    top: -1903px;
+}
 
 input {
     width: 100%;
@@ -98,7 +107,26 @@ input {
     margin-bottom: 5px;
 }
   
+.categorytype img {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #fff;
+  position: relative;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  top: -1650px;
+  left: -206px;
+}
 
+.categorytype img:hover{
+  filter : grayscale(1);
+  transform : scale(1.03)
+} 
+   
 /** 평범한 버튼 */
 .placehomepage {
     background-color: #007BFF;
