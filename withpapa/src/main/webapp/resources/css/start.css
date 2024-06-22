@@ -35,10 +35,10 @@
 }
   
 input {
-    width: 100%;
+    width: 95%;
     border: 1px solid #d3d3d3;
     border-radius: 8px;
-    padding: 10px 12px;
+    padding: 23px 12px;
     font-size: 14px;
 }
   
@@ -49,7 +49,17 @@ input {
     right: 12px;
     margin: auto;
 
-  }
+}
+
+.modal-button{
+	position:absolute;
+	z-index:auto;
+	top:1px;
+	left: 580px;
+	
+}
+
+
 footer{
     position : relative;
     transform : translateY(2200%);
@@ -57,7 +67,7 @@ footer{
 
 .ducks { /* 오리 */
     text-align: center;
-    transform: translate(47%, 80%);
+    transform: translate(45%, 80%);
     position:relative;
     margin: auto;
     justify-content:center;
@@ -220,7 +230,7 @@ ul, ol, li, dl, dt, dd {
 .scrollMenu {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 21px;
 }
 
 .scrollMenu label {
@@ -311,7 +321,7 @@ div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code
 }
 
 .indexicon1 {
-  width: 50px; /* Adjust size as needed */
+  width: 65px; /* Adjust size as needed */
   height: auto;
 }
 .indexicongroup a {
@@ -331,6 +341,15 @@ div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code
   margin-top: 10px; /* Adjust margin as needed for 역사 */
 }
 
+.space {
+    width: 4px;
+    height: auto;
+    display: inline-block;
+}
+
+.mappart {
+    background-color: #b1bac4;
+}
 
 /* All Device */
 /*모든 해상도를 위한 공통 코드를 작성한다. 모든 해상도에서 이 코드가 실행됨.*/

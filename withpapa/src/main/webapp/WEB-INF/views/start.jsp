@@ -19,7 +19,7 @@
 <style type="text/css">
 #banner_online {
     height: 500px;
-    width: 450px;
+    width: 453px;
     border: 1px solid black;
     box-shadow: 3px 3px 7px 1px rgb(255, 253, 253);
     background-color: white;
@@ -28,7 +28,7 @@
     display: none;
     position: absolute;
     top: 80%;
-    left: 48%;
+    left: 50%;
     transform : translate(-50%,-50%);
     padding:20px;
     overflow-y:auto;
@@ -142,67 +142,70 @@
 		<img src="resources/img/img_searchbox/location.png"> 지역
 	    </p>
 			
-	<div class="scrollMenu"></div>
-		 <button class="mappart" name = "placeDistrict">거제시</button>
-         <button class="mappart" name = "placeDistrict">거창군</button>
-         <button class="mappart" name = "placeDistrict">고성군</button>
-         <button class="mappart" name = "placeDistrict">김해시</button>
-         <button class="mappart" name = "placeDistrict">남해군</button>
-         <button class="mappart" name = "placeDistrict">밀양시</button>
-         <button class="mappart" name = "placeDistrict">사천시</button>
-         <button class="mappart" name = "placeDistrict">산청군</button>
-         <button class="mappart" name = "placeDistrict">양산시</button>
-         <button class="mappart" name = "placeDistrict">의령군</button>
-         <button class="mappart" name = "placeDistrict">진주시</button>
-         <button class="mappart" name = "placeDistrict">창녕군</button>
-         <button class="mappart" name = "placeDistrict">창원시</button>
-         <button class="mappart" name = "placeDistrict">통영시</button>
-         <button class="mappart" name = "placeDistrict">하동군</button>
-         <button class="mappart" name = "placeDistrict">함안군</button>
-         <button class="mappart" name = "placeDistrict">함양군</button>
-         <button class="mappart" name = "placeDistrict">합천군</button>
+	<div class="scrollMenu">
+        <button class="mappart" name="placeDistrict">거제시</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">거창군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">고성군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">김해시</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">남해군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">밀양시</button>  <div class="space"></div>
+        <span style="line-height:20%"><br></span>
+        <button class="mappart" name="placeDistrict">사천시</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">산청군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">양산시</button>  <div class="space"></div><button class="mappart" name="placeDistrict">의령군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">진주시</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">창녕군</button>  <div class="space"></div>
+        <span style="line-height:20%"><br></span>
+        <button class="mappart" name="placeDistrict">창원시</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">통영시</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">하동군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">함안군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">함양군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">합천군</button>
+        </div>
+	
 		 <p>
 		 <img src="resources/img/img_searchbox/category.png"> 유형 선택
 		 </p>
 				
 	<div class="category">
     <div class="text-center indexicongroup"> 
-    <a href="" onfocus="blur()"  target="_self" data-vibrate="5">
+    <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
          <img src="resources/img/img_type/미술.png" border="0" alt="" class="indexicon1">
          <span>미술</span>
         </a>
         </div>  
 
     <div class="text-center indexicongroup"> 
-    <a href="" onfocus="blur()"  target="_self" data-vibrate="5">
+    <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
          <img src="resources/img/img_type/요리.png" border="0" alt="" class="indexicon1">
          <span>요리</span>
         </a>
         </div>
 
     <div class="text-center indexicongroup"> 
-    <a href="" onfocus="blur()"  target="_self" data-vibrate="5">
+    <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
          <img src="resources/img/img_type/과학.png" border="0" alt="" class="indexicon1">
          <span>과학</span>
         </a>
         </div>
 
     <div class="text-center indexicongroup">
-    <a href="" onfocus="blur()"  target="_self" data-vibrate="5">
+    <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
          <img src="resources/img/img_type/체육.png" border="0" alt="" class="indexicon1">
          <span>체육</span>
         </a>
         </div>
 
     <div class="text-center indexicongroup">
-    <a href="" onfocus="blur()"  target="_self" data-vibrate="5">
+    <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
          <img src="resources/img/img_type/역사.png" border="0" alt="" class="indexicon1">
          <span>역사</span>
         </a>
         </div>
 
     <div class="text-center indexicongroup">
-    <a href="" onfocus="blur()"  target="_self" data-vibrate="5">
+    <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
          <img src="resources/img/img_type/생태.png" border="0" alt="" class="indexicon1">
          <span>생태</span>
         </a>
@@ -221,37 +224,37 @@
 	<div class='row my-3'>
     <div class = "col-12 col-md-6 d-flex justify-content-around pr-md-0 mb-3 pt-3">
     <div class = "text-center indexicongroup"> 
-    <a href="" onfocus="blur()"  target="_self" data-vibrate="5">
+    <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
          <img src="resources/img/img_type/미술.png" border="0" alt="" class="indexicon">
             <span>미술</span>
          </a>
      </div>
     <div class = "text-center indexicongroup"> 
-        <a href="" onfocus="blur()" target="_self" data-vibrate="5">
+        <a href="" onfocus="blur()" target="_self" data-vibrate="5" name="progType">
           <img src="resources/img/img_type/요리.png" border="0" alt="" class="indexicon">
             <span>요리</span>
          </a>
      </div>
     <div class = "text-center indexicongroup"> 
-    <a href="" onfocus="blur()"  target="_self" data-vibrate="5">
+    <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
           <img src="resources/img/img_type/과학.png" border="0" alt="" class="indexicon">
             <span>과학</span>
           </a>
      </div>
       <div class = "text-center indexicongroup">
-          <a href="" onfocus="blur()"  target="_self" data-vibrate="5">
+          <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
           <img src="resources/img/img_type/체육.png" border="0" alt="" class="indexicon">
             <span>체육</span>
           </a>
      </div>
     <div class = "text-center indexicongroup">
-          <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
+          <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
           <img src="resources/img/img_type/역사.png" border="0" alt="" class="indexicon">
             <span>역사</span>
           </a>
      </div>
     <div class = "text-center indexicongroup">
-          <a href="" onfocus="blur()" class="" target="_self" data-vibrate="5">
+          <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
           <img src="resources/img/img_type/생태.png" border="0" alt="" class="indexicon">
             <span>생태</span>
           </a>
@@ -268,23 +271,23 @@
          <map name="image-map">
          <area target="_blank" alt="거창군" title="거창군" href="https://www.geochang.go.kr/" coords="180,108,83,44" shape="rect">
      </map>
-            <li class="area_box map_area02"><img src="resources/img/img_district/경상남도 합천군 색.png" alt="합천군"></li>
-            <li class="area_box map_area03"><img src="resources/img/img_district/경상남도 지도 창녕군.png" alt="창녕군"></li>
-            <li class="area_box map_area04"><img src="resources/img/img_district/경상남도 지도 밀양시.png" alt="밀양시"></li>
-            <li class="area_box map_area05"><img src="resources/img/img_district/경상남도 지도 양산시.png" alt="양산시"></li>
-            <li class="area_box map_area06"><img src="resources/img/img_district/경상남도 함양군 색.png" alt="함양군"></li>
-            <li class="area_box map_area07"><img src="resources/img/img_district/경상남도 지도 산청군 색.png" alt="산청군"></li>
-            <li class="area_box map_area08"><img src="resources/img/img_district/경상남도 지도 의령군.png" alt="의령군"></li>
-            <li class="area_box map_area09"><img src="resources/img/img_district/경상남도 지도 함안군.png" alt="함안군"></li>
-            <li class="area_box map_area10"><img src="resources/img/img_district/경상남도 지도 창원시1.png" alt="창원시"></li>
-            <li class="area_box map_area11"><img src="resources/img/img_district/경상남도 지도 김해시.png" alt="김해시"></li>
-            <li class="area_box map_area12"><img src="resources/img/img_district/경상남도 지도 하동군.png" alt="하동군"></li>
-            <li class="area_box map_area13"><img src="resources/img/img_district/경상남도 지도 진주시.png" alt="진주시"></li>
-            <li class="area_box map_area14"><img src="resources/img/img_district/경상남도 지도 사천시.png" alt="사천시"></li>
-            <li class="area_box map_area15"><img src="resources/img/img_district/경상남도 지도 고성군.png" alt="고성군"></li>
-            <li class="area_box map_area16"><img src="resources/img/img_district/경상남도 지도 남해군.png" alt="남해군"></li>
-            <li class="area_box map_area17"><img src="resources/img/img_district/경상남도 지도 통영시.png" alt="통영시"></li>
-            <li class="area_box map_area18"><img src="resources/img/img_district/경상남도 지도 거제시.png" alt="거제시"></li>
+         <li class="area_box map_area02"><a href = "https://www.youtube.com/" target = "_blank"><img src="resources/img/img_district/경상남도 합천군 색.png" alt="합천군"></a></li>
+         <li class="area_box map_area03"><a href = "https://www.youtube.com/" target = "_blank"><img src="resources/img/img_district/경상남도 지도 창녕군.png" alt="창녕군"></a></li>
+         <li class="area_box map_area04"><a href = "https://www.youtube.com/" target = "_blank"><img src="resources/img/img_district/경상남도 지도 밀양시.png" alt="밀양시"></a></li>
+         <li class="area_box map_area05"><a href = "https://www.youtube.com/" target = "_blank"><img src="resources/img/img_district/경상남도 지도 양산시.png" alt="양산시"></a></li>
+         <li class="area_box map_area06"><a href = "https://www.youtube.com/" target = "_blank"><img src="resources/img/img_district/경상남도 함양군 색.png" alt="함양군"></a></li>
+         <li class="area_box map_area07"><a href = "https://www.youtube.com/" target = "_blank"><img src="resources/img/img_district/경상남도 지도 산청군 색.png" alt="산청군"></a></li>
+         <li class="area_box map_area08"><a href = "https://www.youtube.com/" target = "_blank"><img src="resources/img/img_district/경상남도 지도 의령군.png" alt="의령군"></a></li>
+         <li class="area_box map_area09"><a href = "https://www.youtube.com/" target = "_blank"><img src="resources/img/img_district/경상남도 지도 함안군.png" alt="함안군"></a></li>
+         <li class="area_box map_area10"><a href = "https://www.youtube.com/" target = "_blank"><img src="resources/img/img_district/경상남도 지도 창원시1.png" alt="창원시"></a></li>
+         <li class="area_box map_area11"><a href = "https://www.youtube.com/" target = "_blank"><img src="resources/img/img_district/경상남도 지도 김해시.png" alt="김해시"></a></li>
+         <li class="area_box map_area12"><a href = "https://www.youtube.com/" target = "_blank"><img src="resources/img/img_district/경상남도 지도 하동군.png" alt="하동군"></a></li>
+         <li class="area_box map_area13"><a href = "https://www.youtube.com/" target = "_blank"><img src="resources/img/img_district/경상남도 지도 진주시.png" alt="진주시"></a></li>
+         <li class="area_box map_area14"><a href = "https://www.youtube.com/" target = "_blank"><img src="resources/img/img_district/경상남도 지도 사천시.png" alt="사천시"></a></li>
+         <li class="area_box map_area15"><a href = "https://www.youtube.com/" target = "_blank"><img src="resources/img/img_district/경상남도 지도 고성군.png" alt="고성군"></a></li>
+         <li class="area_box map_area16"><a href = "https://www.youtube.com/" target = "_blank"><img src="resources/img/img_district/경상남도 지도 남해군.png" alt="남해군"></a></li>
+         <li class="area_box map_area17"><a href = "https://www.youtube.com/" target = "_blank"><img src="resources/img/img_district/경상남도 지도 통영시.png" alt="통영시"></a></li>
+         <li class="area_box map_area18"><a href = "https://www.youtube.com/" target = "_blank"><img src="resources/img/img_district/경상남도 지도 거제시.png" alt="거제시"></a></li>
 					
       </ul>
       </div>

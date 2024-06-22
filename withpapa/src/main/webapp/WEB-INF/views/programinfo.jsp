@@ -30,7 +30,7 @@
     display: none;
     position: absolute;
     top: 43%;
-    left: 48%;
+    left: 50%;
     transform : translate (-50%,-50%);
     padding : 20px;
     overflow-y : auto;
@@ -100,8 +100,10 @@
         
 #search {
     display: flex;
-    width: 500px;
+    width: 617px;
     margin: auto;
+    position:relative;
+    left:32px;
 }
 </style>
 </head>
@@ -126,65 +128,87 @@
     <p>
      <img src="${path}/resources/img/img_searchbox/location.png" alt="location"> 지역
       </p>
-  <div class="scrollMenu"></div>
-     <button class="mappart">거제시</button>
-     <button class="mappart">거창군</button>
-     <button class="mappart">고성군</button>
-     <button class="mappart">김해시</button>
-     <button class="mappart">남해군</button>
-     <button class="mappart">밀양시</button>
-     <button class="mappart">사천시</button>
-     <button class="mappart">산청군</button>
-     <button class="mappart">양산시</button>
-     <button class="mappart">의령군</button>
-     <button class="mappart">진주시</button>
-     <button class="mappart">창녕군</button>
-     <button class="mappart">창원시</button>
-     <button class="mappart">통영시</button>
-     <button class="mappart">하동군</button>
-     <button class="mappart">함안군</button>
-     <button class="mappart">함양군</button>
-     <button class="mappart">합천군</button>
 
+  <div class="scrollMenu">
+        <button class="mappart" name="placeDistrict">거제시</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">거창군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">고성군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">김해시</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">남해군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">밀양시</button>  <div class="space"></div>
+        <span style="line-height:20%"><br></span>
+        <button class="mappart" name="placeDistrict">사천시</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">산청군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">양산시</button>  <div class="space"></div><button class="mappart" name="placeDistrict">의령군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">진주시</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">창녕군</button>  <div class="space"></div>
+        <span style="line-height:20%"><br></span>
+        <button class="mappart" name="placeDistrict">창원시</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">통영시</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">하동군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">함안군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">함양군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">합천군</button>
+        </div>
+     
     <p>
        <img src="${path}/resources/img/img_searchbox/category.png" alt="category"> 유형 선택
      </p>
-  <div class="category">
-     <button type="button" class="delbtn">
-       <img src="${progType}/resources/img/img_type/미술.png" width="45"><br>미술<input type="checkbox" />
-     </button>
-            
-     <button type="button" class="delbtn">
-       <img src="${progType}/resources/img/img_type/요리.png" width="45"><br>요리<input type="checkbox" />
-     </button>
-     
-     <button type="button" class="delbtn">
-       <img src="${progType}/resources/img/img_type/과학.png" width="45"><br>과학<input type="checkbox" />
-     </button>
-     
-     <button type="button" class="delbtn">
-       <img src="${progType}/resources/img/img_type/체육.png" width="45"><br>체육<input type="checkbox" />
-     </button>
-     
-     <button type="button" class="delbtn">
-       <img src="${progType}/resources/img/img_type/역사.png" width="45"><br>역사<input type="checkbox" />
-     </button>
-     
-     <button type="button" class="delbtn">
-       <img src="${progType}/resources/img/img_type/생태.png" width="45"><br>생태<input type="checkbox" />
-     </button>
-     
-    </div>
-    </div>
-    <p>
-       <img src="resources/img/img_type/date.png"> 날짜 선택
+  
+   <div class="category">
+   <div class="text-center indexicongroup"> 
+    <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
+         <img src="resources/img/img_type/미술.png" border="0" alt="" class="indexicon1">
+         <span>미술</span>
+        </a>
+        </div>  
+
+   <div class="text-center indexicongroup"> 
+    <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
+         <img src="resources/img/img_type/요리.png" border="0" alt="" class="indexicon1">
+         <span>요리</span>
+        </a>
+        </div>
+
+   <div class="text-center indexicongroup"> 
+    <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
+         <img src="resources/img/img_type/과학.png" border="0" alt="" class="indexicon1">
+         <span>과학</span>
+        </a>
+        </div>
+
+   <div class="text-center indexicongroup">
+    <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
+         <img src="resources/img/img_type/체육.png" border="0" alt="" class="indexicon1">
+         <span>체육</span>
+        </a>
+        </div>
+
+   <div class="text-center indexicongroup">
+    <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
+         <img src="resources/img/img_type/역사.png" border="0" alt="" class="indexicon1">
+         <span>역사</span>
+        </a>
+        </div>
+
+   <div class="text-center indexicongroup">
+    <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
+         <img src="resources/img/img_type/생태.png" border="0" alt="" class="indexicon1">
+         <span>생태</span>
+        </a>
+        </div>
+
+        </div>
+        </div>
+     <p>
+        <img src="${path}/resources/img/img_type/date.png"> 날짜 선택
     </p>
-       <input type="date" />
+        <input type="date" />
     </div>
     
     <!-- 카테고리 유형 -->
   <div class = "categorytype">
-       <img src="data:image/jpg;base64,${result.progType}">
+       <img src="">
     </div>
     
     <!-- 체험장소 이름 -->
@@ -225,20 +249,61 @@
     </div>
 
 <!-- 지도 화면 -->
-  <div id="map" style="width:480px;height:280px;"></div>
-
+  <div id="map" style="width:546px;height:280px;"></div>
+  
   <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3e6f79d0b7c01aaf6bd4612381ea932e"></script>
   <script>
-    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-        mapOption = {
-            center: new kakao.maps.LatLng(37.56682, 126.97865), // 지도의 중심좌표
-            level: 3, // 지도의 확대 레벨
-            mapTypeId: kakao.maps.MapTypeId.ROADMAP // 지도종류
-        }; 
+		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+		    mapOption = {
+		        center: new kakao.maps.LatLng(37.56715, 126.97571), // 지도의 중심좌표
+		        level: 3, // 지도의 확대 레벨
+		        mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
+		    }; 
 
-    // 지도를 생성한다 
-    var map = new kakao.maps.Map(mapContainer, mapOption); 
-    </script>
+		// 지도를 생성한다 
+		var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+		// 지도 타입 변경 컨트롤을 생성한다
+		var mapTypeControl = new kakao.maps.MapTypeControl();
+
+		// 지도의 상단 우측에 지도 타입 변경 컨트롤을 추가한다
+		map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);	
+
+		// 지도에 확대 축소 컨트롤을 생성한다
+		var zoomControl = new kakao.maps.ZoomControl();
+
+		// 지도의 우측에 확대 축소 컨트롤을 추가한다
+		map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+		// 지도에 마커를 생성하고 표시한다
+		var marker = new kakao.maps.Marker({
+		    position: new kakao.maps.LatLng(37.56670, 126.97729), // 마커의 좌표
+		    draggable : true, // 마커를 드래그 가능하도록 설정한다
+		    map: map // 마커를 표시할 지도 객체
+		});
+
+		// 마커에 mouseover 이벤트를 등록한다
+		kakao.maps.event.addListener(marker, 'mouseover', function() {
+		    console.log('마커에 mouseover 이벤트가 발생했습니다!');
+		});
+
+		// 마커에 mouseout 이벤트 등록
+		kakao.maps.event.addListener(marker, 'mouseout', function() {
+		    console.log('마커에 mouseout 이벤트가 발생했습니다!');
+		});
+
+		// 마커에 dragstart 이벤트 등록
+		kakao.maps.event.addListener(marker, 'dragstart', function() {
+		    console.log('마커에 dragstart 이벤트가 발생했습니다!');
+		});
+
+		// 마커에 dragend 이벤트 등록
+		kakao.maps.event.addListener(marker, 'dragend', function() {
+		    console.log('마커에 dragend 이벤트가 발생했습니다!');
+		});
+
+	</script>
+
 
  <script type="text/javascript">
         $(document).ready(function() {

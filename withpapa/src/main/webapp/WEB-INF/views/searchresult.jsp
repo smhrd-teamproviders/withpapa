@@ -4,7 +4,7 @@
 <c:set var="path" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html>
-<link rel = "stylesheet" href = "${path}/resources/css/searchresult.css">
+<link rel = "stylesheet" href = "resources/css/searchresult.css">
 <script src="https://code.jquery.com/jquery-3.2.1.min.js">
         window.onload = function() {
             for (var i = 0; i < document.getElementsByTagName('input').length; i++) {
@@ -29,7 +29,7 @@
     display: none;
     position: absolute;
     top: 43%;
-    left: 47%;
+    left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
     overflow-y: auto;
@@ -102,14 +102,16 @@
         
 #search {
     display :flex;
-    width: 500px;
+    width: 554px;
     margin: auto;
+    position:relative;
+    left:30px;
 }
 </style>
 </head>
 <body>
 	<!-- 검색 결과 화면 -->
-  <div id="search">
+   <div id="search">
         <input type="text" placeholder="어디로 놀러 가볼까요?">
     
         <!-- 돋보기 버튼 -->
@@ -119,10 +121,6 @@
      </a>
      </div>
     
-  <form action="info/Programinfo">
-        <input type="text" name="progId">
-        <input type="submit">
-     </form>
 	<!-- 돋보기 눌렀을 때 나오는 모달 창 -->
    <div id="modal"></div>
    <div id="banner_online">
@@ -133,56 +131,77 @@
      <p>
         <img src="${path}/resources/img/img_searchbox/location.png" alt="location"> 지역
      </p>
-   <div class="scrollMenu"></div>
-        <button class="mappart">거제시</button>
-        <button class="mappart">거창군</button>
-        <button class="mappart">고성군</button>
-        <button class="mappart">김해시</button>
-        <button class="mappart">남해군</button>
-        <button class="mappart">밀양시</button>
-        <button class="mappart">사천시</button>
-        <button class="mappart">산청군</button>
-        <button class="mappart">양산시</button>
-        <button class="mappart">의령군</button>
-        <button class="mappart">진주시</button>
-        <button class="mappart">창녕군</button>
-        <button class="mappart">창원시</button>
-        <button class="mappart">통영시</button>
-        <button class="mappart">하동군</button>
-        <button class="mappart">함안군</button>
-        <button class="mappart">함양군</button>
-        <button class="mappart">합천군</button>
+   <div class="scrollMenu">
+        <button class="mappart" name="placeDistrict">거제시</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">거창군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">고성군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">김해시</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">남해군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">밀양시</button>  <div class="space"></div>
+        <span style="line-height:20%"><br></span>
+        <button class="mappart" name="placeDistrict">사천시</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">산청군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">양산시</button>  <div class="space"></div><button class="mappart" name="placeDistrict">의령군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">진주시</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">창녕군</button>  <div class="space"></div>
+        <span style="line-height:20%"><br></span>
+        <button class="mappart" name="placeDistrict">창원시</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">통영시</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">하동군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">함안군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">함양군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">합천군</button>
+    </div>
         
      <p>
       <img src="${path}/resources/img/img_searchbox/category.png" alt="category"> 유형 선택
     </p>
+    
    <div class="category">
-    <button type="button" class="delbtn">
-        <img src="${path}/resources/img/img_type/미술.png" width="45"><br>미술<input type="checkbox" />
-    </button>
-       
-    <button type="button" class="delbtn">
-        <img src="${path}/resources/img/img_type/요리.png" width="45"><br>요리<input type="checkbox" />
-    </button>
-    
-    <button type="button" class="delbtn">
-        <img src="${path}/resources/img/img_type/과학.png" width="45"><br>과학<input type="checkbox" />
-    </button>
-    
-    <button type="button" class="delbtn">
-        <img src="${path}/resources/img/img_type/체육.png" width="45"><br>체육<input type="checkbox" />
-    </button>
-    
-    <button type="button" class="delbtn">
-        <img src="${path}/resources/img/img_type/역사.png" width="45"><br>역사<input type="checkbox" />
-    </button>
-    
-    <button type="button" class="delbtn">
-        <img src="${path}/resources/img/img_type/생태.png" width="45"><br>생태<input type="checkbox" />
-    </button>
+   <div class="text-center indexicongroup"> 
+    <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
+         <img src="resources/img/img_type/미술.png" border="0" alt="" class="indexicon1">
+         <span>미술</span>
+        </a>
+        </div>  
 
-    </div>
-    </div>
+   <div class="text-center indexicongroup"> 
+    <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
+         <img src="resources/img/img_type/요리.png" border="0" alt="" class="indexicon1">
+         <span>요리</span>
+        </a>
+        </div>
+
+   <div class="text-center indexicongroup"> 
+    <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
+         <img src="resources/img/img_type/과학.png" border="0" alt="" class="indexicon1">
+         <span>과학</span>
+        </a>
+        </div>
+
+   <div class="text-center indexicongroup">
+    <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
+         <img src="resources/img/img_type/체육.png" border="0" alt="" class="indexicon1">
+         <span>체육</span>
+        </a>
+        </div>
+
+   <div class="text-center indexicongroup">
+    <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
+         <img src="resources/img/img_type/역사.png" border="0" alt="" class="indexicon1">
+         <span>역사</span>
+        </a>
+        </div>
+
+   <div class="text-center indexicongroup">
+    <a href="" onfocus="blur()"  target="_self" data-vibrate="5" name="progType">
+         <img src="resources/img/img_type/생태.png" border="0" alt="" class="indexicon1">
+         <span>생태</span>
+        </a>
+        </div>
+
+        </div>
+        </div>
      <p>
         <img src="${path}/resources/img/img_type/date.png"> 날짜 선택
     </p>
@@ -191,8 +210,20 @@
 	
 
 	<!-- 장소 사진 -->
-  <div class = "place">
+   <div class = "place">
     <img src="data:image/jpg;base64,${result.imgNm}">
+    <!-- 카테고리 유형 -->
+   <div class = "categorytype">
+       <img src="data:image/jpg;base64,${result.progType}">
+    </div>
+    <!-- 체험장소 이름 -->
+   <div class="title">
+    <h2>${result.progNm}fdaf</h2>
+    </div>
+    <!-- 체험지역 -->
+   <div class = "location">
+    <a>${result.placeDistrict}asfdaf</a>
+    </div>
     <br>
     <img src="data:image/jpg;base64,${result.imgNm}">
     <br>
@@ -202,21 +233,34 @@
     </div> 
   
   <!-- 카테고리 유형 -->
-  <div class = "categorytype">
+   <div class = "categorytype1">
        <img src="data:image/jpg;base64,${result.progType}">
     </div>
   <!-- 체험장소 이름 -->
-  <div class="title">
-    <h2>${result.progNm}</h2>
+   <div class="title1">
+    <h2>${result.progNm}fdaf</h2>
     </div>
   <!-- 체험지역 -->
-  <div class = "location">
-    <a>${result.placeDistrict}</a>
+   <div class = "location1">
+    <a>${result.placeDistrict}asfdaf</a>
+    </div>
+    
+  <!-- 카테고리 유형 -->
+   <div class = "categorytype2">
+       <img src="data:image/jpg;base64,${result.progType}">
+    </div>
+  <!-- 체험장소 이름 -->
+   <div class="title2">
+    <h2>${result.progNm}fdaf</h2>
+    </div>
+  <!-- 체험지역 -->
+   <div class = "location2">
+    <a>${result.placeDistrict}asfdaf</a>
     </div>
 
 
 
-  <script type="text/javascript">
+   <script type="text/javascript">
         $(document).ready(function() {
             $("#openModalButton").click(function(event) {
                 event.preventDefault(); // Prevent the default link behavior

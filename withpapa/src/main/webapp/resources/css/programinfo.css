@@ -4,9 +4,9 @@
     height : 200px;
     text-align: center;
     position: relative;
-    left: -100px;
+    left: -116px;
     margin: auto;
-    top: -5px;
+    top: -34px;
 }
 
 .search {
@@ -19,18 +19,17 @@
     height: 200px;
     text-align: center;
     position: relative;
-    left: -96px;
+    left: -152px;
     margin: auto;
-    top: -1903px;
+    top: -194px;
 }
 
 input {
-    width: 100%;
+    width: 95%;
     border: 1px solid #d3d3d3;
     border-radius: 8px;
-    padding: 10px 12px;
+    padding: 23px 12px;
     font-size: 14px;
-    margin: auto;
 }
   
 .magnifer {  /* 돋보기 */
@@ -93,7 +92,7 @@ input {
 .scrollMenu {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 21px;
 }
   
 .scrollMenu label {
@@ -118,8 +117,8 @@ input {
   display: block;
   /* margin-left: auto; */
   /* margin-right: auto; */
-  top: -1650px;
-  left: -206px;
+  top: 61px;
+  left: -234px;
 }
 
 .categorytype img:hover{
@@ -141,8 +140,8 @@ input {
     margin: auto;
     cursor: pointer;
     border-radius: 4px;
-    left:170px;
-    top: -210px;
+    left:208px;
+    top: -426px;
     
 }
 
@@ -166,7 +165,7 @@ input {
     margin-top: 50px;
     margin: auto;
     display: block;
-    top: -180px;
+    top: -393px;
 }
   
 .place img:hover{
@@ -175,7 +174,7 @@ input {
 }    
 
 #map {
-    top:-292px;
+    top:-520px;
     margin: auto;
     position: relative;
     background: url(http://t1.daumcdn.net/mapjsapi/images/2x/bg_tile.png);
@@ -185,7 +184,7 @@ input {
     text-align: center;
     margin: auto;
     position: relative;
-    top: 143px;
+    top: -69px;
     left: -171px;
 }
 
@@ -193,8 +192,8 @@ input {
     text-align: center;
     margin: auto;
     position: relative;
-    top: 81px;
-    left: 71px;
+    top: -134px;
+    left: 83px;
 }
 
 
@@ -202,10 +201,57 @@ input {
     text-align: center;
     margin: auto;
     position: relative;
-    top: 113px;
+    top: -74px;
     left: -191px;
 }
 
+.indexicongroup {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.indexicon {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+}
+
+.indexicon1 {
+  width: 59px; /* Adjust size as needed */
+  height: auto;
+}
+
+.indexicongroup a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Ensure the text color is inherited */
+}
+
+.indexicongroup span {
+  margin-top: 5px; /* Adjust spacing as needed */
+}
+
+.indexicongroup:nth-of-type(3) span {
+  margin-top: -10px; /* Adjust margin as needed for 과학 */
+}
+
+.indexicongroup:nth-of-type(5) span {
+  margin-top: 10px; /* Adjust margin as needed for 역사 */
+}
+
+.space {
+    width: 4px;
+    height: auto;
+    display: inline-block;
+}
+
+.modal-button{
+	position:relative;
+	z-index:auto;
+	top:2px;
+	left: -64px;
+	
+}
 
 .mappart {
     background-color: #b1bac4;
