@@ -3,20 +3,31 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.smhrd.withpapa.mapper.SearchMapper">
-	<select id="searchResult" parameterType="com.smhrd.withpapa.model.SearchElement">
-		select prog_type, prog_nm, place_district, img_nm
-		from tb_prog, tb_
-		
-		select prog_type, prog_nm
-		from tb_prog
-		where 
-		
-		
-	</select>
-	<select id="searchTbProg">
-		select prog_id, prog_type, prog_nm
-		from tb_program
-		where prog_nm like '%#{progNm}%'
-		and prog_type	
+	
+	<select id="searchTbProg" parameterType="com.smhrd.withpapa.model.SearchElement" resultType="com.smhrd.withpapa.model.SearchResult">
+		select pr.prog_id, pr.prog_nm, pl.place_district, pr.prog_type, pr.prog_day_start, pr.prog_day_end, pr.prog_rept_day_start, pr.prog_rept_day_end, pr.prog_rept_tf, pr.prog_rept_dow, img.img_nm
+		<!-- 테이블 조인  -->
+		from tb_program pr, tb_place pl, tb_img img
+		<where>
+			<!-- 테이블 INNER JOIN 조건 -->
+			pr.place_id = pl.place_id
+			and pr.prog_id = img.prog_id
+			<!-- 키워드 검색 조건 -->
+			<if test="progNm != null">
+				and prog_nm like CONCAT('%',#{progNm},'%')
+			</if>
+			<!-- 지역 검색 조건 -->
+			<if test="placeDistrict != null">
+				and pl.place_district = #{placeDistrict} 
+			</if>
+			<!-- 유형 검색 조건 -->
+			<if test="progType != null">
+				and prog_type in (
+			<foreach collection="progType" item="type" index="i" separator=",">
+				#{type}
+			</foreach>
+			)
+			</if>
+		</where>
 	</select>
 </mapper>
