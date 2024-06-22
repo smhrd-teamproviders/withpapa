@@ -160,20 +160,23 @@
     <button type="button" class="delbtn">
         <img src="${path}/resources/img/img_type/미술.png" width="45"><br>미술<input type="checkbox" />
     </button>
-            
+       
     <button type="button" class="delbtn">
         <img src="${path}/resources/img/img_type/요리.png" width="45"><br>요리<input type="checkbox" />
     </button>
+    
     <button type="button" class="delbtn">
         <img src="${path}/resources/img/img_type/과학.png" width="45"><br>과학<input type="checkbox" />
     </button>
+    
     <button type="button" class="delbtn">
-        <img src="${path}/resources/img/img_type/체육.png" width="45"><br>체육<input
-                type="checkbox" />
+        <img src="${path}/resources/img/img_type/체육.png" width="45"><br>체육<input type="checkbox" />
     </button>
+    
     <button type="button" class="delbtn">
         <img src="${path}/resources/img/img_type/역사.png" width="45"><br>역사<input type="checkbox" />
     </button>
+    
     <button type="button" class="delbtn">
         <img src="${path}/resources/img/img_type/생태.png" width="45"><br>생태<input type="checkbox" />
     </button>

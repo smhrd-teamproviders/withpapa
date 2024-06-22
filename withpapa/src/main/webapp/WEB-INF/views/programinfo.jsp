@@ -148,19 +148,24 @@
      <button type="button" class="delbtn">
        <img src="${progType}/resources/img/img_type/요리.png" width="45"><br>요리<input type="checkbox" />
      </button>
+     
      <button type="button" class="delbtn">
        <img src="${progType}/resources/img/img_type/과학.png" width="45"><br>과학<input type="checkbox" />
      </button>
+     
      <button type="button" class="delbtn">
        <img src="${progType}/resources/img/img_type/체육.png" width="45"><br>체육<input type="checkbox" />
      </button>
+     
      <button type="button" class="delbtn">
        <img src="${progType}/resources/img/img_type/역사.png" width="45"><br>역사<input type="checkbox" />
      </button>
+     
      <button type="button" class="delbtn">
        <img src="${progType}/resources/img/img_type/생태.png" width="45"><br>생태<input type="checkbox" />
      </button>
-     </div>
+     
+    </div>
     <p>
        <img src="resources/img/img_type/date.png"> 날짜 선택
     </p>
