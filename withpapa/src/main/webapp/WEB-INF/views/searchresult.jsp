@@ -4,7 +4,7 @@
 <c:set var="path" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html>
-<link rel = "stylesheet" href = "${path}/resources/css/searchresult.css">
+<link rel = "stylesheet" href = "${path}/resources/css/searchresult.css?after">
 <script src="https://code.jquery.com/jquery-3.2.1.min.js">
     window.onload = function() {
       for (var i = 0; i < document.getElementsByTagName('input').length; i++) {
@@ -210,61 +210,25 @@
     </div>
 	
 
-	<!-- 장소 사진 -->
-   <div class = "place">
-    <img src="data:image/jpg;base64,${result.imgNm}" name = "place1">
-    <!-- 카테고리 유형 -->
-   <div class = "categorytype">
-       <img src="data:image/jpg;base64,${result.progType}">
-    </div>
-    <!-- 체험장소 이름 -->
-   <div class="title">
-    <h2>${result.progNm}fdaf</h2>
-    </div>
-    <!-- 체험지역 -->
-   <div class = "location">
-    <a>${result.placeDistrict}asfdaf</a>
-    </div>
-    </div>
+	<c:forEach var="result" items="${result}">
+      <!-- 장소 사진 -->
+      <div class="place">
+         <img src="data:image/jpg;base64,${result.imgNm}" name="place1">
+         <!-- 카테고리 유형 -->
+         <div class="categorytype">
+            <img src="data:image/jpg;base64,${result.progType}">
+         </div>
+         <!-- 체험장소 이름 -->
+         <div class="title">
+            <h2><a href="programinfo?progId=${result.progId}" onclick="location.href=programinfo?progId=${result.progId}">${result.progNm}</a></h2>
+         </div>
+         <!-- 체험지역 -->
+         <div class="location">
+            <a>${result.placeDistrict}</a>
+         </div>
+      </div>
+   </c:forEach>
     
-   <div class = "place1">
-    <img src="data:image/jpg;base64,${result.imgNm}" name = "place2">
-     <!-- 카테고리 유형 -->
-   <div class = "categorytype1">
-       <img src="data:image/jpg;base64,${result.progType}">
-    </div>
-    <!-- 체험장소 이름 -->
-   <div class="title1">
-    <h2>${result.progNm} tytyty</h2>
-    </div>
-  	<!-- 체험지역 -->
-   <div class = "location1">
-    <a>${result.placeDistrict} ioioioiio</a>
-    </div>
-    </div>
-    
-    
-    <br>
-    <img src="data:image/jpg;base64,${result.imgNm}">
-    <br>
-    <img src="data:image/jpg;base64,${result.imgNm}">
-
-  
-  
-    
-  <!-- 카테고리 유형 -->
-   <div class = "categorytype2">
-       <img src="data:image/jpg;base64,${result.progType}">
-    </div>
-  <!-- 체험장소 이름 -->
-   <div class="title2">
-    <h2>${result.progNm}fdaf</h2>
-    </div>
-  <!-- 체험지역 -->
-   <div class = "location2">
-    <a>${result.placeDistrict}asfdaf</a>
-    </div>
-
 
 
    <script type="text/javascript">
