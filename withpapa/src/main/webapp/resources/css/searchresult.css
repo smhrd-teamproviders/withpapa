@@ -33,6 +33,10 @@
     
 }
 
+.homepagebutton{
+	display:flex;
+}
+
 /*
 	height: 200px;
     text-align: center;

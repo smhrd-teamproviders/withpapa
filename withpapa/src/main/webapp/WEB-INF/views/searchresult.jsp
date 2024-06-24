@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet"
-	href="${path}/resources/css/searchresult.css?first">
+	href="${path}/resources/css/searchresult.css?after">
 <script src="https://code.jquery.com/jquery-3.2.1.min.js">
     window.onload = function() {
       for (var i = 0; i < document.getElementsByTagName('input').length; i++) {
@@ -123,6 +123,12 @@
 		</a>
 	</div>
 
+	<!-- 홈페이지로 가는 오리 화면 -->
+	<div class="homepagebutton">
+		<a href="https://google.com"> <img src="https://e7.pngegg.com/pngimages/396/796/png-clipart-home-house-lia-space-button-angle-logo-thumbnail.png" />
+		</a>
+	</div>
+	
 	<!-- 돋보기 눌렀을 때 나오는 모달 창 -->
 	<div id="modal"></div>
 	<div id="banner_online">
@@ -226,13 +232,13 @@
 
 			</div>
 		</div>
-		
+
 		<p>
 			<img src="${path}/resources/img/img_searchbox/date.png"> 날짜 선택
 		</p>
 		<input type="date" />
 	</div>
-    
+
 
 	<c:forEach var="result" items="${result}">
 		<!-- 장소 사진 -->

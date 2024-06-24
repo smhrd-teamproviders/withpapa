@@ -238,7 +238,7 @@
 
 		<!-- 체험장소 이름 -->
 		<div class="title">
-			<b>${progNm}</b>
+			<b style = "font-size:30px">${progNm}</b>
 		</div>
 
 		<!-- 홈페이지 버튼 -->
