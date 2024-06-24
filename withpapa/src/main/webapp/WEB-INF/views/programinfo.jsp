@@ -202,7 +202,7 @@
         </div>
         </div>
      <p>
-        <img src="${path}/resources/img/img_type/date.png"> 날짜 선택
+        <img src="${path}/resources/img/img_searchbox/date.png"> 날짜 선택
     </p>
         <input type="date" />
     </div>

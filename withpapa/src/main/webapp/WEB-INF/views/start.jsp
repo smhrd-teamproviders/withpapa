@@ -108,6 +108,46 @@
 </style>
 </head>
 <body>
+	<!-- 검색 테스트 코드 -->
+   <form action="search/searchresult" method="post">
+      <div>
+         <input type="text" name="progNm" placeholder="키워드 검색">
+      </div>
+      <div>
+         <label>거제시<input type="radio" name="placeDistrict" value="거제시" /></label>
+         <label>거창군<input type="radio" name="placeDistrict" value="거창군" /></label>
+         <label>고성군<input type="radio" name="placeDistrict" value="고성군" /></label>
+         <label>김해시<input type="radio" name="placeDistrict" value="김해시" /></label>
+         <label>남해군<input type="radio" name="placeDistrict" value="남해군" /></label>
+         <label>밀양시<input type="radio" name="placeDistrict" value="밀양시" /></label>
+         <label>사천시<input type="radio" name="placeDistrict" value="사천시" /></label>
+         <label>산청군<input type="radio" name="placeDistrict" value="산청군" /></label>
+         <label>양산시<input type="radio" name="placeDistrict" value="양산시" /></label>
+         <label>의령군<input type="radio" name="placeDistrict" value="의령군" /></label>
+         <label>진주시<input type="radio" name="placeDistrict" value="진주시" /></label>
+         <label>창녕군<input type="radio" name="placeDistrict" value="창녕군" /></label>
+         <label>창원시<input type="radio" name="placeDistrict" value="창원시" /></label>
+         <label>통영시<input type="radio" name="placeDistrict" value="통영시" /></label>
+         <label>하동군<input type="radio" name="placeDistrict" value="하동군" /></label>
+         <label>함안군<input type="radio" name="placeDistrict" value="함안군" /></label>
+         <label>함양군<input type="radio" name="placeDistrict" value="함양군" /></label>
+         <label>합천군<input type="radio" name="placeDistrict" value="합천군" /></label>
+      </div>
+      <div>
+         미술<input type="checkbox" name="progType" value="미술"><br>
+         요리<input type="checkbox" name="progType" value="요리"><br>
+         과학<input type="checkbox" name="progType" value="과학"><br>
+         운동<input type="checkbox" name="progType" value="운동"><br>
+         역사<input type="checkbox" name="progType" value="역사"><br>
+         생태<input type="checkbox" name="progType" value="생태"><br>
+      </div>
+      <div>
+         시작일<input type="date" name="progDayStart">
+         종료일<input type="date" name="progDayEnd">
+      </div>
+      <input type="submit" value="전송">
+   </form>
+   
 	<!-- 상단 화면 -->
 	<div class="ducks">
           <img src="resources/img/img_logo/logo_duck.png" alt="papaducks" width="100px">
@@ -214,7 +254,7 @@
         </div>
         </div>
          <p>
-         <img src="resources/img/img_type/date.png"> 날짜 선택
+         <img src="resources/img/img_searchbox/date.png"> 날짜 선택
         </p>
          <input type="date" />
         </div>

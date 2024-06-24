@@ -29,5 +29,7 @@
 	
 	<!-- mapper 경로 등록 -->
 	<mybatis-spring:scan base-package="com.smhrd.withpapa.mapper"/>
+
+	
 	
 </beans>

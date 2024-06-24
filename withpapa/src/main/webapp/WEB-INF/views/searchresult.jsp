@@ -6,13 +6,13 @@
 <html>
 <link rel = "stylesheet" href = "${path}/resources/css/searchresult.css">
 <script src="https://code.jquery.com/jquery-3.2.1.min.js">
-        window.onload = function() {
-            for (var i = 0; i < document.getElementsByTagName('input').length; i++) {
-                if (document.getElementsByTagName('input')[i].getAttribute('type') == 'checkbox') {
-                    document.getElementsByTagName('input')[i].checked = true;
-                }
-            }
-        };
+    window.onload = function() {
+      for (var i = 0; i < document.getElementsByTagName('input').length; i++) {
+         if (document.getElementsByTagName('input')[i].getAttribute('type') == 'checkbox') {
+             document.getElementsByTagName('input')[i].checked = true;
+               }
+           }
+       };
 </script>
 <meta charset="UTF-8">
 <head>
@@ -204,7 +204,7 @@
         </div>
         </div>
      <p>
-        <img src="${path}/resources/img/img_type/date.png"> 날짜 선택
+        <img src="${path}/resources/img/img_searchbox/date.png"> 날짜 선택
     </p>
         <input type="date" />
     </div>
