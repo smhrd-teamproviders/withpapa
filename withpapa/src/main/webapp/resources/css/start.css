@@ -67,7 +67,7 @@ footer{
 
 .ducks { /* 오리 */
     text-align: center;
-    transform: translate(45%, 80%);
+    transform: translate(47%, 80%);
     position:relative;
     margin: auto;
     justify-content:center;
@@ -316,7 +316,7 @@ div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code
 
 
 .indexicon {
-  width: 100px; /* Adjust size as needed */
+  width: 75px; /* Adjust size as needed */
   height: auto;
 }
 

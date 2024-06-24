@@ -111,8 +111,8 @@ input {
 }
   
 .categorytype img {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   border: 2px solid #fff;
   position: relative;
   border-radius: 6px;
@@ -129,7 +129,7 @@ input {
   transform : scale(1.03)
 } 
    
-/** 평범한 버튼 */
+/** 홈페이지 버튼 */
 .placehomepage {
     background-color: #007BFF;
     color: white;
@@ -143,8 +143,8 @@ input {
     margin: auto;
     cursor: pointer;
     border-radius: 4px;
-    left: 208px;
-    top: -223px;
+    left: 217px;
+    top: -184px;
 }
 
 .placehomepage:hover {
@@ -157,8 +157,8 @@ input {
 
 .programinfo {
     position: relative;
-    left: 41px;
-    top: -156px;
+    left: 57px;
+    top: -153px;
     display: flex;
     margin: auto;
     justify-content: center;
@@ -175,7 +175,7 @@ input {
     margin-top: 50px;
     margin: auto;
     display: block;
-    top: -184px;
+    top: -181px;
 }
   
 .place img:hover{
@@ -183,7 +183,7 @@ input {
 }    
 
 #map {
-    top:-171px;
+    top:-173px;
     margin: auto;
     position: relative;
     background: url(http://t1.daumcdn.net/mapjsapi/images/2x/bg_tile.png);

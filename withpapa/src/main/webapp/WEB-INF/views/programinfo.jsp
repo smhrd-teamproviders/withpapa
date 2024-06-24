@@ -241,7 +241,7 @@
 			<b>${progNm}</b>
 		</div>
 
-		<!-- 평범한 버튼 -->
+		<!-- 홈페이지 버튼 -->
 		<button onclick="location.href='${progUrl}'" class="placehomepage">바로가기</button>
 	</div>
 

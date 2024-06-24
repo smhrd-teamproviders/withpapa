@@ -190,72 +190,65 @@
 					<img src="resources/img/img_searchbox/category.png"> 유형 선택
 				</p>
 
-			
+
+			</div>
+			<div class="category">
+				<div class="text-center indexicongroup">
+					<a
+						href="search/searchresult?progNm=&progType=미술&progDayStart=&progDayEnd="
+						onfocus="blur()" target="_self" data-vibrate="5" name="progType">
+						<img src="resources/img/img_type/미술.png" border="0" alt=""
+						class="indexicon1"> <span>미술</span>
+					</a>
+				</div>
+
+				<div class="text-center indexicongroup">
+					<a
+						href="search/searchresult?progNm=&progType=요리&progDayStart=&progDayEnd="
+						onfocus="blur()" target="_self" data-vibrate="5" name="progType">
+						<img src="resources/img/img_type/요리.png" border="0" alt=""
+						class="indexicon1"> <span>요리</span>
+					</a>
+				</div>
+
+				<div class="text-center indexicongroup">
+					<a
+						href="search/searchresult?progNm=&progType=과학&progDayStart=&progDayEnd="
+						onfocus="blur()" target="_self" data-vibrate="5" name="progType">
+						<img src="resources/img/img_type/과학.png" border="0" alt=""
+						class="indexicon1"> <span>과학</span>
+					</a>
+				</div>
+
+				<div class="text-center indexicongroup">
+					<a
+						href="search/searchresult?progNm=&progType=체육&progDayStart=&progDayEnd="
+						onfocus="blur()" target="_self" data-vibrate="5" name="progType">
+						<img src="resources/img/img_type/체육.png" border="0" alt=""
+						class="indexicon1"> <span>체육</span>
+					</a>
+				</div>
+
+				<div class="text-center indexicongroup">
+					<a
+						href="search/searchresult?progNm=&progType=역사&progDayStart=&progDayEnd="
+						onfocus="blur()" target="_self" data-vibrate="5" name="progType">
+						<img src="resources/img/img_type/역사.png" border="0" alt=""
+						class="indexicon1"> <span>역사</span>
+					</a>
+				</div>
+
+				<div class="text-center indexicongroup">
+					<a
+						href="search/searchresult?progNm=&progType=생태&progDayStart=&progDayEnd="
+						onfocus="blur()" target="_self" data-vibrate="5" name="progType">
+						<img src="resources/img/img_type/생태.png" border="0" alt=""
+						class="indexicon1"> <span>생태</span>
+					</a>
+				</div>
+
+			</div>
 		</div>
-		<div class="category">
-			<div class="text-center indexicongroup">
-				<a
-					href="search/searchresult?progNm=&progType=미술&progDayStart=&progDayEnd="
-					onfocus="blur()" target="_self" data-vibrate="5" name="progType">
-					<img src="resources/img/img_type/미술.png" border="0" alt=""
-					class="indexicon1"> <span>미술</span>
-				</a>
-			</div>
-
-			<div class="text-center indexicongroup">
-				<a
-					href="search/searchresult?progNm=&progType=요리&progDayStart=&progDayEnd="
-					onfocus="blur()" target="_self" data-vibrate="5" name="progType">
-					<img src="resources/img/img_type/요리.png" border="0" alt=""
-					class="indexicon1"> <span>요리</span>
-				</a>
-			</div>
-
-			<div class="text-center indexicongroup">
-				<a
-					href="search/searchresult?progNm=&progType=과학&progDayStart=&progDayEnd="
-					onfocus="blur()" target="_self" data-vibrate="5" name="progType">
-					<img src="resources/img/img_type/과학.png" border="0" alt=""
-					class="indexicon1"> <span>과학</span>
-				</a>
-			</div>
-
-			<div class="text-center indexicongroup">
-				<a
-					href="search/searchresult?progNm=&progType=체육&progDayStart=&progDayEnd="
-					onfocus="blur()" target="_self" data-vibrate="5" name="progType">
-					<img src="resources/img/img_type/체육.png" border="0" alt=""
-					class="indexicon1"> <span>체육</span>
-				</a>
-			</div>
-
-			<div class="text-center indexicongroup">
-				<a
-					href="search/searchresult?progNm=&progType=역사&progDayStart=&progDayEnd="
-					onfocus="blur()" target="_self" data-vibrate="5" name="progType">
-					<img src="resources/img/img_type/역사.png" border="0" alt=""
-					class="indexicon1"> <span>역사</span>
-				</a>
-			</div>
-
-			<div class="text-center indexicongroup">
-				<a
-					href="search/searchresult?progNm=&progType=생태&progDayStart=&progDayEnd="
-					onfocus="blur()" target="_self" data-vibrate="5" name="progType">
-					<img src="resources/img/img_type/생태.png" border="0" alt=""
-					class="indexicon1"> <span>생태</span>
-				</a>
-			</div>
-
-		</div>
-	</div>
-	<p>
-		<img src="resources/img/img_searchbox/date.png"> 날짜 선택
-	</p>
-	<div>
-		시작일<input type="date" name="progDayStart"> 종료일<input
-			type="date" name="progDayEnd">
-	</div>
 	</div>
 
 

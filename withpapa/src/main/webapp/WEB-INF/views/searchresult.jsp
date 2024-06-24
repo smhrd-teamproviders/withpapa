@@ -226,12 +226,13 @@
 
 			</div>
 		</div>
+		
 		<p>
 			<img src="${path}/resources/img/img_searchbox/date.png"> 날짜 선택
 		</p>
 		<input type="date" />
 	</div>
-
+    
 
 	<c:forEach var="result" items="${result}">
 		<!-- 장소 사진 -->
