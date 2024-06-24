@@ -73,9 +73,10 @@
 
 
 - Back-End 오류 발생 : List<SearchResult> 타입의 변수 result의 값을 Controller에서 검색결과를 View로 전달할 때 View에서 결과값 미출력됨
-- 오류 해결 : jstl 내 for each 태그의 입력 오류 확인 items의 속성값이 Collection(List or Map) 타입임을 확인 후 속성값 'List'로 변경, View에서 값 출력됨
+- 오류 해결! : jstl 내 for each 태그의 입력 오류 확인 items의 속성값이 Collection(List or Map) 타입임을 확인 후 속성값 'List'로 변경, View에서 값 출력됨
 
-
+- Front-End 오류 발생 : 닫는 div 태그 누락으로 상세 검색창 내에 지도 이미지, 유형 아이콘이 혼재된 상황 발생
+- 오류 해결! : 닫는 div 태그 삽입하여 해결하였음.
 
 
 
