@@ -139,7 +139,8 @@
         <span style="line-height:20%"><br></span>
         <button class="mappart" name="placeDistrict">사천시</button>  <div class="space"></div>
         <button class="mappart" name="placeDistrict">산청군</button>  <div class="space"></div>
-        <button class="mappart" name="placeDistrict">양산시</button>  <div class="space"></div><button class="mappart" name="placeDistrict">의령군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">양산시</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">의령군</button>  <div class="space"></div>
         <button class="mappart" name="placeDistrict">진주시</button>  <div class="space"></div>
         <button class="mappart" name="placeDistrict">창녕군</button>  <div class="space"></div>
         <span style="line-height:20%"><br></span>
@@ -148,7 +149,7 @@
         <button class="mappart" name="placeDistrict">하동군</button>  <div class="space"></div>
         <button class="mappart" name="placeDistrict">함안군</button>  <div class="space"></div>
         <button class="mappart" name="placeDistrict">함양군</button>  <div class="space"></div>
-        <button class="mappart" name="placeDistrict">합천군</button>
+        <button class="mappart" name="placeDistrict">합천군</button>  <div class="space"></div>
         </div>
      
     <p>

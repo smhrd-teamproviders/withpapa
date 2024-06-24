@@ -127,7 +127,28 @@ input {
 .place img:hover{
     filter : grayscale(1);
     transform : scale(1.03)
-}    
+}  
+
+.place1 img {
+    width: 490px;
+    height: 350px;
+    border: 2px solid #fff;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0px 4px 7px 0px;
+    cursor: pointer;
+    /* margin: auto; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: -70px;
+    margin-top: 150px;
+}
+
+.place1 img:hover{
+    filter : grayscale(1);
+    transform : scale(1.03)
+}  
 
 
 .categorytype img {
@@ -161,7 +182,7 @@ input {
   display: block;
   /* margin-left: auto; */
   /* margin-right: auto; */
-  top: -1630px;
+  top: -70px;
   left: -206px;
 }
 
@@ -176,7 +197,7 @@ input {
     position: relative;
     left: -105px;
     margin: auto;
-    top: -1725px;
+    top: 0px;
 }
 .location1 {
     height: 200px;
@@ -184,7 +205,7 @@ input {
     position: relative;
     left: -110px;
     margin: auto;
-    top: -1887px;
+    top: 0px;
 }        
 
 

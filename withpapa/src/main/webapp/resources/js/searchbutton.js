@@ -1,8 +1,4 @@
-/**
- *
- */
- 
-  // 모달 및 배너 표시 함수
+// 모달 및 배너 표시 함수
 function showBanner() {
   document.getElementById('modal').style.display = 'block';
   document.getElementById('banner_online').style.display = 'block';

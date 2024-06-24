@@ -141,7 +141,8 @@
         <span style="line-height:20%"><br></span>
         <button class="mappart" name="placeDistrict">사천시</button>  <div class="space"></div>
         <button class="mappart" name="placeDistrict">산청군</button>  <div class="space"></div>
-        <button class="mappart" name="placeDistrict">양산시</button>  <div class="space"></div><button class="mappart" name="placeDistrict">의령군</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">양산시</button>  <div class="space"></div>
+        <button class="mappart" name="placeDistrict">의령군</button>  <div class="space"></div>
         <button class="mappart" name="placeDistrict">진주시</button>  <div class="space"></div>
         <button class="mappart" name="placeDistrict">창녕군</button>  <div class="space"></div>
         <span style="line-height:20%"><br></span>
@@ -150,7 +151,7 @@
         <button class="mappart" name="placeDistrict">하동군</button>  <div class="space"></div>
         <button class="mappart" name="placeDistrict">함안군</button>  <div class="space"></div>
         <button class="mappart" name="placeDistrict">함양군</button>  <div class="space"></div>
-        <button class="mappart" name="placeDistrict">합천군</button>
+        <button class="mappart" name="placeDistrict">합천군</button>  <div class="space"></div>
     </div>
         
      <p>
@@ -211,7 +212,7 @@
 
 	<!-- 장소 사진 -->
    <div class = "place">
-    <img src="data:image/jpg;base64,${result.imgNm}">
+    <img src="data:image/jpg;base64,${result.imgNm}" name = "place1">
     <!-- 카테고리 유형 -->
    <div class = "categorytype">
        <img src="data:image/jpg;base64,${result.progType}">
@@ -224,26 +225,32 @@
    <div class = "location">
     <a>${result.placeDistrict}asfdaf</a>
     </div>
-    <br>
-    <img src="data:image/jpg;base64,${result.imgNm}">
-    <br>
-    <img src="data:image/jpg;base64,${result.imgNm}">
-    <br>
-    <img src="data:image/jpg;base64,${result.imgNm}">
-    </div> 
-  
-  <!-- 카테고리 유형 -->
+    </div>
+    
+   <div class = "place1">
+    <img src="data:image/jpg;base64,${result.imgNm}" name = "place2">
+     <!-- 카테고리 유형 -->
    <div class = "categorytype1">
        <img src="data:image/jpg;base64,${result.progType}">
     </div>
-  <!-- 체험장소 이름 -->
+    <!-- 체험장소 이름 -->
    <div class="title1">
-    <h2>${result.progNm}fdaf</h2>
+    <h2>${result.progNm} tytyty</h2>
     </div>
-  <!-- 체험지역 -->
+  	<!-- 체험지역 -->
    <div class = "location1">
-    <a>${result.placeDistrict}asfdaf</a>
+    <a>${result.placeDistrict} ioioioiio</a>
     </div>
+    </div>
+    
+    
+    <br>
+    <img src="data:image/jpg;base64,${result.imgNm}">
+    <br>
+    <img src="data:image/jpg;base64,${result.imgNm}">
+
+  
+  
     
   <!-- 카테고리 유형 -->
    <div class = "categorytype2">
