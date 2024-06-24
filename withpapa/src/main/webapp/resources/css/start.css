@@ -1,354 +1,357 @@
 @charset "UTF-8";
 
-.title{
-    text-align: center;
-    font-size: 70px;
-    font-family: "Fredoka One";
-    margin: auto;
-}
-  
-.subtitle{
-  	top: 100%;
-    text-align: center;
-    font-size: 15px;
-    position:relative;
-    top:-70px;
-    font-weight: 300;
-    line-height:10px;
-    margin: auto;
+.title {
+	text-align: center;
+	font-size: 70px;
+	font-family: "Fredoka One";
+	margin: auto;
 }
 
-#wrapper{
-    margin: auto;
-    min-height: 100%;
-    position: relative;
-    text-align: center;
-    top:120px;
+.subtitle {
+	top: 100%;
+	text-align: center;
+	font-size: 15px;
+	position: relative;
+	top: -70px;
+	font-weight: 300;
+	line-height: 10px;
+	margin: auto;
+}
+
+#wrapper {
+	margin: auto;
+	min-height: 100%;
+	position: relative;
+	text-align: center;
+	top: 120px;
 }
 
 .search {
-    position: relative;
-    width: 650px;
-    margin: auto;
-    display:flex;
-    top:-76px;
+	position: relative;
+	width: 650px;
+	margin: auto;
+	display: flex;
+	top: -76px;
 }
-  
+
 input {
-    width: 95%;
-    border: 1px solid #d3d3d3;
-    border-radius: 8px;
-    padding: 23px 12px;
-    font-size: 14px;
-}
-  
-.magnifer {  /* 돋보기 */
-    position : absolute;
-    width: 0px;
-    top: 4px;
-    right: 12px;
-    margin: auto;
-
+	width: 95%;
+	border: 1px solid #d3d3d3;
+	border-radius: 8px;
+	padding: 23px 12px;
+	font-size: 14px;
 }
 
-.modal-button{
-	position:absolute;
-	z-index:auto;
-	top:1px;
+.magnifer { /* 돋보기 */
+	position: absolute;
+	width: 0px;
+	top: 4px;
+	right: 12px;
+	margin: auto;
+}
+
+.modal-button {
+	position: absolute;
+	z-index: auto;
+	top: 1px;
 	left: 580px;
-	
 }
 
-
-footer{
-    position : relative;
-    transform : translateY(2200%);
+footer {
+	position: relative;
+	transform: translateY(2200%);
 }
 
 .ducks { /* 오리 */
-    text-align: center;
-    transform: translate(47%, 80%);
-    position:relative;
-    margin: auto;
-    justify-content:center;
+	text-align: center;
+	transform: translate(47%, 80%);
+	position: relative;
+	margin: auto;
+	justify-content: center;
 }
 
-.category{
-    display: fixed;
-  	text-align: center;
-    margin: auto;
+.category {
+	display: fixed;
+	text-align: center;
+	margin: auto;
 }
 
-.delbtn{
-    border:none;
-    background-color: rgba(0, 0, 0, 0);
+.delbtn {
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
 }
 
 ul, ol, li, dl, dt, dd {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .center_map_area {
-    justify-content: center;
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    left: 44%;
-    top: 91%;
-    margin: auto;
-    transform: translate(-50%, -50%);
+	justify-content: center;
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	left: 44%;
+	top: 91%;
+	margin: auto;
+	transform: translate(-50%, -50%);
 }
 
 .center_map_area .area_box {
-  position: absolute;
-  left: 70%;
-  top: 60%;
-  transform: translate(-50%, -50%);
-  transition: all .3s;
-  margin: auto;
+	position: absolute;
+	left: 70%;
+	top: 60%;
+	transform: translate(-50%, -50%);
+	transition: all .3s;
+	margin: auto;
 }
 
-.center_map_area .map_area01 
-{
-  transform: translate(-118%, -131%);
- 
-}
-.center_map_area .map_area02 
-{
-  transform: translate(-106%, -106%);
+.center_map_area .map_area01 {
+	transform: translate(-118%, -131%);
 }
 
-.center_map_area .map_area03 
-{
-
-  transform: translate(-38%, -100%);
+.center_map_area .map_area02 {
+	transform: translate(-106%, -106%);
 }
 
-.center_map_area .map_area04 
-{
-  transform: translate(18%, -92%);
+.center_map_area .map_area03 {
+	transform: translate(-38%, -100%);
 }
 
-.center_map_area .map_area05 
-{
-  transform: translate(80%, -79%);
+.center_map_area .map_area04 {
+	transform: translate(18%, -92%);
 }
 
-.center_map_area .map_area06 
-{
-  transform: translate(-238%, -95%);
+.center_map_area .map_area05 {
+	transform: translate(80%, -79%);
 }
-.center_map_area .map_area07 
-{
-  transform: translate(-170%, -64%);
+
+.center_map_area .map_area06 {
+	transform: translate(-238%, -95%);
 }
-.center_map_area .map_area08 
-{
-  transform: translate(-77%, -77%);
+
+.center_map_area .map_area07 {
+	transform: translate(-170%, -64%);
 }
-.center_map_area .map_area09 
-{
-  transform: translate(-45%, -50%);
+
+.center_map_area .map_area08 {
+	transform: translate(-77%, -77%);
 }
+
+.center_map_area .map_area09 {
+	transform: translate(-45%, -50%);
+}
+
 .center_map_area .map_area10 {
-  transform: translate(-17%, -35%);
+	transform: translate(-17%, -35%);
 }
+
 .center_map_area .map_area11 {
-  transform: translate(43%, -46%);
+	transform: translate(43%, -46%);
 }
+
 .center_map_area .map_area12 {
-  transform: translate(-171%, -22%);
+	transform: translate(-171%, -22%);
 }
+
 .center_map_area .map_area13 {
-  transform: translate(-105%, -28%);
+	transform: translate(-105%, -28%);
 }
+
 .center_map_area .map_area14 {
-  transform: translate(-132%, 10%);
+	transform: translate(-132%, 10%);
 }
+
 .center_map_area .map_area15 {
-  transform: translate(-70%, 18%);
+	transform: translate(-70%, 18%);
 }
+
 .center_map_area .map_area16 {
-  transform: translate(-145%, 65%);
+	transform: translate(-145%, 65%);
 }
+
 .center_map_area .map_area17 {
-  transform: translate(-47%, 50%);
+	transform: translate(-47%, 50%);
 }
+
 .center_map_area .map_area18 {
-  transform: translate(2%, 40%);
+	transform: translate(2%, 40%);
 }
 
 #banner_online {
-  position: relative;
-  top: 69.5%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgb(255, 255, 255);
-  display: none; /* 기본적으로 숨김 */
-  z-index: 1000;
-  width: 80%;
-  max-width: 600px;
-  max-height: 80%;
-  overflow-y: auto;
-  margin: auto;
+	position: relative;
+	top: 69.5%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	background: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 2px 10px rgb(255, 255, 255);
+	display: none; /* 기본적으로 숨김 */
+	z-index: 1000;
+	width: 80%;
+	max-width: 600px;
+	max-height: 80%;
+	overflow-y: auto;
+	margin: auto;
 }
 
 #banner_online {
-  display: flex;
-  justify-content: space-between; /* 요소들 사이의 간격을 최대화하기 위해 */
-  align-items: flex-start; /* 세로 정렬 기준을 맞춤 */
+	display: flex;
+	justify-content: space-between; /* 요소들 사이의 간격을 최대화하기 위해 */
+	align-items: flex-start; /* 세로 정렬 기준을 맞춤 */
 }
 
 #close_button {
-  text-align: right;
+	text-align: right;
 }
 
 .pop_content {
-  flex: 1;
-  padding: 20px;
-  background-color: #ffffff;
-  border: 1px solid #ffffff;
-  border-radius: 5px;
-  margin-right: 20px;
+	flex: 1;
+	padding: 20px;
+	background-color: #ffffff;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	margin-right: 20px;
 }
+
 .delbtn {
-  display: nowrap;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-  text-align: center;
+	display: nowrap;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+	text-align: center;
 }
+
 .delbtn img {
-  width: 45px;
+	width: 45px;
 }
 
 .scrollMenu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
 }
 
 .scrollMenu label {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin: 5px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	margin: 5px;
 }
 
 .delbtn img {
-  margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
-  
-  .text-center, .center-text {
-    text-align: center;
-    display: block;
+.text-center, .center-text {
+	text-align: center;
+	display: block;
 }
 
-.left-text, .center-text, .right-text, .text-center, .text-right, .text-left {
-    display: block;
+.left-text, .center-text, .right-text, .text-center, .text-right,
+	.text-left {
+	display: block;
 }
 
 .text-center {
-    text-align: center;
+	text-align: center;
 }
 
-@media (min-width: 768px) {
-    .pt-md-3, .py-md-3 {
-        padding-top: 1rem;
-    }
+@media ( min-width : 768px) {
+	.pt-md-3, .py-md-3 {
+		padding-top: 1rem;
+	}
 }
 
-@media (min-width: 768px) {
-    .pl-md-0, .px-md-0 {
-        padding-left: 2;
-    }
+@media ( min-width : 768px) {
+	.pl-md-0, .px-md-0 {
+		padding-left: 2;
+	}
 }
 
 .justify-content-around {
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
 }
 
 .d-flex {
-    display: -ms-flexbox;
-    display: flex;
+	display: -ms-flexbox;
+	display: flex;
 }
 
-@media (min-width: 768px) {
-    .col-md-6 {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
+@media ( min-width : 768px) {
+	.col-md-6 {
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
 }
 
 .col-12 {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
 }
 
-.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin:auto;
-    top:-27px;
+.col-12, 
+	.col-6 {
+	width: 50%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: auto;
+	top: -28px;
+	display: flex;
 }
 
-div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code, pre {
-     display: block;
-    position: relative;
-}  
+div, a, p, img, blockquote, form, fieldset, textarea, input, label,
+	iframe, code, pre {
+	display: block;
+	position: relative;
+}
 
 .indexicongroup {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-
 .indexicon {
-  width: 75px; /* Adjust size as needed */
-  height: auto;
+	width: 75px; /* Adjust size as needed */
+	height: auto;
 }
 
 .indexicon1 {
-  width: 65px; /* Adjust size as needed */
-  height: auto;
+	width: 65px; /* Adjust size as needed */
+	height: auto;
 }
+
 .indexicongroup a {
-  text-decoration: none; /* Remove underline */
-  color: inherit; /* Ensure the text color is inherited */
+	text-decoration: none; /* Remove underline */
+	color: inherit; /* Ensure the text color is inherited */
 }
 
 .indexicongroup span {
-  margin-top: 5px; /* Adjust spacing as needed */
+	margin-top: 5px; /* Adjust spacing as needed */
 }
 
 .indexicongroup:nth-of-type(3) span {
-  margin-top: -10px; /* Adjust margin as needed for 과학 */
+	margin-top: -10px; /* Adjust margin as needed for 과학 */
 }
 
 .indexicongroup:nth-of-type(5) span {
-  margin-top: 10px; /* Adjust margin as needed for 역사 */
+	margin-top: 10px; /* Adjust margin as needed for 역사 */
 }
 
 .space {
-    width: 4px;
-    height: auto;
-    display: inline-block;
+	width: 4px;
+	height: auto;
+	display: inline-block;
 }
 
 .mappart {
-    background-color: #b1bac4;
+	background-color: #b1bac4;
 }
 
 /* All Device */
@@ -359,15 +362,15 @@ div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code
 
 /* Tablet &amp; Desktop Device */
 @media all and (min-width:768px) {
-/*    사용자 해상도가 768px 이상일 때 이 코드가 실행됨. 테블릿과 데스크톱의 공통 코드를 작성한다.*/
+	/*    사용자 해상도가 768px 이상일 때 이 코드가 실행됨. 테블릿과 데스크톱의 공통 코드를 작성한다.*/
 }
 
 /* Tablet Device */
 @media all and (min-width:768px) and (max-width:1024px) {
-/*    사용자 해상도가 768px 이상이고 1024px 이하일 때 이 코드가 실행됨. 아이패드 또는 비교적 작은 해상도의 랩탑이나 데스크톱에 대응하는 코드를 작성한다.*/
+	/*    사용자 해상도가 768px 이상이고 1024px 이하일 때 이 코드가 실행됨. 아이패드 또는 비교적 작은 해상도의 랩탑이나 데스크톱에 대응하는 코드를 작성한다.*/
 }
 
 /* Desktop Device */
 @media all and (min-width:1025px) {
-/*    사용자 해상도가 1025px 이상일 때 이 코드가 실행됨. 1025px 이상의 랩탑 또는 데스크톱에 대응하는 코드를 작성한다.*/
+	/*    사용자 해상도가 1025px 이상일 때 이 코드가 실행됨. 1025px 이상의 랩탑 또는 데스크톱에 대응하는 코드를 작성한다.*/
 }
