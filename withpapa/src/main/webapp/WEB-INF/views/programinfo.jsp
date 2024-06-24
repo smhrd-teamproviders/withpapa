@@ -319,7 +319,7 @@
 				</tr>
 				<tr>
 					<td class="tdright">운영시간 |</td>
-					<td>${progTmStart}~${progTmEnd}</td>
+					<td>${progTime}</td>
 					<td class="tdright">비용 |</td>
 					<td>${progCost}</td>
 				</tr>

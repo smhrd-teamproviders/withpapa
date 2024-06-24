@@ -45,12 +45,15 @@
 
 ### :notebook_with_decorative_cover: 서비스 흐름도
 - MIRO 작업 후 미리캔버스 작업
-![서비스 흐름도](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/9d88dad2-3009-42f6-8bf5-926269a08626)
+![서비스 흐름도_1](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/88bc19c4-996f-49ae-b1ed-1a2bfb5f4914)
+
 
 ### :notebook_with_decorative_cover: 시스템 아키텍처
 - MIRO 작업 후 미리캔버스 작업
 
-![시스템 아키텍처](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/7021f3fb-47b2-4d2d-8fac-3d4ec40d7bb7)
+![시스템 아키텍처_1](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/a1b4273a-f12e-4155-a972-081477b336ce)
+
+
 
 ### :pushpin: ER 다이어그램
 - MIRO 작업 후 미리캔버스 작업
@@ -73,9 +76,10 @@
 
 
 - Back-End 오류 발생 : List<SearchResult> 타입의 변수 result의 값을 Controller에서 검색결과를 View로 전달할 때 View에서 결과값 미출력됨
-- 오류 해결 : jstl 내 for each 태그의 입력 오류 확인 items의 속성값이 Collection(List or Map) 타입임을 확인 후 속성값 'List'로 변경, View에서 값 출력됨
+- 오류 해결! : jstl 내 for each 태그의 입력 오류 확인 items의 속성값이 Collection(List or Map) 타입임을 확인 후 속성값 'List'로 변경, View에서 값 출력됨
 
-
+- Front-End 오류 발생 : 닫는 div 태그 누락으로 상세 검색창 내에 지도 이미지, 유형 아이콘이 혼재된 상황 발생
+- 오류 해결! : 닫는 div 태그 삽입하여 해결하였음.
 
 
 
