@@ -22,7 +22,7 @@ public class SearchController {
 	@Autowired
 	SearchService service;
 
-	@RequestMapping(value = "/search/searchresult", method = RequestMethod.POST)
+	@RequestMapping(value = "/search/searchresult", method = RequestMethod.GET)
 	public String searchResult(@ModelAttribute SearchElement element, Model model) throws IOException {
 		// 검색 요청에 날짜 정보가 없을 경우, 시작일을 오늘로, 종료일은 올해 12월 31일로 값을 변경
 		LocalDate now = LocalDate.now();

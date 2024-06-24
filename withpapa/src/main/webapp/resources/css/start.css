@@ -96,7 +96,7 @@ ul, ol, li, dl, dt, dd {
     height: 400px;
     position: absolute;
     left: 44%;
-    top: 105%;
+    top: 91%;
     margin: auto;
     transform: translate(-50%, -50%);
 }
@@ -230,7 +230,7 @@ ul, ol, li, dl, dt, dd {
 .scrollMenu {
   display: flex;
   flex-wrap: wrap;
-  gap: 21px;
+  gap: 24px;
 }
 
 .scrollMenu label {

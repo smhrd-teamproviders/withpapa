@@ -1,23 +1,49 @@
 @charset "UTF-8";
 
 .title {
-    height: 200px;
-    text-align: left;
+    
+    
+    
+    
+    top: -168px;
+    
+}
+
+/*
+	height: 200px;
+    text-align: center;
     position: relative;
-    left: 343px;
+    left: -73px;
     margin: auto;
-    top: -163px;
+    top: -168px;
+    display: flex;
+    justify-content: center;
+*/
+.search_textContainer{
+	
 }
 
 .location {
-    height: 200px;
+    height: 100px;
+    
+    
+    
+    
+    font-size: larger;
+    
+}
+
+/*
+	height: 200px;
     text-align: center;
     position: relative;
-    left: -128px;
+    left: -124px;
     margin: auto;
-    top: -324px;
+    top: -300px;
     font-size: larger;
-}
+    display: flex;
+    justify-content: center;
+*/
 
 .search {
     position: relative;
@@ -43,6 +69,27 @@ input {
 
 } 
 
+a {
+  text-decoration-line: none;
+}
+
+
+a:link {
+  color : black;
+  text-decoration: none;
+}
+a:visited {
+  color : black;
+  text-decoration: none;
+}
+a:hover {
+  color : black;
+  text-decoration: underline;
+}
+a:active {
+  color : black;
+  text-decoration: none;
+}
 
   /* 배너 스타일 */
 #banner_online {
@@ -115,24 +162,64 @@ input {
     width: 490px;
     height: 350px;
     border: 2px solid #fff;
-    position: relative;
+    
     border-radius: 6px;
     box-shadow: 0px 4px 7px 0px;
     cursor: pointer;
     /* margin: auto; */
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+/*
+	width: 490px;
+    height: 350px;
+    border: 2px solid #fff;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0px 4px 7px 0px;
+    cursor: pointer;
+    margin: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
     top: -91px;
     margin-top: 150px;
+*/
+.place{
+	display : flex;
+	flex-direction : column;
+	justify-content: center;
 }
 
 .place img:hover{
     transform : scale(1.03)
 }  
 
+.search_container{
+	display: flex;
+	justify-content:center;
+}
 
 .categorytype img {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #fff;
+  
+  border-radius: 6px;
+  cursor: pointer;
+  
+  
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  
+  
+}
+
+/*
   width: 80px;
   height: 80px;
   border: 2px solid #fff;
@@ -141,11 +228,11 @@ input {
   cursor: pointer;
   margin: auto;
   display: block;
-  /* margin-left: auto; */
-  /* margin-right: auto; */
+  margin-left: auto; 
+  margin-right: auto;
   top: -70px;
   left: -205px;
-}
+*/
 
 .categorytype img:hover{
   transform : scale(1.03)
