@@ -111,9 +111,21 @@
 </style>
 </head>
 <body>
+
+	<div style="margin-left: 35vw;">
+      <!-- 오리 버튼 (홈페이지 리다이렉트) -->
+      <a href="http://localhost:8089/withpapa/" onfocus="blur()"
+         target="_self" data-vibrate="5" name="progType"> <img
+         src="http://localhost:8089/withpapa/resources/img/img_logo/logo_duck.png"
+         border="0" alt="papaducks" class="papaduck">
+      </a>
+   </div>
+	
 	<!-- 검색 결과 화면 -->
 	<div id="search">
 		<input type="text" placeholder="어디로 놀러 가볼까요?">
+		
+		
 
 		<!-- 돋보기 버튼 -->
 
@@ -123,11 +135,6 @@
 		</a>
 	</div>
 
-	<!-- 홈페이지로 가는 오리 화면 -->
-	<div class="homepagebutton">
-		<a href="https://google.com"> <img src="https://e7.pngegg.com/pngimages/396/796/png-clipart-home-house-lia-space-button-angle-logo-thumbnail.png" />
-		</a>
-	</div>
 	
 	<!-- 돋보기 눌렀을 때 나오는 모달 창 -->
 	<div id="modal"></div>

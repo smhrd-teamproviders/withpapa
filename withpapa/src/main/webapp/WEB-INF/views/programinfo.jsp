@@ -108,6 +108,16 @@
 </style>
 </head>
 <body>
+
+	<div style="margin-left: 35vw;">
+      <!-- 오리 버튼 (홈페이지 리다이렉트) -->
+      <a href="http://localhost:8089/withpapa/" onfocus="blur()"
+         target="_self" data-vibrate="5" name="progType"> <img
+         src="http://localhost:8089/withpapa/resources/img/img_logo/logo_duck.png"
+         border="0" alt="papaducks" class="papaduck">
+      </a>
+   </div>
+
 	<!-- 프로그램 상세 정보 페이지 -->
 	<div id="search">
 		<input type="text" placeholder="어디로 놀러 가볼까요?">
