@@ -1,6 +1,5 @@
 package com.smhrd.withpapa;
 
-import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -23,7 +22,7 @@ public class SearchController {
 	@Autowired
 	SearchService service;
 
-	@RequestMapping(value = "/search/searchresult", method = RequestMethod.GET)
+	@RequestMapping(value = "/search/searchresult", method = RequestMethod.POST)
 	public String searchResult(@ModelAttribute SearchElement element, Model model) throws IOException {
 		// 검색 요청에 날짜 정보가 없을 경우, 시작일을 오늘로, 종료일은 올해 12월 31일로 값을 변경
 		LocalDate now = LocalDate.now();
@@ -39,8 +38,6 @@ public class SearchController {
 			element.setProgDayEnd(dayEndIfNull);
 		}
 		
-//		System.out.println(element.getProgDayStart() + "\t" + element.getProgDayEnd());
-		
 		// 시작일, 종료일 값에서 '-' 제거
 		element.setProgDayStart(element.getProgDayStart().replace("-", ""));
 		element.setProgDayEnd(element.getProgDayEnd().replace("-", ""));
@@ -55,38 +52,17 @@ public class SearchController {
 		String imgPathRootImgNm = "C:\\Users\\smhrd\\git\\withpapa\\withpapa\\src\\main\\webapp\\resources\\img\\img_program\\";
 		String imgPathRootProgType = "C:\\Users\\smhrd\\git\\withpapa\\withpapa\\src\\main\\webapp\\resources\\img\\img_type\\";		
 		
+		ImageToBase64 converter = new ImageToBase64();
+		
 		// 프로그램 이미지명, 유형에 해당하는 이미지를 인코딩
 		for (SearchResult prog : result) {
-			String encodeImgNm = encodeImg(imgPathRootImgNm, prog.getImgNm(), "png");
-			String encodeProgType = encodeImg(imgPathRootProgType, prog.getProgType(), "png");
-			
-			prog.setImgNm(encodeImgNm);
-			prog.setProgType(encodeProgType);
+			prog.setImgNm(converter.encodeImg(imgPathRootImgNm, prog.getImgNm(), "png"));
+			prog.setProgType(converter.encodeImg(imgPathRootProgType, prog.getProgType(), "png"));
 		}
 		
 		// model에 List<SearchResult> result 추가
 		model.addAttribute("result", result);
 		return "searchresult";
 	}
-	
-	public String encodeImg(String imgPathRoot, String imgName, String imgExtension)
-				throws IOException {
-		/**
-		 * 이미지명과 유형 문자열을 이미지로 변경하는 메소드
-		 * 
-		 * @param imgPathRoot 이미지 파일이 있는 폴더 주소
-		 * @param imgName 이미지 파일의 이름
-		 * @param imgExtension 이미지 파일의 확장자명 ex) "png" "jpg" 등
-		 */
-		
-		String imgPath = imgPathRoot+imgName+"."+imgExtension;
-		File imgFile = new File(imgPath);
-
-		ImageToBase64 converter = new ImageToBase64();
-		String imgBase64String = converter.convert(imgFile);
-
-		return imgBase64String;
-	}
-	
 
 }
