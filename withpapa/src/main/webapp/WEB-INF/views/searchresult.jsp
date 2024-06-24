@@ -4,7 +4,7 @@
 <c:set var="path" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html>
-<link rel = "stylesheet" href = "resources/css/searchresult.css">
+<link rel = "stylesheet" href = "${path}/resources/css/searchresult.css">
 <script src="https://code.jquery.com/jquery-3.2.1.min.js">
         window.onload = function() {
             for (var i = 0; i < document.getElementsByTagName('input').length; i++) {
