@@ -4,24 +4,38 @@
 
 ### :open_file_folder: 서비스 소개
 - 서비스명 : [WITHPAPA] 아빠들과 함께하는 아이들의 행복한 시간
-- 서비스 설명 : 주 사용자가 '아빠'인 놀이·체험 프로그램 장소 정보 제공 반응형 웹사이트
+- 서비스 설명 : <b>주 사용자가 '아빠'인 놀이·체험 프로그램 장소 정보 제공 반응형 웹사이트
   <br>
 ### :calendar: 개발 기간 
-2024.05.17 ~ 2024.06.25 (40일)
+<b> 2024.05.17 ~ 2024.06.25 (40일)
 
 
 ### :wrench: 기술 스택
-![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
-![VisualStudioCode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
-![GoogleSheets](https://img.shields.io/badge/Google%20Sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white)
-![Miro](https://img.shields.io/badge/Miro-050038?style=for-the-badge&logo=Miro&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
-![javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)
-![css](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
-![html](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
+#### :heavy_check_mark: Front-End
 
+![VisualStudioCode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+![Miro](https://img.shields.io/badge/Miro-050038?style=for-the-badge&logo=Miro&logoColor=white)
+
+
+#### :heavy_check_mark: Back-End
+<img src="https://img.shields.io/badge/apache tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=white">
+<img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
+
+ 
+
+#### :file_folder: DataBase
+<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+
+
+#### :paperclip: etc
+
+![GoogleSheets](https://img.shields.io/badge/Google%20Sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white)
+<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+ 
 
 ### :page_facing_up: 시연 페이퍼 
 ![Providers_ WITHPAPA -시연페이퍼-001](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/4889006a-c562-41f7-9d03-f256ef9e9a97)
@@ -59,6 +73,28 @@
 - MIRO 작업 후 미리캔버스 작업
 
 ![ER다이어그램](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/0c061288-a37f-42cc-92f8-0daf50987527)
+
+
+
+
+### :sparkles: 화면 구성
+
+- 시작 화면
+  
+![시작화면](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/9daddf84-6a56-400a-8ac4-e95bc5e0d1c4)
+
+- 상세 검색창 화면
+
+![상세검색창 화면](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/943c9991-4f5e-40de-b0e7-1fae445aa6d1)
+
+- 유형별 검색결과 화면
+  
+![유형별 검색결과](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/8a751aa0-e6a7-49d1-a0f7-72fa5ee78f05)
+
+- 프로그램 상세 정보 화면
+  
+![상세 정보 화면](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/844050dd-6083-4014-817d-67567c017abb)
+
 
 
 ### :computer: 팀원 소개
