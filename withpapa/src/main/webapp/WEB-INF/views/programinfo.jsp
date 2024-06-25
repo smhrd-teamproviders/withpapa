@@ -6,7 +6,7 @@
 <html>
 
 <link rel="stylesheet"
-	href="${path}/resources/css/programinfo.css?after">
+	href="${path}/resources/css/programinfo.css">
 <script src="https://code.jquery.com/jquery-3.2.1.min.js">
         window.onload = function() {
             for (var i = 0; i < document.getElementsByTagName('input').length; i++) {
@@ -30,10 +30,10 @@
 	margin: auto;
 	display: none;
 	position: absolute;
-	top: 43%;
+	top: 63%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	padding: 20px;
+	padding: 45px;
 	overflow-y: auto;
 }
 
@@ -77,7 +77,7 @@
 }
 
 #modal {
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	height: 100%;
 	background: rgb(255, 255, 255, 0);
@@ -110,134 +110,121 @@
 <body>
 
 	<div style="margin-left: 35vw;">
-      <!-- 오리 버튼 (홈페이지 리다이렉트) -->
-      <a href="http://localhost:8089/withpapa/" onfocus="blur()"
-         target="_self" data-vibrate="5" name="progType"> <img
-         src="http://localhost:8089/withpapa/resources/img/img_logo/logo_duck.png"
-         border="0" alt="papaducks" class="papaduck">
-      </a>
-   </div>
-
-	<!-- 프로그램 상세 정보 페이지 -->
-	<div id="search">
-		<input type="text" placeholder="어디로 놀러 가볼까요?">
-		<!-- 돋보기 버튼 -->
-		<a href="#" class="modal-button" id="openModalButton"> <img
-			src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png"
-			alt="돋보기 이미지">
+		<!-- 오리 버튼 (홈페이지 리다이렉트) -->
+		<a href="http://localhost:8089/withpapa/" onfocus="blur()"
+			target="_self" data-vibrate="5" name="progType"> <img
+			src="http://localhost:8089/withpapa/resources/img/img_logo/logo_duck.png"
+			border="0" alt="papaducks" class="papaduck">
 		</a>
 	</div>
 
-
-
-	<div id="modal"></div>
-	<div id="banner_online">
-		<div id="close_button" style="cursur: pointer;">
-			<img src="${path}/resources/img/img_searchbox/close_cross.png"
-				alt="Close">
+	<form action="search/searchresult" method="get">
+		<div class="search">
+			<input type="text" name="progNm" placeholder="어디로 놀러 가볼까요?">
+			<!-- 돋보기 버튼 -->
+			<a href="#" class="modal-button" id="openModalButton"> <img
+				src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png"
+				alt="돋보기 이미지">
+			</a>
 		</div>
-		<div class="pop_content">
-			<p>
-				<img src="${path}/resources/img/img_searchbox/location.png"
-					alt="location"> 지역
-			</p>
 
-			<div class="scrollMenu">
-				<button class="mappart" name="placeDistrict">거제시</button>
-				<div class="space"></div>
-				<button class="mappart" name="placeDistrict">거창군</button>
-				<div class="space"></div>
-				<button class="mappart" name="placeDistrict">고성군</button>
-				<div class="space"></div>
-				<button class="mappart" name="placeDistrict">김해시</button>
-				<div class="space"></div>
-				<button class="mappart" name="placeDistrict">남해군</button>
-				<div class="space"></div>
-				<button class="mappart" name="placeDistrict">밀양시</button>
-				<div class="space"></div>
-				<span style="line-height: 20%"><br></span>
-				<button class="mappart" name="placeDistrict">사천시</button>
-				<div class="space"></div>
-				<button class="mappart" name="placeDistrict">산청군</button>
-				<div class="space"></div>
-				<button class="mappart" name="placeDistrict">양산시</button>
-				<div class="space"></div>
-				<button class="mappart" name="placeDistrict">의령군</button>
-				<div class="space"></div>
-				<button class="mappart" name="placeDistrict">진주시</button>
-				<div class="space"></div>
-				<button class="mappart" name="placeDistrict">창녕군</button>
-				<div class="space"></div>
-				<span style="line-height: 20%"><br></span>
-				<button class="mappart" name="placeDistrict">창원시</button>
-				<div class="space"></div>
-				<button class="mappart" name="placeDistrict">통영시</button>
-				<div class="space"></div>
-				<button class="mappart" name="placeDistrict">하동군</button>
-				<div class="space"></div>
-				<button class="mappart" name="placeDistrict">함안군</button>
-				<div class="space"></div>
-				<button class="mappart" name="placeDistrict">함양군</button>
-				<div class="space"></div>
-				<button class="mappart" name="placeDistrict">합천군</button>
-				<div class="space"></div>
-			</div>
-
-			<p>
-				<img src="${path}/resources/img/img_searchbox/category.png"
-					alt="category"> 유형 선택
-			</p>
-
-			<div class="category">
-				<div class="text-center indexicongroup">
-					<a href="" onfocus="blur()" target="_self" data-vibrate="5"
-						name="progType"> <img src="resources/img/img_type/미술.png"
-						border="0" alt="" class="indexicon1"> <span>미술</span>
-					</a>
+		<!-- 돋보기 눌렀을 때 실행되는 모달 창 -->
+		<div id="modal">
+			<div id="banner_online">
+				<div id="close_button" style="cursor: pointer;">
+					<img
+						src="http://localhost:8089/withpapa/resources/img/img_searchbox/close_cross.png">
 				</div>
 
-				<div class="text-center indexicongroup">
-					<a href="" onfocus="blur()" target="_self" data-vibrate="5"
-						name="progType"> <img src="resources/img/img_type/요리.png"
-						border="0" alt="" class="indexicon1"> <span>요리</span>
-					</a>
+				<!-- <form action="search/searchresult" method="get"> -->
+				<div class="pop_content">
+					<p>
+						<img
+							src="http://localhost:8089/withpapa/resources/img/img_searchbox/location.png">
+						지역
+					</p>
+
+					<div class="scrollMenu">
+						<select name="placeDistrict">
+							<option value="거제시">거제시</option>
+							<option value="거창군">거창군</option>
+							<option value="고성군">고성군</option>
+							<option value="김해시">김해시</option>
+							<option value="남해군">남해군</option>
+							<option value="밀양시">밀양시</option>
+							<option value="사천시">사천시</option>
+							<option value="산청군">산청군</option>
+							<option value="양산시">양산시</option>
+							<option value="의령군">의령군</option>
+							<option value="진주시">진주시</option>
+							<option value="창녕군">창녕군</option>
+							<option value="창원시">창원시</option>
+							<option value="통영시">통영시</option>
+							<option value="하동군">하동군</option>
+							<option value="함안군">함안군</option>
+							<option value="함양군">함양군</option>
+							<option value="합천군">합천군</option>
+						</select>
+					</div>
+					<p>
+						<img
+							src="http://localhost:8089/withpapa/resources/img/img_searchbox/category.png">
+						유형 선택
+					</p>
+				</div>
+				<!-- 모달창 안에 카테고리 선택  -->
+				<table>
+					<tbody>
+						<tr>
+							<td><img
+								src="http://localhost:8089/withpapa/resources/img/img_type/미술.png"
+								border="0" alt="" class="indexicon1"></td>
+							<td><img
+								src="http://localhost:8089/withpapa/resources/img/img_type/요리.png"
+								border="0" alt="" class="indexicon1"></td>
+							<td><img
+								src="http://localhost:8089/withpapa/resources/img/img_type/과학.png"
+								border="0" alt="" class="indexicon1"></td>
+							<td><img
+								src="http://localhost:8089/withpapa/resources/img/img_type/체육.png"
+								border="0" alt="" class="indexicon1"></td>
+							<td><img
+								src="http://localhost:8089/withpapa/resources/img/img_type/역사.png"
+								border="0" alt="" class="indexicon1"></td>
+							<td><img
+								src="http://localhost:8089/withpapa/resources/img/img_type/생태.png"
+								border="0" alt="" class="indexicon1"></td>
+						</tr>
+						<tr>
+							<td>미술</td>
+							<td>요리</td>
+							<td>과학</td>
+							<td>체육</td>
+							<td>역사</td>
+							<td>생태</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="progType" value="미술"></td>
+							<td><input type="checkbox" name="progType" value="요리"></td>
+							<td><input type="checkbox" name="progType" value="과학"></td>
+							<td><input type="checkbox" name="progType" value="체육"></td>
+							<td><input type="checkbox" name="progType" value="역사"></td>
+							<td><input type="checkbox" name="progType" value="생태"></td>
+						</tr>
+					</tbody>
+				</table>
+				<div>
+					<input type="date" name="progDayStart"> <input type="date"
+						name="progDayEnd">
 				</div>
 
-				<div class="text-center indexicongroup">
-					<a href="" onfocus="blur()" target="_self" data-vibrate="5"
-						name="progType"> <img src="resources/img/img_type/과학.png"
-						border="0" alt="" class="indexicon1"> <span>과학</span>
-					</a>
+				<div>
+					<input type="submit" value="검색">
 				</div>
-
-				<div class="text-center indexicongroup">
-					<a href="" onfocus="blur()" target="_self" data-vibrate="5"
-						name="progType"> <img src="resources/img/img_type/체육.png"
-						border="0" alt="" class="indexicon1"> <span>체육</span>
-					</a>
-				</div>
-
-				<div class="text-center indexicongroup">
-					<a href="" onfocus="blur()" target="_self" data-vibrate="5"
-						name="progType"> <img src="resources/img/img_type/역사.png"
-						border="0" alt="" class="indexicon1"> <span>역사</span>
-					</a>
-				</div>
-
-				<div class="text-center indexicongroup">
-					<a href="" onfocus="blur()" target="_self" data-vibrate="5"
-						name="progType"> <img src="resources/img/img_type/생태.png"
-						border="0" alt="" class="indexicon1"> <span>생태</span>
-					</a>
-				</div>
-
+				<!-- </form> -->
 			</div>
 		</div>
-		<p>
-			<img src="${path}/resources/img/img_searchbox/date.png"> 날짜 선택
-		</p>
-		<input type="date" />
-	</div>
+	</form>
 
 	<div>
 		<!-- 카테고리 유형 -->
@@ -248,7 +235,7 @@
 
 		<!-- 체험장소 이름 -->
 		<div class="title">
-			<b style = "font-size:30px">${progNm}</b>
+			<b style="font-size: 30px">${progNm}</b>
 		</div>
 
 		<!-- 홈페이지 버튼 -->
