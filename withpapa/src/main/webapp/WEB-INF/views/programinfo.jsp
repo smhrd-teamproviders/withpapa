@@ -144,62 +144,37 @@
 					</p>
 
 					<div class="scrollMenu">
-						<div>
-							<input type="radio" name="placeDistrict" value="거제시"><a>거제시
-							</a>
-						</div>
-						<div>
-							<input type="radio" name="placeDistrict" value="거창군"><a>거창군</a>
-						</div>
-						<div>
-							<input type="radio" name="placeDistrict" value="고성군"><a>고성군</a>
-						</div>
-						<div>
-							<input type="radio" name="placeDistrict" value="김해시"><a>김해시</a>
-						</div>
-						<div>
-							<input type="radio" name="placeDistrict" value="남해군"><a>남해군</a>
-						</div>
-						<div>
-							<input type="radio" name="placeDistrict" value="밀양시"><a>밀양시</a>
-						</div>
-						<div>
-							<input type="radio" name="placeDistrict" value="사천시"><a>사천시</a>
-						</div>
-						<div>
-							<input type="radio" name="placeDistrict" value="산청군"><a>산청군</a>
-						</div>
-						<div>
-							<input type="radio" name="placeDistrict" value="양산시"><a>양산시</a>
-						</div>
-						<div>
-							<input type="radio" name="placeDistrict" value="의령군"><a>의령군</a>
-						</div>
-						<div>
-							<input type="radio" name="placeDistrict" value="진주시"><a>진주시</a>
-						</div>
-						<div>
-							<input type="radio" name="placeDistrict" value="창녕군"><a>창녕군</a>
-						</div>
-						<div>
-							<input type="radio" name="placeDistrict" value="창원시"><a>창원시</a>
-						</div>
-						<div>
-							<input type="radio" name="placeDistrict" value="통영시"><a>통영시</a>
-						</div>
-						<div>
-							<input type="radio" name="placeDistrict" value="하동군"><a>하동군</a>
-						</div>
-						<div>
-							<input type="radio" name="placeDistrict" value="함안군"><a>함안군</a>
-						</div>
-						<div>
-							<input type="radio" name="placeDistrict" value="함양군"><a>함양군</a>
-						</div>
-						<div>
-							<input type="radio" name="placeDistrict" value="합천군"><a>합천군</a>
-						</div>
+						<table style="text-align: center">
+							<tbody>
+								<tr>
+									<td><input type="radio" name="placeDistrict" value="거제시">거제시</td>
+									<td><input type="radio" name="placeDistrict" value="거창군">거창군</td>
+									<td><input type="radio" name="placeDistrict" value="고성군">고성군</td>
+									<td><input type="radio" name="placeDistrict" value="김해시">김해시</td>
+									<td><input type="radio" name="placeDistrict" value="남해군">남해군</td>
+									<td><input type="radio" name="placeDistrict" value="밀양시">밀양시</td>
+								</tr>
+
+								<tr>
+									<td><input type="radio" name="placeDistrict" value="사천시">사천시</td>
+									<td><input type="radio" name="placeDistrict" value="산청군">산청군</td>
+									<td><input type="radio" name="placeDistrict" value="양산시">양산시</td>
+									<td><input type="radio" name="placeDistrict" value="의령군">의령군</td>
+									<td><input type="radio" name="placeDistrict" value="진주시">진주시</td>
+									<td><input type="radio" name="placeDistrict" value="창녕군">창녕군</td>
+								</tr>
+								<tr>
+									<td><input type="radio" name="placeDistrict" value="창원시">창원시</td>
+									<td><input type="radio" name="placeDistrict" value="통영시">통영시</td>
+									<td><input type="radio" name="placeDistrict" value="하동군">하동군</td>
+									<td><input type="radio" name="placeDistrict" value="함안군">함안군</td>
+									<td><input type="radio" name="placeDistrict" value="함양군">함양군</td>
+									<td><input type="radio" name="placeDistrict" value="합천군">합천군</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
+
 					<p>
 						<img
 							src="http://localhost:8089/withpapa/resources/img/img_searchbox/category.png">
@@ -247,9 +222,14 @@
 						</tr>
 					</tbody>
 				</table>
+
+				<p>
+					<img src="http://localhost:8089/withpapa/resources/img/img_searchbox/date.png"> 날짜 선택
+				</p>
+
 				<div>
-					<input type="date" name="progDayStart"> <input type="date"
-						name="progDayEnd">
+					<a>시작일</a><input type="date" name="progDayStart"> <a>종료일</a>
+					<input type="date" name="progDayEnd">
 				</div>
 
 				<div>
