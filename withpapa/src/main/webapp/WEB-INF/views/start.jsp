@@ -168,57 +168,57 @@
 							<option value="함양군">함양군</option>
 							<option value="합천군">합천군</option>
 						</select>
-						</div>
-						<p>
-							<img src="resources/img/img_searchbox/category.png"> 유형 선택
-						</p>
 					</div>
-					<!-- 모달창 안에 카테고리 선택  -->
-					<table>
-						<tbody>
-							<tr>
-								<td><img src="resources/img/img_type/미술.png" border="0"
-									alt="" class="indexicon1"></td>
-								<td><img src="resources/img/img_type/요리.png" border="0"
-									alt="" class="indexicon1"></td>
-								<td><img src="resources/img/img_type/과학.png" border="0"
-									alt="" class="indexicon1"></td>
-								<td><img src="resources/img/img_type/체육.png" border="0"
-									alt="" class="indexicon1"></td>
-								<td><img src="resources/img/img_type/역사.png" border="0"
-									alt="" class="indexicon1"></td>
-								<td><img src="resources/img/img_type/생태.png" border="0"
-									alt="" class="indexicon1"></td>
-							</tr>
-							<tr>
-								<td>미술</td>
-								<td>요리</td>
-								<td>과학</td>
-								<td>체육</td>
-								<td>역사</td>
-								<td>생태</td>
-							</tr>
-							<tr>
-								<td><input type="checkbox" name="progType" value="미술"></td>
-								<td><input type="checkbox" name="progType" value="요리"></td>
-								<td><input type="checkbox" name="progType" value="과학"></td>
-								<td><input type="checkbox" name="progType" value="체육"></td>
-								<td><input type="checkbox" name="progType" value="역사"></td>
-								<td><input type="checkbox" name="progType" value="생태"></td>
-							</tr>
-						</tbody>
-					</table>
-					<div>
-						<input type="date" name="progDayStart"> <input type="date"
-							name="progDayEnd">
-					</div>
-
-					<div>
-						<input type="submit" value="검색">
-					</div>
-					<!-- </form> -->
+					<p>
+						<img src="resources/img/img_searchbox/category.png"> 유형 선택
+					</p>
 				</div>
+				<!-- 모달창 안에 카테고리 선택  -->
+				<table>
+					<tbody>
+						<tr>
+							<td><img src="resources/img/img_type/미술.png" border="0"
+								alt="" class="indexicon1"></td>
+							<td><img src="resources/img/img_type/요리.png" border="0"
+								alt="" class="indexicon1"></td>
+							<td><img src="resources/img/img_type/과학.png" border="0"
+								alt="" class="indexicon1"></td>
+							<td><img src="resources/img/img_type/체육.png" border="0"
+								alt="" class="indexicon1"></td>
+							<td><img src="resources/img/img_type/역사.png" border="0"
+								alt="" class="indexicon1"></td>
+							<td><img src="resources/img/img_type/생태.png" border="0"
+								alt="" class="indexicon1"></td>
+						</tr>
+						<tr>
+							<td>미술</td>
+							<td>요리</td>
+							<td>과학</td>
+							<td>체육</td>
+							<td>역사</td>
+							<td>생태</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="progType" value="미술"></td>
+							<td><input type="checkbox" name="progType" value="요리"></td>
+							<td><input type="checkbox" name="progType" value="과학"></td>
+							<td><input type="checkbox" name="progType" value="체육"></td>
+							<td><input type="checkbox" name="progType" value="역사"></td>
+							<td><input type="checkbox" name="progType" value="생태"></td>
+						</tr>
+					</tbody>
+				</table>
+				<div>
+					<input type="date" name="progDayStart"> <input type="date"
+						name="progDayEnd">
+				</div>
+
+				<div>
+					<input type="submit" value="검색">
+				</div>
+				<!-- </form> -->
 			</div>
+		</div>
 	</form>
 
 	<!-- 카테고리 화면 -->

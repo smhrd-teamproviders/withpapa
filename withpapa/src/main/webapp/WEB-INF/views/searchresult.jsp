@@ -17,8 +17,6 @@
 <meta charset="UTF-8">
 <head>
 <style type="text/css">
-
-
 #banner_online {
 	height: 500px;
 	width: 450px;
@@ -116,8 +114,8 @@
 			border="0" alt="papaducks" class="papaduck">
 		</a>
 	</div>
-	
-	
+
+
 	<!-- 돋보기 눌렀을 때 실행되는 모달 창 -->
 	<form action="search/searchresult" method="get">
 		<div class="search">
@@ -129,7 +127,7 @@
 			</a>
 		</div>
 
-		
+
 		<div id="modal">
 			<div id="banner_online">
 				<div id="close_button" style="cursor: pointer;">
