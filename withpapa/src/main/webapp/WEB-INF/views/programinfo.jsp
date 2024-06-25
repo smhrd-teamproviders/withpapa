@@ -327,7 +327,7 @@
 					<td>${placeAddress}</td>
 				</tr>
 				<tr>
-					<td colspan="4">체험내용<br> ${progContent }
+					<td colspan="4">체험내용 |<br> ${progContent }
 					</td>
 				</tr>
 			</tbody>

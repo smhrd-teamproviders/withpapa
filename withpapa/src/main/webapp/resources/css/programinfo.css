@@ -1,12 +1,33 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'MangoByeolbyeol';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+tr{
+	font-family: 'MangoByeolbyeol';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+b{
+	font-family: 'MangoByeolbyeol';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .title {
 	height: 200px;
 	text-align: center;
 	position: relative;
 	left: -83px;
 	margin: auto;
-	top: 12px;
+	top: -65px;
 }
 
 .search {
@@ -55,7 +76,7 @@ input {
 	display: block;
 	/* margin-left: auto; */
 	/* margin-right: auto; */
-	top: 61px;
+	top: -17px;
 	left: -234px;
 }
 
@@ -78,7 +99,7 @@ input {
 	cursor: pointer;
 	border-radius: 4px;
 	left: 217px;
-	top: -184px;
+	top: -263px;
 }
 
 .placehomepage:hover {
@@ -92,7 +113,7 @@ input {
 .programinfo {
 	position: relative;
 	left: 57px;
-	top: -153px;
+	top: -204px;
 	display: flex;
 	margin: auto;
 	justify-content: center;
@@ -109,7 +130,7 @@ input {
 	margin-top: 50px;
 	margin: auto;
 	display: block;
-	top: -181px;
+	top: -246px;
 }
 
 .place img:hover {
@@ -117,7 +138,7 @@ input {
 }
 
 #map {
-	top: -173px;
+	top: -225px;
 	margin: auto;
 	position: relative;
 	background: url(http://t1.daumcdn.net/mapjsapi/images/2x/bg_tile.png);

@@ -27,10 +27,10 @@
 	margin: auto;
 	display: none;
 	position: absolute;
-	top: 59%;
+	top: 176px;
 	left: 49%;
 	transform: translate(-50%, -50%);
-	padding: 122px;
+	padding: 46px;
 	overflow-y: auto;
 }
 

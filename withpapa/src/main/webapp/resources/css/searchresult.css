@@ -1,19 +1,32 @@
 @charset "UTF-8";
 
-.title {
-	top: -168px;
+@font-face {
+    font-family: 'MangoByeolbyeol';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/*
-	height: 200px;
-    text-align: center;
-    position: relative;
-    left: -73px;
-    margin: auto;
-    top: -168px;
-    display: flex;
-    justify-content: center;
-*/
+td{
+	font-family: 'MangoByeolbyeol';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a{
+	font-family: 'MangoByeolbyeol';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title {
+	top:-4px;
+	position:relative;
+	left:24px;
+
+}
 .search_textContainer {
 	display:flex;
 	justify-content:center;
@@ -21,8 +34,11 @@
 }
 
 .location {
-	height: 100px;
-	font-size: larger;
+    position: relative;
+    height: 100px;
+    font-size: larger;
+    top: -18px;
+    left: 24px;
 }
 
 .search {
