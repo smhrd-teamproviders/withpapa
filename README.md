@@ -74,7 +74,8 @@
 
 ### :dart: 트러블 슈팅
 
-|오류 분야    |오류 내용               |오류 해결                                |
+
+|분야    |오류 내용               |오류 해결                                |
 |-------------|-----------------------|-----------------------------------------|
 |Back-End|List<SearchResult> 타입의 변수 result의 값을 Controller에서 View로 전달할 때 View에서 결과값 미출력|jstl 내 for each 태그의 items 속성값이 Collection(List or Map) 타입임을 확인 후 List 타입의 변수 result로 변경하여 해결|
 |Front-End|닫는 div 태그 누락으로 상세 검색창 내 지도 이미지, 유형 아이콘 혼재되는 상황 발생|닫는 div 태그 삽입하여 해결|
