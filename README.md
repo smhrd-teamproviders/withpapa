@@ -81,19 +81,26 @@
 
 - 시작 화면
   
-![시작화면](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/9daddf84-6a56-400a-8ac4-e95bc5e0d1c4)
+![시작화면](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/ff4674c3-de84-4727-b23c-2727d388ec63)
+
 
 - 상세 검색창 화면
 
-![상세검색창 화면](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/943c9991-4f5e-40de-b0e7-1fae445aa6d1)
+![달력](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/2f2d5c6f-7096-4498-b84b-4c6cf4bb4f36)
+
 
 - 유형별 검색결과 화면
+
+![유형별 검색](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/82ec2a55-0043-48eb-ae7e-88336403f486)
+
+- 지역별 검색결과 화면
   
-![유형별 검색결과](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/8a751aa0-e6a7-49d1-a0f7-72fa5ee78f05)
+![지역별 검색결과](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/ca763bb2-af21-41bc-b943-5a1ac94a366e)
+
 
 - 프로그램 상세 정보 화면
   
-![상세 정보 화면](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/844050dd-6083-4014-817d-67567c017abb)
+![상세 정보 화면](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/4cabd2ce-c874-4cc2-9700-b1f0f9ce3d3f)
 
 
 
