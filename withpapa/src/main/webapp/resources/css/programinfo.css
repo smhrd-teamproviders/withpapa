@@ -27,6 +27,15 @@ b {
 	font-style: normal;
 }
 
+a{
+	font-family: 'MangoByeolbyeol';
+	src:
+		url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2')
+		format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
 .title {
 	height: 200px;
 	text-align: center;
@@ -56,7 +65,7 @@ b {
 }
 
 input {
-	width: 95%;
+	width: 96%;
 	border: 1px solid #d3d3d3;
 	border-radius: 8px;
 	padding: 23px 12px;

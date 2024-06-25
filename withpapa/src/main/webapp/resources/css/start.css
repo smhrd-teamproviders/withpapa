@@ -79,6 +79,10 @@ p {
 	top: -76px;
 }
 
+.scrollMenu{
+	position:flex;
+}
+
 input {
 	width: 95%;
 	border: 1px solid #d3d3d3;
