@@ -63,13 +63,7 @@ p {
 	margin: auto;
 }
 
-#wrapper {
-	margin: auto;
-	min-height: 100%;
-	position: relative;
-	text-align: center;
-	top: 120px;
-}
+
 
 .search {
 	position: relative;
@@ -79,8 +73,8 @@ p {
 	top: -76px;
 }
 
-.scrollMenu{
-	position:flex;
+.scrollMenu {
+	position: flex;
 }
 
 input {
@@ -106,14 +100,10 @@ input {
 	left: 580px;
 }
 
-footer {
-	position: relative;
-	transform: translateY(2200%);
-}
 
 .ducks { /* 오리 */
 	text-align: center;
-	transform: translate(47%, 80%);
+	transform: translate(0%, 80%);
 	position: relative;
 	margin: auto;
 	justify-content: center;
@@ -264,6 +254,17 @@ ul, ol, li, dl, dt, dd {
 	display: flex;
 }
 
+#wrapper{
+  height: auto;
+  min-height: 100%;
+  left : 367px;
+  transform : translateY(3050%);
+}
+footer{
+  position : relative;
+  
+}
+
 @media ( min-width : 768px) {
 	.col-md-6 {
 		-ms-flex: 0 0 50%;
@@ -285,12 +286,6 @@ ul, ol, li, dl, dt, dd {
 	margin: auto;
 	top: -28px;
 	display: flex;
-}
-
-div, a, p, img, blockquote, form, fieldset, textarea, input, label,
-	iframe, code, pre {
-	display: block;
-	position: relative;
 }
 
 .indexicongroup {

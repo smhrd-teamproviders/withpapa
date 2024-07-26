@@ -4,8 +4,6 @@
 <c:set var="path" value="${pageContext.request.contextPath}" />
 <!DOCTYPE html>
 <html>
-
-<link rel="stylesheet" href="${path}/resources/css/programinfo.css">
 <script src="https://code.jquery.com/jquery-3.2.1.min.js">
         window.onload = function() {
             for (var i = 0; i < document.getElementsByTagName('input').length; i++) {
@@ -15,7 +13,8 @@
             }
         };
 </script>
-<meta charset="UTF-8">
+<meta charset=UTF-8/>
+<link href="${path}/resources/css/programinfo.css" rel="stylesheet">
 <head>
 <style type="text/css">
 /* CSS 코드 */
@@ -224,7 +223,9 @@
 				</table>
 
 				<p>
-					<img src="http://localhost:8089/withpapa/resources/img/img_searchbox/date.png"> 날짜 선택
+					<img
+						src="http://localhost:8089/withpapa/resources/img/img_searchbox/date.png">
+					날짜 선택
 				</p>
 
 				<div>
@@ -353,12 +354,12 @@
 	<script type="text/javascript">
         $(document).ready(function() {
             $("#openModalButton").click(function(event) {
-                event.preventDefault(); // Prevent the default link behavior
+                event.preventDefault(); 
                 $("body").css("modal-open");
                 $("#banner_online").fadeIn();
                 $("#modal").fadeIn();
     
-                // Execute your custom function
+                
                 myCustomFunction();
             });
     
@@ -372,7 +373,7 @@
                if (event.target.id === "modal"){
                 $("#banner_online").fadeOut();
                 $("#modal").fadeOut();
-                $("body").css("modal-open"); // 스크롤 복원
+                $("body").css("modal-open"); 
                }
             });
          });

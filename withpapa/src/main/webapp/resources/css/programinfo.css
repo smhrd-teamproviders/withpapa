@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+<!-- 글씨체 변경 -->
 @font-face {
 	font-family: 'MangoByeolbyeol';
 	src:
@@ -27,7 +28,7 @@ b {
 	font-style: normal;
 }
 
-a{
+a {
 	font-family: 'MangoByeolbyeol';
 	src:
 		url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2')

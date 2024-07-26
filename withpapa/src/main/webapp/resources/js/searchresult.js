@@ -1,57 +1,25 @@
-// 모달 및 배너 표시 함수
-function showBanner() {
-  document.getElementById('modal').style.display = 'block';
-  document.getElementById('banner_online').style.display = 'block';
-}
+// 모달과 배너 요소 캐싱
+const modal = document.getElementById('modal');
+const banner = document.getElementById('banner_online');
 
-// 닫기 버튼 클릭 이벤트 리스너
-document.getElementById('close_button').addEventListener('click', function() {
-  document.getElementById('modal').style.display = 'none';
-  document.getElementById('banner_online').style.display = 'none';
-});
-
-// 페이지 로드 후 배너 표시
-window.onload = function() {
-  showBanner();
-};
-
-// 모달 및 배너 표시/숨기기 함수
+// 모달과 배너 표시/숨기기 함수
 function toggleBanner() {
-  const modal = document.getElementById('modal');
-  const banner = document.getElementById('banner_online');
-  const isHidden = banner.style.display === 'none';
-
-  if (isHidden) {
-    modal.style.display = 'block';
-    banner.style.display = 'block';
-  } else {
-    modal.style.display = 'none';
-    banner.style.display = 'none';
-  }
+  modal.style.display = modal.style.display === 'none' ? 'block' : 'none';
+  banner.style.display = modal.style.display; // 모달 상태와 동일하게 설정
 }
 
 // 닫기 버튼 클릭 이벤트 리스너
-document.getElementById('close_button').addEventListener('click', function() {
-  toggleBanner();
-});
+document.getElementById('close_button').addEventListener('click', toggleBanner);
 
 // 모달 클릭 이벤트 리스너 (모달 클릭 시 닫기)
-document.getElementById('modal').addEventListener('click', function() {
-  toggleBanner();
-});
+modal.addEventListener('click', toggleBanner);
 
 // 토글 버튼 클릭 이벤트 리스너
-document.getElementById('toggle_button').addEventListener('click', function() {
-  toggleBanner();
-});
+document.getElementById('toggle_button').addEventListener('click', toggleBanner);
 
-// 배너 내부 클릭 시 이벤트 전파 중지
-document.getElementById('banner_online').addEventListener('click', function(event) {
-  event.stopPropagation();
-});
+// 배너 내부 클릭 시 이벤트 전파 중지 (더 효율적인 방법)
+banner.classList.add('no-click-propagation');
 
-// 페이지 로드 후 배너 표시 (초기 상태는 숨김)
-window.onload = function() {
-  // 처음 로드 시 배너를 표시하고 싶으면 주석을 해제
-  // toggleBanner();
-};
+// 페이지 로드 시 배너 표시 (초기 상태는 숨김)
+// 필요에 따라 주석 해제
+// toggleBanner();

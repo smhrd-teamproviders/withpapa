@@ -1,46 +1,33 @@
 @charset "UTF-8";
 
+
 @font-face {
 	font-family: 'MangoByeolbyeol';
-	src:
-		url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2')
-		format('woff2');
+	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2')format('woff2');
 	font-weight: normal;
 	font-style: normal;
 }
 
-td{
-	font-family: 'MangoByeolbyeol';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
 
-a{
-	font-family: 'MangoByeolbyeol';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
 
 .title {
-	top:-4px;
-	position:relative;
-	left:24px;
-
+	top: -4px;
+	position: relative;
+	left: 24px;
 }
+
 .search_textContainer {
-	display:flex;
-	justify-content:center;
-	flex-direction:column;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .location {
-    position: relative;
-    height: 100px;
-    font-size: larger;
-    top: -18px;
-    left: 24px;
+	position: relative;
+	height: 100px;
+	font-size: larger;
+	top: -18px;
+	left: 24px;
 }
 
 .search {
@@ -48,6 +35,18 @@ a{
 	width: 650px;
 	margin: auto;
 	display: flex;
+}
+
+.scrollMenu {
+	position: flex;
+}
+
+
+.modal-button {
+    position: absolute;
+    z-index: auto;
+    top: 1px;
+    left: 580px;
 }
 
 input {
@@ -68,6 +67,9 @@ input {
 
 a {
 	text-decoration-line: none;
+	font-family: 'MangoByeolbyeol';
+	font-weight: normal;
+	font-style: normal;
 }
 
 a:link {
@@ -90,8 +92,6 @@ a:active {
 	text-decoration: none;
 }
 
-
-
 .place img {
 	width: 490px;
 	height: 350px;
@@ -105,9 +105,7 @@ a:active {
 }
 
 .place {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	display: inline-table;
 }
 
 .place img:hover {
@@ -129,7 +127,6 @@ a:active {
 	/* margin-left: auto; */
 	/* margin-right: auto; */
 }
-
 
 .categorytype img:hover {
 	transform: scale(1.03)
@@ -172,30 +169,29 @@ a:active {
 }
 
 .indexicon {
-	width: 100px; /* Adjust size as needed */
+	width: 100px;
 	height: auto;
 }
 
 .indexicon1 {
-	width: 59px; /* Adjust size as needed */
+	width: 59px;
 	height: auto;
 }
 
 .indexicongroup a {
-	text-decoration: none; /* Remove underline */
-	color: inherit; /* Ensure the text color is inherited */
+	text-decoration: none;
+	color: inherit;
 }
-
-.indexicongroup span {
-	margin-top: 5px; /* Adjust spacing as needed */
+.indexicongroup span{
+	margin-top: 5px;
 }
 
 .indexicongroup:nth-of-type(3) span {
-	margin-top: -10px; /* Adjust margin as needed for 과학 */
+	margin-top: -10px;
 }
 
 .indexicongroup:nth-of-type(5) span {
-	margin-top: 10px; /* Adjust margin as needed for 역사 */
+	margin-top: 10px;
 }
 
 .space {
@@ -208,12 +204,6 @@ a:active {
 	background-color: #b1bac4;
 }
 
-.modal-button {
-	position: relative;
-	z-index: auto;
-	top: 2px;
-	left: -66px;
-}
 
 /* Tablet &amp; Desktop Device */
 @media all and (min-width:768px) {

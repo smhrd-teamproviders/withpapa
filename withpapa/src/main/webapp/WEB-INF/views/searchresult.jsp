@@ -4,7 +4,6 @@
 <c:set var="path" value="${pageContext.request.contextPath}" />
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="${path}/resources/css/searchresult.css">
 <script src="https://code.jquery.com/jquery-3.2.1.min.js">
     window.onload = function() {
       for (var i = 0; i < document.getElementsByTagName('input').length; i++) {
@@ -14,7 +13,8 @@
            }
        };
 </script>
-<meta charset="UTF-8">
+<meta charset= UTF-8 />
+<link href="${path}/resources/css/searchresult.css" rel="stylesheet">
 <head>
 <style type="text/css">
 #banner_online {
@@ -26,7 +26,6 @@
 	z-index: 100;
 	margin: auto;
 	display: none;
-	position: absolute;
 	top: 62%;
 	left: 47%;
 	transform: translate(-50%, -50%);
@@ -96,11 +95,10 @@
 
 #search {
 	display: flex;
-	width: 617px;
+	width: 500px;
 	margin: auto;
-	position: relative;
-	left: 32px;
 }
+
 </style>
 </head>
 <body>
@@ -115,8 +113,7 @@
 	</div>
 
 
-	<!-- 돋보기 눌렀을 때 실행되는 모달 창 -->
-	<form action="search/searchresult" method="get">
+		<form action="search/searchresult" method="get">
 		<div class="search">
 			<input type="text" name="progNm" placeholder="어디로 놀러 가볼까요?">
 			<!-- 돋보기 버튼 -->
@@ -126,7 +123,7 @@
 			</a>
 		</div>
 
-
+		<!-- 돋보기 눌렀을 때 실행되는 모달 창 -->
 		<div id="modal">
 			<div id="banner_online">
 				<div id="close_button" style="cursor: pointer;">
@@ -134,7 +131,6 @@
 						src="http://localhost:8089/withpapa/resources/img/img_searchbox/close_cross.png">
 				</div>
 
-				<!-- <form action="search/searchresult" method="get"> -->
 				<div class="pop_content">
 					<p>
 						<img
@@ -221,22 +217,26 @@
 						</tr>
 					</tbody>
 				</table>
+
 				<p>
-					<img src="http://localhost:8089/withpapa/resources/img/img_searchbox/date.png"> 날짜 선택
+					<img
+						src="http://localhost:8089/withpapa/resources/img/img_searchbox/date.png">
+					날짜 선택
 				</p>
 
 				<div>
 					<a>시작일</a><input type="date" name="progDayStart"> <a>종료일</a>
 					<input type="date" name="progDayEnd">
 				</div>
+
 				<div>
 					<input type="submit" value="검색">
 				</div>
-				<!-- </form> -->
 			</div>
 		</div>
 	</form>
-
+	
+	
 
 	<c:forEach var="result" items="${result}">
 		<!-- 장소 사진 -->
@@ -249,9 +249,9 @@
 				</div>
 				<!-- 체험장소 이름 -->
 				<div class="search_textContainer">
-					<div class="title">
+					<div>
 						<h2>
-							<a href="programinfo?progId=${result.progId}"
+							<a class = "title" href="programinfo?progId=${result.progId}"
 								onclick="location.href=programinfo?progId=${result.progId}">${result.progNm}</a>
 						</h2>
 					</div>
@@ -270,13 +270,12 @@
 	<script type="text/javascript">
         $(document).ready(function() {
             $("#openModalButton").click(function(event) {
-                event.preventDefault(); // Prevent the default link behavior
+                event.preventDefault(); 
                 $("body").css("modal-open");
                 $("#banner_online").fadeIn();
                 $("#modal").fadeIn();
     
-                // Execute your custom function
-                myCustomFunction();
+               myCustomFunction();
             });
     
             $("#close_button").click(function() {
@@ -289,7 +288,7 @@
                if (event.target.id === "modal") {
                 $("#banner_online").fadeOut();
                 $("#modal").fadeOut();
-                $("body").css("modal-open"); // 스크롤 복원
+                $("body").css("modal-open"); 
                }
            });
         });

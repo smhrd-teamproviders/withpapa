@@ -15,7 +15,8 @@
 		}
 	};
 </script>
-<link href="${path}/resources/css/start.css?first" rel="stylesheet" />
+<link rel="stylesheet" href="style.css?v=1.0">
+<link href="${path}/resources/css/start.css" rel="stylesheet" />
 <style type="text/css">
 #banner_online {
 	height: 502px;
@@ -26,7 +27,6 @@
 	z-index: 100;
 	margin: auto;
 	display: none;
-	position: absolute;
 	top: 176px;
 	left: 49%;
 	transform: translate(-50%, -50%);
@@ -113,7 +113,7 @@
 	</div>
 	<div class="main">
 		<div class="title">
-			<p style="color: #0CA789;">WITHPAPA</p>
+			<p style="color: #0CA789">WITHPAPA</p>
 		</div>
 		<div class="subtitle">
 			<h5>아빠들과 함께하는 아이들의 소중한 시간</h5>
@@ -136,8 +136,6 @@
 				<div id="close_button" style="cursor: pointer;">
 					<img src="resources/img/img_searchbox/close_cross.png">
 				</div>
-
-				<!-- <form action="search/searchresult" method="get"> -->
 				<div class="pop_content">
 					<p>
 						<img src="resources/img/img_searchbox/location.png"> 지역
@@ -220,14 +218,13 @@
 				</p>
 
 				<div>
-					<a>시작일</a><input type="date" name="progDayStart"> <a>종료일</a> <input type="date"
-						name="progDayEnd">
+					<a>시작일</a><input type="date" name="progDayStart"> <a>종료일</a>
+					<input type="date" name="progDayEnd">
 				</div>
 
 				<div>
 					<input type="submit" value="검색">
 				</div>
-				<!-- </form> -->
 			</div>
 		</div>
 	</form>
@@ -241,7 +238,7 @@
 					href="search/searchresult?progNm=&progType=미술&progDayStart=&progDayEnd="
 					onfocus="blur()" target="_self" data-vibrate="5" name="progType"
 					alt="미술"> <img src="resources/img/img_type/미술.png" border="0"
-					alt="" class="indexicon"> <span>미술</span>
+					alt="" class="indexicon"><br/><span>미술</span>
 				</a>
 			</div>
 			<div class="text-center indexicongroup">
@@ -249,7 +246,7 @@
 					href="search/searchresult?progNm=&progType=요리&progDayStart=&progDayEnd="
 					onfocus="blur()" target="_self" data-vibrate="5" name="progType"
 					alt="요리"> <img src="resources/img/img_type/요리.png" border="0"
-					alt="" class="indexicon"> <span>요리</span>
+					alt="" class="indexicon"><br/><span>요리</span>
 				</a>
 			</div>
 			<div class="text-center indexicongroup">
@@ -257,7 +254,7 @@
 					href="search/searchresult?progNm=&progType=과학&progDayStart=&progDayEnd="
 					onfocus="blur()" target="_self" data-vibrate="5" name="progType">
 					<img src="resources/img/img_type/과학.png" border="0" alt=""
-					class="indexicon"> <span>과학</span>
+					class="indexicon"><br/><span>과학</span>
 				</a>
 			</div>
 			<div class="text-center indexicongroup">
@@ -265,7 +262,7 @@
 					href="search/searchresult?progNm=&progType=체육&progDayStart=&progDayEnd="
 					onfocus="blur()" target="_self" data-vibrate="5" name="progType">
 					<img src="resources/img/img_type/체육.png" border="0" alt=""
-					class="indexicon"> <span>체육</span>
+					class="indexicon"><br/><span>체육</span>
 				</a>
 			</div>
 			<div class="text-center indexicongroup">
@@ -273,7 +270,7 @@
 					href="search/searchresult?progNm=&progType=역사&progDayStart=&progDayEnd="
 					onfocus="blur()" target="_self" data-vibrate="5" name="progType">
 					<img src="resources/img/img_type/역사.png" border="0" alt=""
-					class="indexicon"> <span>역사</span>
+					class="indexicon"><br/><span>역사</span>
 				</a>
 			</div>
 			<div class="text-center indexicongroup">
@@ -281,7 +278,7 @@
 					href="search/searchresult?progNm=&progType=생태&progDayStart=&progDayEnd="
 					onfocus="blur()" target="_self" data-vibrate="5" name="progType">
 					<img src="resources/img/img_type/생태.png" border="0" alt=""
-					class="indexicon"> <span>생태</span>
+					class="indexicon"><br/><span>생태</span>
 				</a>
 			</div>
 		</div>
@@ -373,35 +370,35 @@
 	<div id='wrapper'>
 		<footer>COPYRIGHT (C) 2024 WITHPAPA, ALL RIGHTS RESERVED</footer>
 	</div>
+	
 
 
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$("#openModalButton").click(function(event) {
-				event.preventDefault(); // Prevent the default link behavior
-				$("body").css("modal-open");
-				$("#banner_online").fadeIn();
-				$("#modal").fadeIn();
+     <script type="text/javascript">
+        $(document).ready(function() {
+            $("#openModalButton").click(function(event) {
+                event.preventDefault(); 
+                $("body").css("modal-open");
+                $("#banner_online").fadeIn();
+                $("#modal").fadeIn();
+    
+               myCustomFunction();
+            });
+    
+            $("#close_button").click(function() {
+                $("#banner_online").fadeOut();
+                $("#modal").fadeOut();
+                $("body").css("modal-open");
+            });
 
-				// Execute your custom function
-				myCustomFunction();
-			});
-
-			$("#close_button").click(function() {
-				$("#banner_online").fadeOut();
-				$("#modal").fadeOut();
-				$("body").css("modal-open");
-			});
-
-			$("#modal").click(function(event) {
-				if (event.target.id === "modal") {
-					$("#banner_online").fadeOut();
-					$("#modal").fadeOut();
-					$("body").css("modal-open"); // 스크롤 복원
-				}
-			});
-		});
-	</script>
+            $("#modal").click(function(event) {
+               if (event.target.id === "modal") {
+                $("#banner_online").fadeOut();
+                $("#modal").fadeOut();
+                $("body").css("modal-open"); 
+               }
+           });
+        });
+       </script>
 
 	<script src="start.js"></script>
 
