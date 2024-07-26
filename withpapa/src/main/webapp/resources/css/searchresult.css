@@ -2,8 +2,8 @@
 
 
 @font-face {
-	font-family: 'MangoByeolbyeol';
-	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2')format('woff2');
+	font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -67,7 +67,7 @@ input {
 
 a {
 	text-decoration-line: none;
-	font-family: 'MangoByeolbyeol';
+	font-family: 'GmarketSansMedium';
 	font-weight: normal;
 	font-style: normal;
 }

@@ -2,39 +2,24 @@
 
 <!-- 글씨체 변경 -->
 @font-face {
-	font-family: 'MangoByeolbyeol';
-	src:
-		url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2')
-		format('woff2');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-tr {
-	font-family: 'MangoByeolbyeol';
-	src:
-		url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2')
-		format('woff2');
-	font-weight: normal;
-	font-style: normal;
+td {
+	font-family: 'GmarketSansMedium';
 }
 
-b {
-	font-family: 'MangoByeolbyeol';
-	src:
-		url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2')
-		format('woff2');
-	font-weight: normal;
-	font-style: normal;
-}
+
 
 a {
-	font-family: 'MangoByeolbyeol';
-	src:
-		url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2')
-		format('woff2');
-	font-weight: normal;
-	font-style: normal;
+	font-family: 'GmarketSansMedium';
+}
+
+.text{
+	font-family: 'GmarketSansMedium';
 }
 
 .title {
@@ -44,6 +29,8 @@ a {
 	left: -83px;
 	margin: auto;
 	top: -65px;
+
+	
 }
 
 .search {
@@ -54,6 +41,7 @@ a {
 
 .tdright {
 	text-align: right;
+	font-family: 'GmarketSansMedium';
 }
 
 .location {
@@ -133,6 +121,8 @@ input {
 	display: flex;
 	margin: auto;
 	justify-content: center;
+	font-family: 'GmarketSansMedium';
+	
 }
 
 .place img {
@@ -166,6 +156,7 @@ input {
 	position: relative;
 	top: -69px;
 	left: -171px;
+	font-family: 'GmarketSansMedium';
 }
 
 .placeinfo2 {
@@ -174,6 +165,7 @@ input {
 	position: relative;
 	top: -134px;
 	left: 83px;
+	font-family: 'GmarketSansMedium';
 }
 
 .placeinfo3 {
@@ -182,6 +174,7 @@ input {
 	position: relative;
 	top: -74px;
 	left: -191px;
+	font-family: 'GmarketSansMedium';
 }
 
 .indexicongroup {
