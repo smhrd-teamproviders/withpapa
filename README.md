@@ -3,7 +3,7 @@
 ![WITHPAPA_MAIN](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/ca516de4-c653-47a2-885c-7d7d0fb872ea)
 
 ### :open_file_folder: 서비스 소개
-- 서비스명 : [WITHPAPA] 아빠들과 함께하는 아이들의 행복한 시간
+- 서비스명 : <b>[WITHPAPA] </b> 아빠들과 함께하는 아이들의 행복한 시간
 - 서비스 설명 : <b>주 사용자가 '아빠'인 놀이·체험 프로그램 장소 정보 제공 반응형 웹사이트
   <br>
 ### :calendar: 개발 기간 
@@ -81,19 +81,26 @@
 
 - 시작 화면
   
-![시작화면](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/9daddf84-6a56-400a-8ac4-e95bc5e0d1c4)
+![시작화면](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/ff4674c3-de84-4727-b23c-2727d388ec63)
+
 
 - 상세 검색창 화면
 
-![상세검색창 화면](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/943c9991-4f5e-40de-b0e7-1fae445aa6d1)
+![달력](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/2f2d5c6f-7096-4498-b84b-4c6cf4bb4f36)
+
 
 - 유형별 검색결과 화면
+
+![유형별 검색](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/82ec2a55-0043-48eb-ae7e-88336403f486)
+
+- 지역별 검색결과 화면
   
-![유형별 검색결과](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/8a751aa0-e6a7-49d1-a0f7-72fa5ee78f05)
+![지역별 검색결과](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/ca763bb2-af21-41bc-b943-5a1ac94a366e)
+
 
 - 프로그램 상세 정보 화면
   
-![상세 정보 화면](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/844050dd-6083-4014-817d-67567c017abb)
+![상세 정보 화면](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/4cabd2ce-c874-4cc2-9700-b1f0f9ce3d3f)
 
 
 
@@ -117,10 +124,18 @@
 |Front-End|닫는 div 태그 누락으로 상세 검색창 내 지도 이미지, 유형 아이콘 혼재되는 상황 발생|닫는 div 태그 삽입하여 해결|
 
 
-
-
-
-
+### :books: 참고문헌
+- 노컷뉴스, 2022.06.14.기사 발췌[자녀양육 분담 여전히... 아내 70%, 남편 29% [그래픽뉴스]]
+- 캐시피드 포스트 발췌, 2023.07.14 [아내가 남편에게 가장 바라는 것, 1순위:○○○○ㅣ육아정보ㅣ아이놀아주는법]
+- 문화경제뉴스, 2023.12.19 [2024 트렌드 키워드①] ‘요즘 남편, 없던 아빠’, 강좌·육아휴직 주인공 되다
+- BabyNews '당신은 '요즘아빠'인가요? ' 2024.05.09 기사 - 인구보건복지협회 설문조사 
+- 오픈서베이 '2023 육아 트렌드 리포트' 2023.08. 리포트 발췌  [출시 희망하는 육아 앱 기능] 
+- [이코리아, 2023.12.20] 1년 육아휴직 아빠, 회사 복귀하는 "잘 쉬었냐" <육아휴직 문화를 바꾸자> 2022년 전체 육아휴직자 수 및 비중. 자료=통계청 
+- [Bennett, 브런치 스토리, 2023.07.04] 세계 최저 출산율에도 키즈 스타트업이 성장하는 이유는 
+- 날리지리서치그룹(KRG) 2024.02.28 기사 발췌 '국내 키즈산업, 2025년에 58조원 시장 전망'
+- THEPR 트렌드 리포트 2023.05.22 리포트 내용 발췌 '알파 세대와 함께 성장하는 키즈테크'
+- 매일 신문 2024.02.18일자 기사 발췌, [가사·육아에 적극적인 30대 '요즘아빠'가 뜬다]
+- 시사저널, 2024.10.10일자 기사 발췌 [[단독]수도권에 편중된 보육 인프라…“지방에는 육아지원센터가 없다”]
 
 
 
