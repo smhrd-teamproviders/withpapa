@@ -23,6 +23,7 @@ a {
 }
 
 .title {
+	font-family: 'GmarketSansMedium';
 	height: 200px;
 	text-align: center;
 	position: relative;

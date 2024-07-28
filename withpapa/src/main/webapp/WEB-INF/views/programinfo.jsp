@@ -13,6 +13,24 @@
             }
         };
 </script>
+<style>
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+.title{
+	 font-family: 'GmarketSansMedium';
+}
+
+.programinfo{
+	 font-family: 'GmarketSansMedium';
+
+}
+
+</style>
 <meta charset=UTF-8/>
 <link href="${path}/resources/css/programinfo.css" rel="stylesheet">
 <head>
