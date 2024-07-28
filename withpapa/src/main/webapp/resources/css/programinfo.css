@@ -2,39 +2,21 @@
 
 <!-- 글씨체 변경 -->
 @font-face {
-	font-family: 'MangoByeolbyeol';
-	src:
-		url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2')
-		format('woff2');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'CWDangamAsac-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
-
 tr {
-	font-family: 'MangoByeolbyeol';
-	src:
-		url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2')
-		format('woff2');
-	font-weight: normal;
-	font-style: normal;
+	font-family: 'CWDangamAsac-Bold';
 }
 
 b {
-	font-family: 'MangoByeolbyeol';
-	src:
-		url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2')
-		format('woff2');
-	font-weight: normal;
-	font-style: normal;
+font-family: 'CWDangamAsac-Bold';
 }
 
 a {
-	font-family: 'MangoByeolbyeol';
-	src:
-		url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2')
-		format('woff2');
-	font-weight: normal;
-	font-style: normal;
+	font-family: 'CWDangamAsac-Bold';
 }
 
 .title {

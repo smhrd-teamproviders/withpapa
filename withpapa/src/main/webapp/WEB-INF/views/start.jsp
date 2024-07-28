@@ -15,7 +15,7 @@
 		}
 	};
 </script>
-<link rel="stylesheet" href="style.css?v=1.0">
+<link rel="stylesheet" href="/resources/css/style.css">
 <link href="${path}/resources/css/start.css" rel="stylesheet" />
 <style type="text/css">
 #banner_online {
@@ -371,9 +371,7 @@
 		<footer>COPYRIGHT (C) 2024 WITHPAPA, ALL RIGHTS RESERVED</footer>
 	</div>
 	
-
-
-     <script type="text/javascript">
+    <script type="text/javascript">
         $(document).ready(function() {
             $("#openModalButton").click(function(event) {
                 event.preventDefault(); 
@@ -398,11 +396,8 @@
                }
            });
         });
-       </script>
-
-	<script src="start.js"></script>
-
-
+     </script>
+   
 
 
 </body>

@@ -13,7 +13,8 @@
             }
         };
 </script>
-<meta charset=UTF-8/>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="/resources/css/style.css">
 <link href="${path}/resources/css/programinfo.css" rel="stylesheet">
 <head>
 <style type="text/css">
@@ -378,8 +379,6 @@
             });
          });
          </script>
-
-	<script src="searchbutton.js"></script>
 
 </body>
 </html>
