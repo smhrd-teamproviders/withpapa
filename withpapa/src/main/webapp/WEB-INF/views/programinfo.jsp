@@ -138,7 +138,7 @@
 			<input type="text" name="progNm" placeholder="어디로 놀러 가볼까요?">
 			<!-- 돋보기 버튼 -->
 			<a href="#" class="modal-button" id="openModalButton"> <img
-				src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png"
+				src="http://localhost:8089/withpapa/resources/img/img_logo/search_magnifier_icon_145939.png"
 				alt="돋보기 이미지">
 			</a>
 		</div>

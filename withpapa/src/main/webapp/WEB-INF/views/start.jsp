@@ -17,6 +17,10 @@
 </script>
 <link rel="stylesheet" href="/resources/css/style.css">
 <link href="${path}/resources/css/start.css" rel="stylesheet" />
+<link rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 <style type="text/css">
 #banner_online {
 	height: 502px;
@@ -98,6 +102,13 @@
 	width: 500px;
 	margin: auto;
 }
+
+.swiper {
+   width: 800px;
+   height: 400px;
+   transform: translate(10px, -165px);
+}
+
 </style>
 </head>
 <body>
@@ -116,7 +127,7 @@
 		<div class="search">
 			<!-- 돋보기 버튼 -->
 			<a href="#" class="modal-button" id="openModalButton"> <img
-				src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png"
+				src="http://localhost:8089/withpapa/resources/img/img_logo/search_magnifier_icon_145939.png"
 				alt="돋보기 이미지">
 			</a>
 		</div>
@@ -271,8 +282,33 @@
 				</a>
 			</div>
 		</div>
+		
+		
+		 <div class="swiper">
+      <div class="swiper-wrapper">
+         <!-- 배너 슬라이드 -->
+         <div class="swiper-slide">
+            <img src="https://via.placeholder.com/800x400">
+         </div>
+         <div class="swiper-slide">
+            <img src="https://via.placeholder.com/800x400">
+         </div>
+         <div class="swiper-slide">
+            <img src="https://via.placeholder.com/800x400">
+         </div>
+         <div class="swiper-slide">
+            <img src="https://via.placeholder.com/800x400">
+         </div>
+      </div>
+      <!-- 순서 버튼 -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
 
-
+      <!-- 스크롤 바 -->
+      <div class="swiper-scrollbar"></div>
+   </div>
+		
 	
     <script type="text/javascript">
         $(document).ready(function() {
@@ -300,6 +336,33 @@
            });
         });
      </script>
+     
+        <script>
+      const swiper = new Swiper('.swiper', {
+         loop : true,
+         autoplay : { //자동 재생 여부
+             delay: 2500, // 시간 지연 설정 (ex : 2500 : 2.5초)
+             disableOnInteraction: false // 배너 자동 재생 유지
+         }, 
+         slidesPerView : 1,
+         pagination : {
+            el : '.swiper-pagination',
+         },
+
+         // 네비게이션 화살표
+         navigation : {
+            nextEl : '.swiper-button-next',
+            prevEl : '.swiper-button-prev',
+         },
+
+         // 스크롤바
+         scrollbar : {
+            el : '.swiper-scrollbar',
+         },
+
+      });
+   </script>
+     
    
 
 
