@@ -238,11 +238,11 @@
 	</form>
 	
 	
-
+	<div class = "container">
 	<c:forEach var="result" items="${result}">
 		<!-- 장소 사진 -->
 		<div class="place">
-			<img src="data:image/jpg;base64,${result.imgNm}" name="place1">
+			<a href="programinfo?progId=${result.progId}"><img src="data:image/jpg;base64,${result.imgNm}" name="place1"></a>
 			<!-- 카테고리 유형 -->
 			<div class="search_container">
 				<div class="categorytype">
@@ -265,7 +265,7 @@
 			</div>
 		</div>
 	</c:forEach>
-
+    </div>
 
 
 	<script type="text/javascript">

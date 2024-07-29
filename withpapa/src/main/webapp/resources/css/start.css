@@ -1,48 +1,39 @@
 @charset "UTF-8";
 
 @font-face {
-	font-family: 'MangoByeolbyeol';
-	src:
-		url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2')
-		format('woff2');
-	font-weight: normal;
-	font-style: normal;
+	
+    font-family: 'yg-jalnan';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+h5{
+	font-family: 'GmarketSansMedium';
+}
 span {
-	font-family: 'MangoByeolbyeol';
-	src:
-		url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2')
-		format('woff2');
-	font-weight: normal;
-	font-style: normal;
+	font-family: 'GmarketSansMedium';
 }
 
 a {
-	font-family: 'MangoByeolbyeol';
-	src:
-		url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2')
-		format('woff2');
-	font-weight: normal;
-	font-style: normal;
+	font-family: 'GmarketSansMedium';
 }
 
 tr {
-	font-family: 'MangoByeolbyeol';
-	src:
-		url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2')
-		format('woff2');
-	font-weight: normal;
-	font-style: normal;
+	font-family: 'GmarketSansMedium';
 }
 
 p {
-	font-family: 'MangoByeolbyeol';
-	src:
-		url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2')
-		format('woff2');
-	font-weight: normal;
-	font-style: normal;
+	font-family: 'yg-jalnan';
+	
+	
 }
 
 .title {
