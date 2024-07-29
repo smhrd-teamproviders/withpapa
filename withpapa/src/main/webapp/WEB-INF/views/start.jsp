@@ -104,7 +104,7 @@
 }
 
 .swiper {
-   width: 800px;
+   width: 600px;
    height: 400px;
    transform: translate(10px, -165px);
 }
