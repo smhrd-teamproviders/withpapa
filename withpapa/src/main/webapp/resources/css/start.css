@@ -260,6 +260,27 @@ body {
 	background-color: #b1bac4;
 }
 
+.swiper {
+   width: 600px;
+   height: 400px;
+   transform: translate(10px, -165px);
+}
+
+.main_image_text {
+   position: absolute;
+   bottom: -8%;
+   color: white;
+   width: 600px;
+    height: 80px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.swiper img {
+    width: 600px;
+    height: 400px;
+
+}
+
 /* All Device */
 /*모든 해상도를 위한 공통 코드를 작성한다. 모든 해상도에서 이 코드가 실행됨.*/
 

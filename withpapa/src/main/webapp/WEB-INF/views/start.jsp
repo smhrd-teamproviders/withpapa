@@ -102,28 +102,6 @@
    width: 500px;
    margin: auto;
 }
-
-.swiper {
-   width: 600px;
-   height: 400px;
-   transform: translate(10px, -165px);
-}
-
-.main_image_text {
-   position: absolute;
-   bottom: -8%;
-   color: white;
-   width: 600px;
-    height: 80px;
-    background-color: rgba(0,0,0,0.6);
-}
-
-.swiper img {
-    width: 600px;
-    height: 400px;
-
-}
-
 </style>
 </head>
 <body>
