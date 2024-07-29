@@ -106,7 +106,6 @@ ul, ol, li, dl, dt, dd {
 	list-style: none;
 }
 
-<<<<<<< HEAD
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -168,7 +167,7 @@ body {
 }
 
 
-=======
+
 .categorycontainer{
 	display: flex;
 	justify-content: space-around;
@@ -179,7 +178,7 @@ body {
 	max-width: 100%;
 	transform: translate(10px, -190px);
 }
->>>>>>> branch 'main' of https://github.com/smhrd-teamproviders/withpapa.git
+
 
 .center_map_area {
 	justify-content: center;
