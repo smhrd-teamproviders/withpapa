@@ -109,7 +109,7 @@
 		<img src="resources/img/img_logo/logo_duck.png" alt="papaducks">
 	</div>
 		<div class="title">
-			<p style="color: #0CA789">WITHPAPA</p>
+		  <p style="color: #0CA789">WITHPAPA</p>
 		</div>
 
 	<form action="search/searchresult" method="get">
@@ -272,92 +272,7 @@
 			</div>
 		</div>
 
-	<!-- 지도 화면  -->
-	<div class="center_map_area">
-		<div id="center_map" class="map_area"
-			style="width: 30rem; height: 26rem; transform: scale(1);">
-			<ul class="map">
-				<li class="area_box map_area01"><a
-					href="search/searchresult?progNm=&placeDistrict=거창군&progDayStart=&progDayEnd="
-					target="_blank"><img
-						src="resources/img/img_district/경상남도 지도 거창군1.png" alt="거창군"></a></li>
-				<li class="area_box map_area02"><a
-					href="search/searchresult?progNm=&placeDistrict=합천군&progDayStart=&progDayEnd="
-					target="_blank"><img
-						src="resources/img/img_district/경상남도 합천군 색.png" alt="합천군"></a></li>
-				<li class="area_box map_area03"><a
-					href="search/searchresult?progNm=&placeDistrict=창녕군&progDayStart=&progDayEnd="
-					target="_blank"><img
-						src="resources/img/img_district/경상남도 지도 창녕군.png" alt="창녕군"></a></li>
-				<li class="area_box map_area04"><a
-					href="search/searchresult?progNm=&placeDistrict=밀양시&progDayStart=&progDayEnd="
-					target="_blank"><img
-						src="resources/img/img_district/경상남도 지도 밀양시.png" alt="밀양시"></a></li>
-				<li class="area_box map_area05"><a
-					href="search/searchresult?progNm=&placeDistrict=양산시&progDayStart=&progDayEnd="
-					target="_blank"><img
-						src="resources/img/img_district/경상남도 지도 양산시.png" alt="양산시"></a></li>
-				<li class="area_box map_area06"><a
-					href="search/searchresult?progNm=&placeDistrict=함양군&progDayStart=&progDayEnd="
-					target="_blank"><img
-						src="resources/img/img_district/경상남도 함양군 색.png" alt="함양군"></a></li>
-				<li class="area_box map_area07"><a
-					href="search/searchresult?progNm=&placeDistrict=산청군&progDayStart=&progDayEnd="
-					target="_blank"><img
-						src="resources/img/img_district/경상남도 지도 산청군 색.png" alt="산청군"></a></li>
-				<li class="area_box map_area08"><a
-					href="search/searchresult?progNm=&placeDistrict=의령군&progDayStart=&progDayEnd="
-					target="_blank"><img
-						src="resources/img/img_district/경상남도 지도 의령군.png" alt="의령군"></a></li>
-				<li class="area_box map_area09"><a
-					href="search/searchresult?progNm=&placeDistrict=함안군&progDayStart=&progDayEnd="
-					target="_blank"><img
-						src="resources/img/img_district/경상남도 지도 함안군.png" alt="함안군"></a></li>
-				<li class="area_box map_area10"><a
-					href="search/searchresult?progNm=&placeDistrict=창원시&progDayStart=&progDayEnd="
-					target="_blank"><img
-						src="resources/img/img_district/경상남도 지도 창원시1.png" alt="창원시"></a></li>
-				<li class="area_box map_area11"><a
-					href="search/searchresult?progNm=&placeDistrict=김해시&progDayStart=&progDayEnd="
-					target="_blank"><img
-						src="resources/img/img_district/경상남도 지도 김해시.png" alt="김해시"></a></li>
-				<li class="area_box map_area12"><a
-					href="search/searchresult?progNm=&placeDistrict=하동군&progDayStart=&progDayEnd="
-					target="_blank"><img
-						src="resources/img/img_district/경상남도 지도 하동군.png" alt="하동군"></a></li>
-				<li class="area_box map_area13"><a
-					href="search/searchresult?progNm=&placeDistrict=진주시&progDayStart=&progDayEnd="
-					target="_blank"><img
-						src="resources/img/img_district/경상남도 지도 진주시.png" alt="진주시"></a></li>
-				<li class="area_box map_area14"><a
-					href="search/searchresult?progNm=&placeDistrict=사천시&progDayStart=&progDayEnd="
-					target="_blank"><img
-						src="resources/img/img_district/경상남도 지도 사천시.png" alt="사천시"></a></li>
-				<li class="area_box map_area15"><a
-					href="search/searchresult?progNm=&placeDistrict=고성군&progDayStart=&progDayEnd="
-					target="_blank"><img
-						src="resources/img/img_district/경상남도 지도 고성군.png" alt="고성군"></a></li>
-				<li class="area_box map_area16"><a
-					href="search/searchresult?progNm=&placeDistrict=남해군&progDayStart=&progDayEnd="
-					target="_blank"><img
-						src="resources/img/img_district/경상남도 지도 남해군.png" alt="남해군"></a></li>
-				<li class="area_box map_area17"><a
-					href="search/searchresult?progNm=&placeDistrict=통영시&progDayStart=&progDayEnd="
-					target="_blank"><img
-						src="resources/img/img_district/경상남도 지도 통영시.png" alt="통영시"></a></li>
-				<li class="area_box map_area18"><a
-					href="search/searchresult?progNm=&placeDistrict=거제시&progDayStart=&progDayEnd="
-					target="_blank"><img
-						src="resources/img/img_district/경상남도 지도 거제시.png" alt="거제시"></a></li>
 
-			</ul>
-		</div>
-	</div>
-
-
-	<div id='wrapper'>
-		<footer>COPYRIGHT (C) 2024 WITHPAPA, ALL RIGHTS RESERVED</footer>
-	</div>
 	
     <script type="text/javascript">
         $(document).ready(function() {

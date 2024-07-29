@@ -24,12 +24,9 @@
 	border: 1px solid black;
 	box-shadow: 3px 3px 7px 1px rgb(255, 253, 253);
 	background-color: white;
-	z-index: 100;
 	margin: auto;
 	display: none;
-	top: 62%;
-	left: 47%;
-	transform: translate(-50%, -50%);
+	transform: translate(-2%, 39%);
 	padding: 45px;
 	overflow-y: auto;
 }

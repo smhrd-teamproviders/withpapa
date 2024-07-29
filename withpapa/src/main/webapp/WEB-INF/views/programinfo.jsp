@@ -44,11 +44,10 @@
 	background-color: white;
 	z-index: 100;
 	margin: auto;
-	display: none;
 	position: absolute;
 	top: 63%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-52%, -60%);
 	padding: 45px;
 	overflow-y: auto;
 }

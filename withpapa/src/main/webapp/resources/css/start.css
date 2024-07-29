@@ -235,19 +235,6 @@ ul, ol, li, dl, dt, dd {
 	}
 }
 
-
-
-#wrapper{
-  height: auto;
-  min-height: 100%;
-  left : 367px;
-  transform : translateY(3050%);
-}
-footer{
-  position : relative;
-  
-}
-
 @media ( min-width : 768px) {
 	.col-md-6 {
 		-ms-flex: 0 0 50%;
