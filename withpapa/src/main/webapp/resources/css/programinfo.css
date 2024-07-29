@@ -2,30 +2,45 @@
 
 <!-- 글씨체 변경 -->
 @font-face {
-    font-family: 'CWDangamAsac-Bold';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
+
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 tr {
 	font-family: 'CWDangamAsac-Bold';
 }
+
+td {
+	font-family: 'GmarketSansMedium';
+}
+
 
 b {
 font-family: 'CWDangamAsac-Bold';
 }
 
+
 a {
-	font-family: 'CWDangamAsac-Bold';
+	font-family: 'GmarketSansMedium';
+}
+
+.text{
+	font-family: 'GmarketSansMedium';
 }
 
 .title {
+	font-family: 'GmarketSansMedium';
 	height: 200px;
 	text-align: center;
 	position: relative;
 	left: -83px;
 	margin: auto;
 	top: -65px;
+
+	
 }
 
 .search {
@@ -36,6 +51,7 @@ a {
 
 .tdright {
 	text-align: right;
+	font-family: 'GmarketSansMedium';
 }
 
 .location {
@@ -74,8 +90,8 @@ input {
 	display: block;
 	/* margin-left: auto; */
 	/* margin-right: auto; */
-	top: -17px;
-	left: -234px;
+	    top: 15px;
+    left: -244px;
 }
 
 .categorytype img:hover {
@@ -115,6 +131,8 @@ input {
 	display: flex;
 	margin: auto;
 	justify-content: center;
+	font-family: 'GmarketSansMedium';
+	
 }
 
 .place img {
@@ -123,7 +141,7 @@ input {
 	border: 2px solid #fff;
 	position: relative;
 	border-radius: 13px;
-	box-shadow: 0px 4px 7px 0px;
+	box-shadow: 0px 4px -1px 0px;
 	cursor: pointer;
 	margin-top: 50px;
 	margin: auto;
@@ -148,6 +166,7 @@ input {
 	position: relative;
 	top: -69px;
 	left: -171px;
+	font-family: 'GmarketSansMedium';
 }
 
 .placeinfo2 {
@@ -156,6 +175,7 @@ input {
 	position: relative;
 	top: -134px;
 	left: 83px;
+	font-family: 'GmarketSansMedium';
 }
 
 .placeinfo3 {
@@ -164,6 +184,7 @@ input {
 	position: relative;
 	top: -74px;
 	left: -191px;
+	font-family: 'GmarketSansMedium';
 }
 
 .indexicongroup {

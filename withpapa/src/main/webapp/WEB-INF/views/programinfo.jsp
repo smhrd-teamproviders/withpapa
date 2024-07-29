@@ -14,7 +14,24 @@
         };
 </script>
 <meta charset="UTF-8"/>
-<link rel="stylesheet" href="/resources/css/style.css">
+<style>
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+.title{
+	 font-family: 'GmarketSansMedium';
+}
+
+.programinfo{
+	 font-family: 'GmarketSansMedium';
+
+}
+
+</style>
 <link href="${path}/resources/css/programinfo.css" rel="stylesheet">
 <head>
 <style type="text/css">
@@ -251,7 +268,7 @@
 
 		<!-- 체험장소 이름 -->
 		<div class="title">
-			<b style="font-size: 30px">${progNm}</b>
+			<p class="text" style="font-size: 30px">${progNm}</p>
 		</div>
 
 		<!-- 홈페이지 버튼 -->
