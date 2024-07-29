@@ -111,16 +111,25 @@ body {
 
 .recommend {
 	text-align: center;
-	transform: translate(-201px, -170px);
+	transform: translate(-274px, -145px);
 	font-size: 1.2em;
+}
+
+.recommend1 {
+	text-align:center;
+	transform: translate(-182px, -180px);
 }
 
 .jido {
 	text-align: center;
-	transform: translate(-239px, -126px);
+	transform: translate(-273px, -126px);
 	font-size: 1.2em;
 }
 
+.jido1 {
+	text-align:center;
+	transform: translate(-211px, -154px);
+}
 .banner {
 	background-image: url('https://example.com/your-banner-image.jpg');
 	background-size: cover;

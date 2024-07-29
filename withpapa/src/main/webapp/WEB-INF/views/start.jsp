@@ -299,9 +299,12 @@
 	</div>
 
 	<div class="recommend">
-		<img src="resources/img/img_type/추천.png" width="30px"><a>추천
-			체험 프로그램</a>
-	</div>
+		<img src="resources/img/img_type/추천.png" width="30px">
+		</div>
+		<div class = "recommend1">
+		<a>추천 체험 프로그램</a>
+		</div>
+	
 
 
 
@@ -351,9 +354,12 @@
 
 
 	<div class="jido">
-		<img src="resources/img/img_type/지역.png" width="30px"><a>지역
-			선택</a>
-	</div>
+		<img src="resources/img/img_type/지역.png" width="30px">
+		</div>
+		<div class = "jido1">
+		<a>지역 선택</a>
+		</div>
+	
 
 
 
