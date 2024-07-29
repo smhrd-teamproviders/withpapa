@@ -1,23 +1,27 @@
 @charset "UTF-8";
 
 @font-face {
-	
-    font-family: 'yg-jalnan';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+	font-family: 'yg-jalnan';
+	src:
+		url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'GmarketSansMedium';
+	src:
+		url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
-h5{
+
+h5 {
 	font-family: 'GmarketSansMedium';
 }
+
 span {
 	font-family: 'GmarketSansMedium';
 }
@@ -32,10 +36,7 @@ tr {
 
 p {
 	font-family: 'yg-jalnan';
-	
-	
 }
-
 
 .title {
 	text-align: center;
@@ -44,8 +45,6 @@ p {
 	margin: auto;
 	transform: translate(4px, -141px);
 }
-
-
 
 .search {
 	position: relative;
@@ -78,11 +77,9 @@ input {
 .modal-button {
 	position: absolute;
 	z-index: auto;
-    top: -207px;
-    left: 545px;
-    
+	top: -207px;
+	left: 545px;
 }
-
 
 .ducks { /* 오리 */
 	text-align: center;
@@ -108,68 +105,75 @@ ul, ol, li, dl, dt, dd {
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+.recommend {
+	text-align: center;
+	transform: translate(-201px, -170px);
+	font-size: 1.2em;
+}
+
+.jido {
+	text-align: center;
+	transform: translate(-239px, -126px);
+	font-size: 1.2em;
 }
 
 .banner {
-    background-image: url('https://example.com/your-banner-image.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-    position: relative;
+	background-image: url('https://example.com/your-banner-image.jpg');
+	background-size: cover;
+	background-position: center;
+	color: white;
+	text-align: center;
+	padding: 50px 20px;
+	position: relative;
 }
 
 .banner h1 {
-    font-size: 3em;
-    margin: 0;
+	font-size: 3em;
+	margin: 0;
 }
 
 .banner p {
-    font-size: 1.2em;
-    margin: 10px 0;
+	font-size: 1.2em;
+	margin: 10px 0;
 }
 
 .banner-button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 1em;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 20px;
+	background-color: #007BFF;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-size: 1em;
+	border-radius: 5px;
+	display: inline-block;
+	margin-top: 20px;
 }
 
 .banner-button:hover {
-    background-color: #0056b3;
+	background-color: #0056b3;
 }
 
 /* 반응형 디자인 */
-@media (max-width: 768px) {
-    .banner {
-        padding: 30px 10px;
-    }
-
-    .banner h1 {
-        font-size: 2.5em;
-    }
-
-    .banner p {
-        font-size: 1em;
-    }
-
-    .banner-button {
-        padding: 8px 16px;
-        font-size: 0.9em;
-    }
+@media ( max-width : 768px) {
+	.banner {
+		padding: 30px 10px;
+	}
+	.banner h1 {
+		font-size: 2.5em;
+	}
+	.banner p {
+		font-size: 1em;
+	}
+	.banner-button {
+		padding: 8px 16px;
+		font-size: 0.9em;
+	}
 }
 
-
-
-.categorycontainer{
+.categorycontainer {
 	display: flex;
 	justify-content: space-around;
 	width: 50%;
@@ -179,7 +183,6 @@ body {
 	max-width: 100%;
 	transform: translate(10px, -190px);
 }
-
 
 .text-center, .center-text {
 	text-align: center;
@@ -214,8 +217,6 @@ body {
 		max-width: 50%;
 	}
 }
-
-
 
 .indexicongroup {
 	display: inline-flex;
@@ -258,27 +259,6 @@ body {
 
 .mappart {
 	background-color: #b1bac4;
-}
-
-.swiper {
-   width: 600px;
-   height: 400px;
-   transform: translate(10px, -165px);
-}
-
-.main_image_text {
-   position: absolute;
-   bottom: -8%;
-   color: white;
-   width: 600px;
-    height: 80px;
-    background-color: rgba(0,0,0,0.6);
-}
-
-.swiper img {
-    width: 600px;
-    height: 400px;
-
 }
 
 /* All Device */
