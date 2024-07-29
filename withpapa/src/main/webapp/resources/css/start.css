@@ -117,6 +117,68 @@ ul, ol, li, dl, dt, dd {
 	list-style: none;
 }
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    background-image: url('https://example.com/your-banner-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.banner-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.banner-button:hover {
+    background-color: #0056b3;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .banner {
+        padding: 30px 10px;
+    }
+
+    .banner h1 {
+        font-size: 2.5em;
+    }
+
+    .banner p {
+        font-size: 1em;
+    }
+
+    .banner-button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+
+
+
 .center_map_area {
 	justify-content: center;
 	width: 400px;
