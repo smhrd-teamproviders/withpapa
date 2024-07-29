@@ -2,16 +2,25 @@
 
 <!-- 글씨체 변경 -->
 @font-face {
+
     font-family: 'GmarketSansMedium';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
+tr {
+	font-family: 'CWDangamAsac-Bold';
+}
+
 td {
 	font-family: 'GmarketSansMedium';
 }
 
+
+b {
+font-family: 'CWDangamAsac-Bold';
+}
 
 
 a {
@@ -81,8 +90,8 @@ input {
 	display: block;
 	/* margin-left: auto; */
 	/* margin-right: auto; */
-	top: -17px;
-	left: -234px;
+	    top: 15px;
+    left: -244px;
 }
 
 .categorytype img:hover {
@@ -132,7 +141,7 @@ input {
 	border: 2px solid #fff;
 	position: relative;
 	border-radius: 13px;
-	box-shadow: 0px 4px 7px 0px;
+	box-shadow: 0px 4px -1px 0px;
 	cursor: pointer;
 	margin-top: 50px;
 	margin: auto;

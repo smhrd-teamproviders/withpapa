@@ -97,15 +97,19 @@ a:active {
 	height: 350px;
 	border: 2px solid #fff;
 	border-radius: 6px;
-	box-shadow: 0px 4px 7px 0px;
+	box-shadow: 0px 4px -1px 0px;
 	cursor: pointer;
 	/* margin: auto; */
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.place {
-	display: inline-table;
+.container {
+	display: grid;
+	width : 111%;
+	height : 54vh;
+	grid-template-columns: repeat(3 , 1fr);
+	grid-template-rows: repeat(4 , 1fr);
 }
 
 .place img:hover {
@@ -114,7 +118,6 @@ a:active {
 
 .search_container {
 	display: flex;
-	justify-content: center;
 }
 
 .categorytype img {

@@ -15,7 +15,7 @@
 		}
 	};
 </script>
-<link rel="stylesheet" href="style.css?v=1.0">
+<link rel="stylesheet" href="/resources/css/style.css">
 <link href="${path}/resources/css/start.css" rel="stylesheet" />
 <style type="text/css">
 #banner_online {
@@ -27,9 +27,7 @@
 	z-index: 100;
 	margin: auto;
 	display: none;
-	top: 176px;
-	left: 49%;
-	transform: translate(-50%, -50%);
+	transform: translate(3%, 1%);
 	padding: 46px;
 	overflow-y: auto;
 }
@@ -108,21 +106,14 @@
 
 	<!-- 상단 화면 -->
 	<div class="ducks">
-		<img src="resources/img/img_logo/logo_duck.png" alt="papaducks"
-			width="100px">
+		<img src="resources/img/img_logo/logo_duck.png" alt="papaducks">
 	</div>
-	<div class="main">
 		<div class="title">
 			<p style="color: #0CA789">WITHPAPA</p>
 		</div>
-		<div class="subtitle">
-			<h5>아빠들과 함께하는 아이들의 소중한 시간</h5>
-		</div>
-	</div>
 
 	<form action="search/searchresult" method="get">
 		<div class="search">
-			<input type="text" name="progNm" placeholder="어디로 놀러 가볼까요?">
 			<!-- 돋보기 버튼 -->
 			<a href="#" class="modal-button" id="openModalButton"> <img
 				src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png"
@@ -230,9 +221,7 @@
 	</form>
 
 	<!-- 카테고리 화면 -->
-	<div class='row my-3'>
-		<div
-			class="col-12 col-md-6 d-flex justify-content-around pr-md-0 mb-3 pt-3">
+		<div class="categorycontainer">
 			<div class="text-center indexicongroup">
 				<a
 					href="search/searchresult?progNm=&progType=미술&progDayStart=&progDayEnd="
@@ -282,7 +271,6 @@
 				</a>
 			</div>
 		</div>
-	</div>
 
 	<!-- 지도 화면  -->
 	<div class="center_map_area">
@@ -371,9 +359,7 @@
 		<footer>COPYRIGHT (C) 2024 WITHPAPA, ALL RIGHTS RESERVED</footer>
 	</div>
 	
-
-
-     <script type="text/javascript">
+    <script type="text/javascript">
         $(document).ready(function() {
             $("#openModalButton").click(function(event) {
                 event.preventDefault(); 
@@ -398,11 +384,8 @@
                }
            });
         });
-       </script>
-
-	<script src="start.js"></script>
-
-
+     </script>
+   
 
 
 </body>
