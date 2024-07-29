@@ -102,6 +102,30 @@
    width: 500px;
    margin: auto;
 }
+
+.swiper {
+   width: 600px;
+   height: 400px;
+   transform: translate(10px, -165px);
+   font-family: 'GmarketSansMedium';
+}
+
+.main_image_text {
+   position: absolute;
+   bottom: -8%;
+   color: white;
+   width: 600px;
+    height: 80px;
+    background-color: rgba(0,0,0,0.6);
+    font-family: 'GmarketSansMedium';
+}
+
+.swiper img {
+    width: 600px;
+    height: 400px;
+
+}
+
 </style>
 </head>
 <body>
@@ -291,26 +315,30 @@
             <img src="resources/img/img_program/PROG000010_01.png">
             <h1 class="main_image_text" style="font-size: 30px"> 속터지는 감자치즈빵
                만들기</h1>
+           
 
          </div>
          <div class="swiper-slide">
             <img src="resources/img/img_program/PROG000017_01.png">
             <h1 class="main_image_text" style="font-size: 30px"> 레일 썰매장</h1>
-
+			
          </div>
          <div class="swiper-slide">
             <img src="resources/img/img_program/PROG000002_01.png">
             <h1 class="main_image_text" style="font-size: 30px"> 도자기 만들기</h1>
+            
 
          </div>
          <div class="swiper-slide">
             <img src="resources/img/img_program/PROG000019_01.png">
             <h1 class="main_image_text" style="font-size: 30px"> 쪽배체험</h1>
+            
 
          </div>
          <div class="swiper-slide">
             <img src="resources/img/img_program/PROG000111_01.png">
             <h1 class="main_image_text" style="font-size: 30px"> 재난역사박물관</h1>
+           
 
          </div>
       </div>
