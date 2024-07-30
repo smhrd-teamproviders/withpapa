@@ -13,7 +13,28 @@
 				document.getElementsByTagName('input')[i].checked = true;
 			}
 		}
+		
+		
+		$.ajax{
+			url:
+			type: "GET"
+			data:
+			success:function() {
+				
+			},
+			
+			error:function(){
+				
+			}
+			
+			
+			
+			
+			
+		}
+		
 	};
+	
 </script>
 <link rel="stylesheet" href="/resources/css/style.css">
 <link href="${path}/resources/css/start.css" rel="stylesheet" />
@@ -496,7 +517,14 @@
 
 		});
 	</script>
-
+	<script>
+			
+	
+	
+	
+	
+	
+	</script>
 
 
 
