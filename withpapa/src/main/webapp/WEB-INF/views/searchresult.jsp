@@ -120,7 +120,7 @@
 				alt="돋보기 이미지">
 			</a>
 		</div>
-
+		
 		<!-- 돋보기 눌렀을 때 실행되는 모달 창 -->
 		<div id="modal">
 			<div id="banner_online">
