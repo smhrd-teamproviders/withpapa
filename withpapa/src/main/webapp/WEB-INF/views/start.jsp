@@ -111,19 +111,14 @@
 }
 
 .main_image_text {
-   position: absolute;
-   bottom: -13%;
-   right: -1%;
-   color: white;
-   width: 600px;
-   height: 80px;
-   font-family: 'GmarketSansMedium';
-   background-color: rgba(0, 0, 0, 0.6);
-   left: 0%
+	position: absolute;
+	bottom: -13%;
+	color: white;
+	width: 600px;
+	height: 80px;
+	font-family: 'GmarketSansMedium';
+	background-color: rgba(0, 0, 0, 0.6);
 }
-
-
-
 
 .swiper img {
 	width: 600px;
@@ -302,15 +297,14 @@
 			</a>
 		</div>
 	</div>
-	
-	<!-- 추천 제험 -->
+
 	<div class="recommend">
 		<img src="resources/img/img_type/추천.png" width="30px">
-		</div>
-		<div class = "recommend1">
+	</div>
+	<div class="recommend1">
 		<a>추천 체험 프로그램</a>
-		</div>
-	
+	</div>
+
 
 
 
@@ -319,34 +313,45 @@
 			<!-- 배너 슬라이드 -->
 			<div class="swiper-slide">
 				<div class="backdrop"></div>
-				<img src="resources/img/img_program/PROG000010_01.png">
-				<h1 class="main_image_text" style="font-size: 30px">속터지는 감자치즈빵
-					만들기</h1>
-
-
+					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000110"> 
+						<img src="resources/img/img_program/PROG000110_01.png">
+						<h1 class="main_image_text" style="font-size: 30px">어린이 화재출동</h1>
+					</a>
 			</div>
 			<div class="swiper-slide">
-				<img src="resources/img/img_program/PROG000017_01.png">
-				<h1 class="main_image_text" style="font-size: 30px">레일 썰매장</h1>
-
+				<div class="backdrop"></div>
+					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000144"> 
+						<img src="resources/img/img_program/PROG000144_01.png">
+						<h1 class="main_image_text" style="font-size: 30px">쏙잡이 체험</h1>
+					</a>
 			</div>
 			<div class="swiper-slide">
-				<img src="resources/img/img_program/PROG000002_01.png">
-				<h1 class="main_image_text" style="font-size: 30px">도자기 만들기</h1>
-
-
+				<div class="backdrop"></div>
+					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000011"> 
+						<img src="resources/img/img_program/PROG000011_01.png">
+						<h1 class="main_image_text" style="font-size: 30px">수제도우 사과피자만들기</h1>
+					</a>
 			</div>
 			<div class="swiper-slide">
-				<img src="resources/img/img_program/PROG000019_01.png">
-				<h1 class="main_image_text" style="font-size: 30px">쪽배체험</h1>
-
-
+				<div class="backdrop"></div>
+					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000017"> 
+						<img src="resources/img/img_program/PROG000017_01.png">
+						<h1 class="main_image_text" style="font-size: 30px">레일 썰매장</h1>
+					</a>
 			</div>
 			<div class="swiper-slide">
-				<img src="resources/img/img_program/PROG000111_01.png">
-				<h1 class="main_image_text" style="font-size: 30px">재난역사박물관</h1>
-
-
+				<div class="backdrop"></div>
+					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000023"> 
+						<img src="resources/img/img_program/PROG000023_01.png">
+						<h1 class="main_image_text" style="font-size: 30px">로봇 만들기</h1>
+					</a>
+			</div>
+			<div class="swiper-slide">
+				<div class="backdrop"></div>
+					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000027"> 
+						<img src="resources/img/img_program/PROG000027_01.png">
+						<h1 class="main_image_text" style="font-size: 30px">스마트 과학교실</h1>
+					</a>
 			</div>
 		</div>
 		<!-- 순서 버튼 -->
@@ -358,58 +363,21 @@
 		<div class="swiper-scrollbar"></div>
 	</div>
 
-	<!--  지역 선택  -->
+
 	<div class="jido">
 		<img src="resources/img/img_type/지역.png" width="30px">
-		</div>
-		<div class = "jido1">
+	</div>
+	<div class="jido1">
 		<a>지역 선택</a>
-		</div>
-		
-		
-		<!-- 맵 -->
-		<div class = "colormap">
-		<img src="resources/img/img_district/컬러맵.png" usemap="#image-map">
-		<map name="image-map">
-    		<area target="_blank" alt="거창군"  
-    		href="search/searchresult?progNm=&placeDistrict=거창군&progDayStart=&progDayEnd=" coords="94,12,170,97" shape="rect">
-    		<area target="_blank" alt="합천군"  
-    		href="search/searchresult?progNm=&placeDistrict=합천군&progDayStart=&progDayEnd=" coords="187,60,310,134" shape="rect">
-    		<area target="_blank" alt="창녕군"  
-    		href="search/searchresult?progNm=&placeDistrict=창녕군&progDayStart=&progDayEnd=" coords="334,71,437,140" shape="rect">
-    		<area target="_blank" alt="밀양시"  
-    		href="search/searchresult?progNm=&placeDistrict=밀양시&progDayStart=&progDayEnd=" coords="466,73,587,140" shape="rect">
-    		<area target="_blank" alt="함양군" 
-    		href="search/searchresult?progNm=&placeDistrict=함양군&progDayStart=&progDayEnd=" coords="7,109,83,227" shape="rect">
-    		<area target="_blank" alt="산청군"  
-    		href="search/searchresult?progNm=&placeDistrict=산청군&progDayStart=&progDayEnd=" coords="95,136,172,206" shape="rect">
-   		 	<area target="_blank" alt="의령군" 
-   		 	href="search/searchresult?progNm=&placeDistrict=의령군&progDayStart=&progDayEnd=" coords="188,167,266,221" shape="rect">
-   		 	<area target="_blank" alt="함안군"  
-   		 	href="search/searchresult?progNm=&placeDistrict=함안군&progDayStart=&progDayEnd=" coords="283,168,359,221" shape="rect">
-    		<area target="_blank" alt="창원시" 
-    		href="search/searchresult?progNm=&placeDistrict=창원시&progDayStart=&progDayEnd=" coords="379,183,475,282" shape="rect">
-    		<area target="_blank" alt="김해시"  
-    		href="search/searchresult?progNm=&placeDistrict=김해시&progDayStart=&progDayEnd=" coords="498,174,589,255" shape="rect">
-    		<area target="_blank" alt="양산시"  
-    		href="search/searchresult?progNm=&placeDistrict=양산시&progDayStart=&progDayEnd=" coords="610,118,692,180" shape="rect">
-    		<area target="_blank" alt="하동군"  
-    		href="search/searchresult?progNm=&placeDistrict=하동군&progDayStart=&progDayEnd=" coords="96,257,170,361" shape="rect">
-    		<area target="_blank" alt="진주시"  
-    		href="search/searchresult?progNm=&placeDistrict=진주시&progDayStart=&progDayEnd=" coords="198,241,352,300" shape="rect">
-    		<area target="_blank" alt="사천시" 
-    		href="search/searchresult?progNm=&placeDistrict=사천시&progDayStart=&progDayEnd=" coords="184,316,290,374" shape="rect">
-    		<area target="_blank" alt="고성군"  
-    		href="search/searchresult?progNm=&placeDistrict=고성군&progDayStart=&progDayEnd=" coords="311,316,412,375" shape="rect">
-   		 	<area target="_blank" alt="남해군"  
-   		 	href="search/searchresult?progNm=&placeDistrict=남해군&progDayStart=&progDayEnd=" coords="144,395,230,483" shape="rect">
-    		<area target="_blank" alt="통영시"  
-    		href="search/searchresult?progNm=&placeDistrict=통영시&progDayStart=&progDayEnd=" coords="339,395,418,504" shape="rect">
-   		 	<area target="_blank" alt="거제시" 
-   		 	href="search/searchresult?progNm=&placeDistrict=거제시&progDayStart=&progDayEnd=" coords="432,386,508,492" shape="rect">
-			</map>
-		</div>
-	
+	</div>
+
+
+	<div class="colormap">
+		<img src="resources/img/img_district/컬러맵.png" width="700px"
+			height="550px">
+	</div>
+
+
 
 
 	<script type="text/javascript">
