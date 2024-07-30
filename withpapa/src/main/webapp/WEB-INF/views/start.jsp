@@ -112,12 +112,28 @@
 
 .main_image_text {
 	position: absolute;
-	bottom: -13%;
+	bottom: -12%;
+	right: -6px;
 	color: white;
 	width: 600px;
-	height: 80px;
+	height: 100px;
 	font-family: 'GmarketSansMedium';
+}
+
+.main_image_box {
+	position: absolute;
+	bottom: -13%;
+	width: 600px;
+	height: 100px;
 	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.main_image_loc {
+	position: absolute;
+	bottom: -2%;
+	right: 3%;
+	color: white;
+	font-family: 'GmarketSansMedium';
 }
 
 .swiper img {
@@ -299,14 +315,11 @@
 	</div>
 
 	<div class="recommend">
-		<img src="resources/img/img_type/추천.png" width="40px">
+		<img src="resources/img/img_type/추천.png" width="30px">
 	</div>
 	<div class="recommend1">
 		<a>추천 체험 프로그램</a>
 	</div>
-
-
-
 
 	<div class="swiper">
 		<div class="swiper-wrapper">
@@ -315,42 +328,54 @@
 				<div class="backdrop"></div>
 					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000110"> 
 						<img src="resources/img/img_program/PROG000110_01.png">
+						<h1 class="main_image_box"></h1>
 						<h1 class="main_image_text" style="font-size: 30px">어린이 화재출동</h1>
+						<h1 class="main_image_loc" style="font-size: 22px">합천군</h1>
 					</a>
 			</div>
 			<div class="swiper-slide">
 				<div class="backdrop"></div>
 					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000144"> 
 						<img src="resources/img/img_program/PROG000144_01.png">
+						<h1 class="main_image_box"></h1>
 						<h1 class="main_image_text" style="font-size: 30px">쏙잡이 체험</h1>
+						<h1 class="main_image_loc" style="font-size: 22px">남해군</h1>
 					</a>
 			</div>
 			<div class="swiper-slide">
 				<div class="backdrop"></div>
 					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000011"> 
 						<img src="resources/img/img_program/PROG000011_01.png">
+						<h1 class="main_image_box"></h1>
 						<h1 class="main_image_text" style="font-size: 30px">수제도우 사과피자만들기</h1>
+						<h1 class="main_image_loc" style="font-size: 22px">거창군</h1>
 					</a>
 			</div>
 			<div class="swiper-slide">
 				<div class="backdrop"></div>
 					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000017"> 
 						<img src="resources/img/img_program/PROG000017_01.png">
+						<h1 class="main_image_box"></h1>
 						<h1 class="main_image_text" style="font-size: 30px">레일 썰매장</h1>
+						<h1 class="main_image_loc" style="font-size: 22px">창녕군</h1>
 					</a>
 			</div>
 			<div class="swiper-slide">
 				<div class="backdrop"></div>
 					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000023"> 
 						<img src="resources/img/img_program/PROG000023_01.png">
+						<h1 class="main_image_box"></h1>
 						<h1 class="main_image_text" style="font-size: 30px">로봇 만들기</h1>
+						<h1 class="main_image_loc" style="font-size: 22px">양산시</h1>
 					</a>
 			</div>
 			<div class="swiper-slide">
 				<div class="backdrop"></div>
 					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000027"> 
 						<img src="resources/img/img_program/PROG000027_01.png">
+						<h1 class="main_image_box"></h1>
 						<h1 class="main_image_text" style="font-size: 30px">스마트 과학교실</h1>
+						<h1 class="main_image_loc" style="font-size: 22px">창원시</h1>
 					</a>
 			</div>
 		</div>
@@ -365,7 +390,7 @@
 
 
 	<div class="jido">
-		<img src="resources/img/img_type/지역.png" width="40px">
+		<img src="resources/img/img_type/지역.png" width="30px">
 	</div>
 	<div class="jido1">
 		<a>지역 선택</a>
@@ -446,7 +471,7 @@
 		const swiper = new Swiper('.swiper', {
 			loop : true,
 			autoplay : { //자동 재생 여부
-				delay : 2500, // 시간 지연 설정 (ex : 2500 : 2.5초)
+				delay : 3000, // 시간 지연 설정 (ex : 3000 : 3.0초)
 				disableOnInteraction : false
 			// 배너 자동 재생 유지
 			},
