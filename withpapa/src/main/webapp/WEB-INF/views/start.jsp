@@ -158,7 +158,7 @@
 		<div class="search">
 			<!-- 돋보기 버튼 -->
 			<a href="#" class="modal-button" id="openModalButton"> <img
-				src="http://localhost:8089/withpapa/resources/img/img_logo/search_magnifier_icon_2 (1).png"
+				src="resources/img/img_logo/search_magnifier_icon_2 (1).png"
 				alt="돋보기 이미지">
 			</a>
 		</div>
