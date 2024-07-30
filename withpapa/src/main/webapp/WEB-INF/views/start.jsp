@@ -118,11 +118,16 @@
    width: 600px;
    height: 80px;
    font-family: 'GmarketSansMedium';
-   background-color: rgba(0, 0, 0, 0.6);
-   left : 0%
+   left: 3%
 }
 
-
+.main_image_box {
+   position: absolute;
+   bottom: -14%;
+   width: 600px;
+   height: 80px;
+   background-color: rgba(0, 0, 0, 0.6);
+}
 
 .swiper img {
 	width: 600px;
@@ -146,7 +151,7 @@
 		<div class="search">
 			<!-- 돋보기 버튼 -->
 			<a href="#" class="modal-button" id="openModalButton"> <img
-				src="http://localhost:8089/withpapa/resources/img/img_logo/search_magnifier_icon_145939.png"
+				src="http://localhost:8089/withpapa/resources/img/img_logo/search_magnifier_icon_2 (1).png"
 				alt="돋보기 이미지">
 			</a>
 		</div>
