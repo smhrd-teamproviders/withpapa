@@ -282,9 +282,9 @@
 	<br>
 	
 	<div class="routeinfo">
-		<img src="resources/img/img_type/routeinfo.png" width="30px">
+		<img src="http://localhost:8089/withpapa/resources/img/img_type/routeinfo.png" width="40px">
 	</div>
-	<div class = "routeinfo">
+	<div class = "routeinfo1">
 		<a>길찾기</a>
 	</div>
 	<br>
