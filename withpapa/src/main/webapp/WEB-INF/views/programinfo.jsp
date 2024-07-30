@@ -282,8 +282,7 @@
 	<!-- 지도 화면 -->
 	<div id="map" style="width: 546px; height: 280px;"></div>
 
-	<script
-		src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3e6f79d0b7c01aaf6bd4612381ea932e"></script>
+	<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3e6f79d0b7c01aaf6bd4612381ea932e"></script>
 	<script>
 		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
 		    mapOption = {
