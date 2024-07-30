@@ -282,7 +282,7 @@
 	<br>
 	
 	<div class="routeinfo">
-		<img src="resources/img/img_type/추천.png" width="30px">
+		<img src="resources/img/img_type/routeinfo.png" width="30px">
 	</div>
 	<div class = "routeinfo">
 		<a>길찾기</a>
