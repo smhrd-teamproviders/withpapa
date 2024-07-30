@@ -111,19 +111,14 @@
 }
 
 .main_image_text {
-   position: absolute;
-   bottom: -13%;
-   right: -1%;
-   color: white;
-   width: 600px;
-   height: 80px;
-   font-family: 'GmarketSansMedium';
-   background-color: rgba(0, 0, 0, 0.6);
-   left: 0%
+	position: absolute;
+	bottom: -13%;
+	color: white;
+	width: 600px;
+	height: 80px;
+	font-family: 'GmarketSansMedium';
+	background-color: rgba(0, 0, 0, 0.6);
 }
-
-
-
 
 .swiper img {
 	width: 600px;
@@ -302,15 +297,14 @@
 			</a>
 		</div>
 	</div>
-	
-	<!-- 추천 제험 -->
+
 	<div class="recommend">
 		<img src="resources/img/img_type/추천.png" width="30px">
-		</div>
-		<div class = "recommend1">
+	</div>
+	<div class="recommend1">
 		<a>추천 체험 프로그램</a>
-		</div>
-	
+	</div>
+
 
 
 
@@ -319,34 +313,45 @@
 			<!-- 배너 슬라이드 -->
 			<div class="swiper-slide">
 				<div class="backdrop"></div>
-				<img src="resources/img/img_program/PROG000010_01.png">
-				<h1 class="main_image_text" style="font-size: 30px">속터지는 감자치즈빵
-					만들기</h1>
-
-
+					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000110"> 
+						<img src="resources/img/img_program/PROG000110_01.png">
+						<h1 class="main_image_text" style="font-size: 30px">어린이 화재출동</h1>
+					</a>
 			</div>
 			<div class="swiper-slide">
-				<img src="resources/img/img_program/PROG000017_01.png">
-				<h1 class="main_image_text" style="font-size: 30px">레일 썰매장</h1>
-
+				<div class="backdrop"></div>
+					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000144"> 
+						<img src="resources/img/img_program/PROG000144_01.png">
+						<h1 class="main_image_text" style="font-size: 30px">쏙잡이 체험</h1>
+					</a>
 			</div>
 			<div class="swiper-slide">
-				<img src="resources/img/img_program/PROG000002_01.png">
-				<h1 class="main_image_text" style="font-size: 30px">도자기 만들기</h1>
-
-
+				<div class="backdrop"></div>
+					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000011"> 
+						<img src="resources/img/img_program/PROG000011_01.png">
+						<h1 class="main_image_text" style="font-size: 30px">수제도우 사과피자만들기</h1>
+					</a>
 			</div>
 			<div class="swiper-slide">
-				<img src="resources/img/img_program/PROG000019_01.png">
-				<h1 class="main_image_text" style="font-size: 30px">쪽배체험</h1>
-
-
+				<div class="backdrop"></div>
+					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000017"> 
+						<img src="resources/img/img_program/PROG000017_01.png">
+						<h1 class="main_image_text" style="font-size: 30px">레일 썰매장</h1>
+					</a>
 			</div>
 			<div class="swiper-slide">
-				<img src="resources/img/img_program/PROG000111_01.png">
-				<h1 class="main_image_text" style="font-size: 30px">재난역사박물관</h1>
-
-
+				<div class="backdrop"></div>
+					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000023"> 
+						<img src="resources/img/img_program/PROG000023_01.png">
+						<h1 class="main_image_text" style="font-size: 30px">로봇 만들기</h1>
+					</a>
+			</div>
+			<div class="swiper-slide">
+				<div class="backdrop"></div>
+					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000027"> 
+						<img src="resources/img/img_program/PROG000027_01.png">
+						<h1 class="main_image_text" style="font-size: 30px">스마트 과학교실</h1>
+					</a>
 			</div>
 		</div>
 		<!-- 순서 버튼 -->
@@ -358,15 +363,14 @@
 		<div class="swiper-scrollbar"></div>
 	</div>
 
-	<!--  지역 선택  -->
+
 	<div class="jido">
 		<img src="resources/img/img_type/지역.png" width="30px">
-		</div>
-		<div class = "jido1">
+	</div>
+	<div class="jido1">
 		<a>지역 선택</a>
-		</div>
-		
-		
+	</div>
+
 		<!-- 맵 -->
 		<div class = "colormap">
 		<img src="resources/img/img_district/컬러맵.png" usemap="#image-map">
@@ -409,7 +413,6 @@
    		 	href="search/searchresult?progNm=&placeDistrict=거제시&progDayStart=&progDayEnd=" coords="432,386,508,492" shape="rect">
 			</map>
 		</div>
-	
 
 
 	<script type="text/javascript">
