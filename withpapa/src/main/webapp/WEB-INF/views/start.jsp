@@ -118,16 +118,10 @@
    width: 600px;
    height: 80px;
    font-family: 'GmarketSansMedium';
-   left: 3%
-}
-
-.main_image_box {
-   position: absolute;
-   bottom: -14%;
-   width: 600px;
-   height: 80px;
    background-color: rgba(0, 0, 0, 0.6);
 }
+
+
 
 .swiper img {
 	width: 600px;
