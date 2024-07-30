@@ -113,7 +113,7 @@
 .main_image_text {
 	position: absolute;
 	bottom: -12%;
-	right: -6px;
+	right: -5px;
 	color: white;
 	width: 600px;
 	height: 100px;
@@ -130,8 +130,8 @@
 
 .main_image_loc {
 	position: absolute;
-	bottom: -2%;
-	right: 3%;
+	bottom: -1%;
+	right: 91%;
 	color: white;
 	font-family: 'GmarketSansMedium';
 }
@@ -158,7 +158,7 @@
 		<div class="search">
 			<!-- 돋보기 버튼 -->
 			<a href="#" class="modal-button" id="openModalButton"> <img
-				src="http://localhost:8089/withpapa/resources/img/img_logo/search_magnifier_icon_2 (1).png"
+				src="resources/img/img_logo/search_magnifier_icon_2 (1).png"
 				alt="돋보기 이미지">
 			</a>
 		</div>
@@ -169,7 +169,6 @@
 				<div id="close_button" style="cursor: pointer;">
 					<img src="resources/img/img_searchbox/close_cross.png">
 				</div>
-				<input type="text" name="progNm" placeholder="어디로 놀러 가볼까요?">
 				<div class="pop_content">
 					<p>
 						<img src="resources/img/img_searchbox/location.png"> 지역
@@ -322,6 +321,9 @@
 		<a>추천 체험 프로그램</a>
 	</div>
 
+
+
+
 	<div class="swiper">
 		<div class="swiper-wrapper">
 			<!-- 배너 슬라이드 -->
@@ -331,7 +333,7 @@
 						<img src="resources/img/img_program/PROG000110_01.png">
 						<h1 class="main_image_box"></h1>
 						<h1 class="main_image_text" style="font-size: 30px">어린이 화재출동</h1>
-						<h1 class="main_image_loc" style="font-size: 22px">합천군</h1>
+						<h1 class="main_image_loc" style="font-size: 16px">합천군</h1>
 					</a>
 			</div>
 			<div class="swiper-slide">
@@ -340,7 +342,7 @@
 						<img src="resources/img/img_program/PROG000144_01.png">
 						<h1 class="main_image_box"></h1>
 						<h1 class="main_image_text" style="font-size: 30px">쏙잡이 체험</h1>
-						<h1 class="main_image_loc" style="font-size: 22px">남해군</h1>
+						<h1 class="main_image_loc" style="font-size: 16px">남해군</h1>
 					</a>
 			</div>
 			<div class="swiper-slide">
@@ -349,7 +351,7 @@
 						<img src="resources/img/img_program/PROG000011_01.png">
 						<h1 class="main_image_box"></h1>
 						<h1 class="main_image_text" style="font-size: 30px">수제도우 사과피자만들기</h1>
-						<h1 class="main_image_loc" style="font-size: 22px">거창군</h1>
+						<h1 class="main_image_loc" style="font-size: 16px">거창군</h1>
 					</a>
 			</div>
 			<div class="swiper-slide">
@@ -358,7 +360,7 @@
 						<img src="resources/img/img_program/PROG000017_01.png">
 						<h1 class="main_image_box"></h1>
 						<h1 class="main_image_text" style="font-size: 30px">레일 썰매장</h1>
-						<h1 class="main_image_loc" style="font-size: 22px">창녕군</h1>
+						<h1 class="main_image_loc" style="font-size: 16px">창녕군</h1>
 					</a>
 			</div>
 			<div class="swiper-slide">
@@ -367,7 +369,7 @@
 						<img src="resources/img/img_program/PROG000023_01.png">
 						<h1 class="main_image_box"></h1>
 						<h1 class="main_image_text" style="font-size: 30px">로봇 만들기</h1>
-						<h1 class="main_image_loc" style="font-size: 22px">양산시</h1>
+						<h1 class="main_image_loc" style="font-size: 16px">양산시</h1>
 					</a>
 			</div>
 			<div class="swiper-slide">
@@ -376,7 +378,7 @@
 						<img src="resources/img/img_program/PROG000027_01.png">
 						<h1 class="main_image_box"></h1>
 						<h1 class="main_image_text" style="font-size: 30px">스마트 과학교실</h1>
-						<h1 class="main_image_loc" style="font-size: 22px">창원시</h1>
+						<h1 class="main_image_loc" style="font-size: 16px">창원시</h1>
 					</a>
 			</div>
 		</div>
