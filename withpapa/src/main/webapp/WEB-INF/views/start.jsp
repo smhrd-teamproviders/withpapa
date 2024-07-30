@@ -190,6 +190,7 @@
 				<div id="close_button" style="cursor: pointer;">
 					<img src="resources/img/img_searchbox/close_cross.png">
 				</div>
+				<input type="text" name="progNm" placeholder="어디로 놀러 가볼까요?">
 				<div class="pop_content">
 					<p>
 						<img src="resources/img/img_searchbox/location.png"> 지역

@@ -59,13 +59,14 @@ p {
 }
 
 input {
-    width: 98%;
-    border: 2px solid #00FF7F;
-    border-radius: 100px;
-    padding: 21px 11px;
-    font-size: 14px;
-    font-family: 'GmarketSansMedium';
+	width: 98%;
+	border: 2px solid #00FF7F;
+	border-radius: 100px;
+	padding: 21px 11px;
+	font-size: 14px;
+	font-family:'GmarketSansMedium';
 }
+
 
 .magnifer { /* 돋보기 */
 	position: absolute;
