@@ -32,15 +32,10 @@ a {
 }
 
 .title {
-	font-family: 'GmarketSansMedium';
-	height: 200px;
-	text-align: center;
-	position: relative;
-	left: -83px;
-	margin: auto;
-	top: -65px;
-
-	
+    font-family: 'GmarketSansMedium';
+    text-align: center;
+    position: relative;
+    top: -29px;
 }
 
 .search {
@@ -79,19 +74,14 @@ input {
 	margin: auto;
 }
 
-.categorytype img {
+.categorytype {
 	width: 50px;
 	height: 50px;
 	border: 2px solid #fff;
-	position: relative;
 	border-radius: 6px;
 	cursor: pointer;
 	margin: auto;
-	display: block;
-	/* margin-left: auto; */
-	/* margin-right: auto; */
-	    top: 15px;
-    left: -244px;
+    transform: translate(-251px, -15px);
 }
 
 .categorytype img:hover {
@@ -112,8 +102,8 @@ input {
 	margin: auto;
 	cursor: pointer;
 	border-radius: 4px;
-	left: 217px;
-	top: -263px;
+	left: -163px;
+    top: -161px;
 }
 
 .placehomepage:hover {
@@ -127,7 +117,7 @@ input {
 .programinfo {
 	position: relative;
 	left: 57px;
-	top: -204px;
+	top: -74px;
 	display: flex;
 	margin: auto;
 	justify-content: center;
@@ -141,12 +131,12 @@ input {
 	border: 2px solid #fff;
 	position: relative;
 	border-radius: 13px;
-	box-shadow: 0px 4px -1px 0px;
+	box-shadow: 0px 0px 9px -3px;
 	cursor: pointer;
 	margin-top: 50px;
 	margin: auto;
 	display: block;
-	top: -246px;
+	    top: -92px;
 }
 
 .place img:hover {
@@ -154,7 +144,7 @@ input {
 }
 
 #map {
-	top: -225px;
+	top: -81px;
 	margin: auto;
 	position: relative;
 	background: url(http://t1.daumcdn.net/mapjsapi/images/2x/bg_tile.png);

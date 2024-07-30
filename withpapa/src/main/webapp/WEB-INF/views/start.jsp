@@ -359,6 +359,11 @@
 		<div class = "jido1">
 		<a>지역 선택</a>
 		</div>
+		
+		
+		<div class = "colormap">
+			<img src="resources/img/img_district/컬러맵.png" width="700px" height="550px">
+		</div>
 	
 
 
