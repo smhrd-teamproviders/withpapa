@@ -351,25 +351,32 @@
 		<table>
 			<tbody>
 				<tr>
-					<td class="tdright">일정 |</td>
-					<td>${progPeriod}</td>
-					<td class="tdright">연락처 |</td>
-					<td>${placePhoneNo}</td>
+				
+				
+				<td class="tdright"><img src="http://localhost:8089/withpapa/resources/img/img_type/schedule.png" width="40px"></td>
+				
+				
+				<td class="tdright2">${progPeriod}</td>
+					
+					
+					<td class="tdright"><img src="http://localhost:8089/withpapa/resources/img/img_type/call.png" width="40px"></td>
+					<td class="tdright2">${placePhoneNo}</td>
 				</tr>
 				<tr>
-					<td class="tdright">운영시간 |</td>
-					<td>${progTime}</td>
-					<td class="tdright">비용 |</td>
-					<td>${progCost}</td>
+					<td class="tdright"><img src="http://localhost:8089/withpapa/resources/img/img_type/clock.png" width="40px"></td>
+					<td class="tdright2">${progTime}</td>
+					<td class="tdright"><img src="http://localhost:8089/withpapa/resources/img/img_type/cost.png" width="40px"></td>
+					
+					<td class="tdright2">${progCost}</td>
 				</tr>
 				<tr>
-					<td class="tdright">장소 |</td>
-					<td>${placeNm}</td>
-					<td class="tdright">주소 |</td>
-					<td>${placeAddress}</td>
+					<td class="tdright"><img src="http://localhost:8089/withpapa/resources/img/img_type/place.png" width="40px"></td>
+					<td class="tdright2">${placeNm}</td>
+					<td class="tdright"><img src="http://localhost:8089/withpapa/resources/img/img_type/routeinfo.png" width="40px"></td>
+					<td class="tdright2">${placeAddress}</td>
 				</tr>
 				<tr>
-					<td colspan="4">체험내용 |<br> ${progContent }
+					<td class="tdright1" colspan="4"><img src="http://localhost:8089/withpapa/resources/img/img_type/content.png" width="40px"> ${progContent }
 					</td>
 				</tr>
 			</tbody>
