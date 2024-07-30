@@ -112,20 +112,20 @@
 
 .main_image_text {
    position: absolute;
-   bottom: -24%;
+   bottom: -13%;
+   right: -1%;
    color: white;
    width: 600px;
    height: 80px;
    font-family: 'GmarketSansMedium';
-   transform: translate(0px, -40px);
-   left: 3%;
+   left: 3%
 }
 
 .main_image_box {
    position: absolute;
-   bottom: -6%;
+   bottom: -14%;
    width: 600px;
-   height: 51px;
+   height: 80px;
    background-color: rgba(0, 0, 0, 0.6);
 }
 
