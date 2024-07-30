@@ -133,7 +133,7 @@
 		</a>
 	</div>
 
-	<form action="search/searchresult" method="get">
+	<form action="searchresult" method="get">
 		<div class="search">
 			<input type="text" name="progNm" placeholder="어디로 놀러 가볼까요?">
 			<!-- 돋보기 버튼 -->
