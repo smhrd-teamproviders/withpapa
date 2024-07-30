@@ -274,11 +274,22 @@
 		<button onclick="location.href='${progUrl}'" class="placehomepage">바로가기</button>
 	</div>
 
+
 	<!-- 프로그램 이미지 -->
 	<div class="place">
 		<img src="data:image/jpg;base64,${imgNm}" alt="">
 	</div>
-
+	<br>
+	
+	<div class="routeinfo">
+		<img src="resources/img/img_type/추천.png" width="30px">
+	</div>
+	<div class = "routeinfo">
+		<a>길찾기</a>
+	</div>
+	<br>
+	
+	
 	<!-- 지도 화면 -->
 	<div id="map" style="width: 546px; height: 280px;"></div>
 
