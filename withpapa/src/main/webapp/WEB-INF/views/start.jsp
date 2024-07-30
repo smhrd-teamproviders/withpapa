@@ -302,7 +302,8 @@
 			</a>
 		</div>
 	</div>
-
+	
+	<!-- 추천 제험 -->
 	<div class="recommend">
 		<img src="resources/img/img_type/추천.png" width="30px">
 		</div>
@@ -357,7 +358,7 @@
 		<div class="swiper-scrollbar"></div>
 	</div>
 
-
+	<!--  지역 선택  -->
 	<div class="jido">
 		<img src="resources/img/img_type/지역.png" width="30px">
 		</div>
@@ -366,11 +367,49 @@
 		</div>
 		
 		
+		<!-- 맵 -->
 		<div class = "colormap">
-			<img src="resources/img/img_district/컬러맵.png" width="700px" height="550px">
+		<img src="resources/img/img_district/컬러맵.png" usemap="#image-map">
+		<map name="image-map">
+    		<area target="_blank" alt="거창군"  
+    		href="search/searchresult?progNm=&placeDistrict=거창군&progDayStart=&progDayEnd=" coords="94,12,170,97" shape="rect">
+    		<area target="_blank" alt="합천군"  
+    		href="search/searchresult?progNm=&placeDistrict=합천군&progDayStart=&progDayEnd=" coords="187,60,310,134" shape="rect">
+    		<area target="_blank" alt="창녕군"  
+    		href="search/searchresult?progNm=&placeDistrict=창녕군&progDayStart=&progDayEnd=" coords="334,71,437,140" shape="rect">
+    		<area target="_blank" alt="밀양시"  
+    		href="search/searchresult?progNm=&placeDistrict=밀양시&progDayStart=&progDayEnd=" coords="466,73,587,140" shape="rect">
+    		<area target="_blank" alt="함양군" 
+    		href="search/searchresult?progNm=&placeDistrict=함양군&progDayStart=&progDayEnd=" coords="7,109,83,227" shape="rect">
+    		<area target="_blank" alt="산청군"  
+    		href="search/searchresult?progNm=&placeDistrict=산청군&progDayStart=&progDayEnd=" coords="95,136,172,206" shape="rect">
+   		 	<area target="_blank" alt="의령군" 
+   		 	href="search/searchresult?progNm=&placeDistrict=의령군&progDayStart=&progDayEnd=" coords="188,167,266,221" shape="rect">
+   		 	<area target="_blank" alt="함안군"  
+   		 	href="search/searchresult?progNm=&placeDistrict=함안군&progDayStart=&progDayEnd=" coords="283,168,359,221" shape="rect">
+    		<area target="_blank" alt="창원시" 
+    		href="search/searchresult?progNm=&placeDistrict=창원시&progDayStart=&progDayEnd=" coords="379,183,475,282" shape="rect">
+    		<area target="_blank" alt="김해시"  
+    		href="search/searchresult?progNm=&placeDistrict=김해시&progDayStart=&progDayEnd=" coords="498,174,589,255" shape="rect">
+    		<area target="_blank" alt="양산시"  
+    		href="search/searchresult?progNm=&placeDistrict=양산시&progDayStart=&progDayEnd=" coords="610,118,692,180" shape="rect">
+    		<area target="_blank" alt="하동군"  
+    		href="search/searchresult?progNm=&placeDistrict=하동군&progDayStart=&progDayEnd=" coords="96,257,170,361" shape="rect">
+    		<area target="_blank" alt="진주시"  
+    		href="search/searchresult?progNm=&placeDistrict=진주시&progDayStart=&progDayEnd=" coords="198,241,352,300" shape="rect">
+    		<area target="_blank" alt="사천시" 
+    		href="search/searchresult?progNm=&placeDistrict=사천시&progDayStart=&progDayEnd=" coords="184,316,290,374" shape="rect">
+    		<area target="_blank" alt="고성군"  
+    		href="search/searchresult?progNm=&placeDistrict=고성군&progDayStart=&progDayEnd=" coords="311,316,412,375" shape="rect">
+   		 	<area target="_blank" alt="남해군"  
+   		 	href="search/searchresult?progNm=&placeDistrict=남해군&progDayStart=&progDayEnd=" coords="144,395,230,483" shape="rect">
+    		<area target="_blank" alt="통영시"  
+    		href="search/searchresult?progNm=&placeDistrict=통영시&progDayStart=&progDayEnd=" coords="339,395,418,504" shape="rect">
+   		 	<area target="_blank" alt="거제시" 
+   		 	href="search/searchresult?progNm=&placeDistrict=거제시&progDayStart=&progDayEnd=" coords="432,386,508,492" shape="rect">
+			</map>
 		</div>
 	
-
 
 
 	<script type="text/javascript">
