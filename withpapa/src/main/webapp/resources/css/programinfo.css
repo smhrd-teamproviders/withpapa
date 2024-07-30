@@ -33,14 +33,11 @@ a {
 
 .title {
 	font-family: 'GmarketSansMedium';
-	height: 200px;
-	text-align: center;
-	position: relative;
-	left: -83px;
-	margin: auto;
-	top: -65px;
-
-	
+    height: 200px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    top: -53px;
 }
 
 .search {
@@ -89,10 +86,8 @@ input {
 	cursor: pointer;
 	margin: auto;
 	display: block;
-	/* margin-left: auto; */
-	/* margin-right: auto; */
-	    top: 15px;
-    left: -244px;
+	top: -15px;
+    left: -252px;
 }
 
 .categorytype img:hover {
@@ -113,8 +108,8 @@ input {
 	margin: auto;
 	cursor: pointer;
 	border-radius: 10px;
-	left: 217px;
-	top: -263px;
+    left: -157px;
+    top: -293px;
 	font-weight: bold;
     font-family:'GmarketSansMedium';
 }
