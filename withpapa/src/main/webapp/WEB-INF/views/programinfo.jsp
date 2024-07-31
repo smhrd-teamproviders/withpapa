@@ -124,7 +124,7 @@
 </head>
 <body>
 
-	<div style="margin-left: 35vw;">
+	<div style="margin-left: 25vw; margin-bottom: -5vw;">
 		<!-- 오리 버튼 (홈페이지 리다이렉트) -->
 		<a href="http://localhost:8089/withpapa/" onfocus="blur()"
 			target="_self" data-vibrate="5" name="progType"> <img
