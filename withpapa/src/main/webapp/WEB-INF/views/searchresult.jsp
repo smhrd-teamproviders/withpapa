@@ -20,17 +20,16 @@
 <style type="text/css">
 #banner_online {
     height: 500px;
-    width: 346px;
+    width: 435px;
     border: 1px solid black;
     box-shadow: 3px 3px 7px 1px rgb(255, 253, 253);
     background-color: white;
     margin: auto;
     display: none;
-    transform: translate(2%, 259px);
+    transform: translate(2%, 176px);
     padding: 45px;
     overflow-y: auto;
 }
-
 #banner_online h2 {
 	text-align: center;
 	font-size: 17px;
