@@ -14,22 +14,24 @@
 			}
 		}
 		
-		
 		$.ajax{
-			url:
-			type: "GET"
-			data:
-			success:function() {
+			
+			url:'recommend' // 1. 메인 페이지 접속
+			type: "get"
+			data: JSON.stringify({ // 2. 추천 프로그램 정보 요청(프로그램명,지역명,이미지)
+				"progNm": progNm,
+				"placeNm": placeNm,
+				"progImg": progImg
 				
+			})
+			
+			success:function(result) {
+				console.log(result);
 			},
 			
-			error:function(){
+			error:function(result){
 				
 			}
-			
-			
-			
-			
 			
 		}
 		
