@@ -1,8 +1,5 @@
 package com.smhrd.withpapa.model;
 
-
-
-
 public class RecommendArrays {
 
 	private String[] progRcmdSpring = { "PROG000003", "PROG000043", "PROG000072", "PROG000098", "PROG000115",
