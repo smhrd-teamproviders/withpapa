@@ -40,9 +40,10 @@ a {
 }
 
 .search {
-	position: relative;
-	width: 650px;
-	margin: auto;
+    position: relative;
+    width: 603px;
+    margin: auto;
+    transform: translate(28px, -67px);
 }
 
 .tdright {
@@ -81,15 +82,21 @@ td {
 	display:flex;
 	flex-direction:column;
 	align-items:center;
+	transform: translate(10px, -87px);
 }
 
 input {
-	width: 98%;
-	border: 2px solid #00FF7F;
-	border-radius: 100px;
-	padding: 21px 11px;
-	font-size: 14px;
-	font-family:'GmarketSansMedium';
+    width: 88%;
+    border: 2px solid #00FF7F;
+    border-radius: 100px;
+    padding: 22px 24px;
+    font-size: 20px;
+    font-family: 'GmarketSansMedium';
+}
+
+.duckbutton {
+    margin: auto;
+    transform: translate(592px, 8px);
 }
 
 .magnifer { /* 돋보기 */
@@ -241,10 +248,8 @@ input {
 }
 
 .modal-button {
-	position: relative;
-	z-index: auto;
-	top: -57px;
-    left: 596px;
+    display: flex;
+    transform: translate(521px, -63px);
 }
 
 .mappart {

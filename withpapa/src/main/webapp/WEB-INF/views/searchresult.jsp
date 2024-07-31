@@ -19,16 +19,16 @@
 <head>
 <style type="text/css">
 #banner_online {
-	height: 500px;
-	width: 450px;
-	border: 1px solid black;
-	box-shadow: 3px 3px 7px 1px rgb(255, 253, 253);
-	background-color: white;
-	margin: auto;
-	display: none;
-	transform: translate(-2%, 39%);
-	padding: 45px;
-	overflow-y: auto;
+    height: 500px;
+    width: 346px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 7px 1px rgb(255, 253, 253);
+    background-color: white;
+    margin: auto;
+    display: none;
+    transform: translate(2%, 259px);
+    padding: 45px;
+    overflow-y: auto;
 }
 
 #banner_online h2 {
@@ -101,15 +101,15 @@
 </head>
 <body>
 
-	<div style="margin-left: 35vw;">
+	
 		<!-- 오리 버튼 (홈페이지 리다이렉트) -->
+		<div class = "duckbutton">
 		<a href="http://localhost:8089/withpapa/" onfocus="blur()"
-			target="_self" data-vibrate="5" name="progType"> <img
-			src="http://localhost:8089/withpapa/resources/img/img_logo/logo_duck.png"
+			target="_self" data-vibrate="5" name="progType"> 
+			<img src="http://localhost:8089/withpapa/resources/img/img_logo/logo_duck.png"
 			border="0" alt="papaducks" class="papaduck">
-		</a>
-	</div>
-
+		 </a>
+	     </div>
 
 		<form action="searchresult" method="get">
 		<div class="search">
@@ -120,6 +120,7 @@
 				alt="돋보기 이미지">
 			</a>
 		</div>
+
 		
 		<!-- 돋보기 눌렀을 때 실행되는 모달 창 -->
 		<div id="modal">

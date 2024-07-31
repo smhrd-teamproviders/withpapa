@@ -37,18 +37,16 @@
 <style type="text/css">
 /* CSS 코드 */
 #banner_online {
-	height: 500px;
-	width: 450px;
+	height: 502px;
+	width: 463px;
 	border: 1px solid black;
 	box-shadow: 3px 3px 7px 1px rgb(255, 253, 253);
 	background-color: white;
 	z-index: 100;
 	margin: auto;
-	position: absolute;
-	top: 63%;
-	left: 50%;
-	transform: translate(-52%, -60%);
-	padding: 45px;
+	display: none;
+	transform: translate(3%, -14px);
+	padding: 46px;
 	overflow-y: auto;
 }
 
@@ -95,8 +93,8 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: rgb(255, 255, 255, 0);
-	top: -100px;
+	background: rgba(255, 255, 255, 0);
+	top: 100px;
 	left: 0;
 	z-index: 99;
 	display: none;
@@ -115,16 +113,15 @@
 
 #search {
 	display: flex;
-	width: 617px;
+	width: 500px;
 	margin: auto;
-	position: relative;
-	left: 32px;
 }
+
 </style>
 </head>
 <body>
 
-	<div style="margin-left: 35vw;">
+	<div class = "duckbutton">
 		<!-- 오리 버튼 (홈페이지 리다이렉트) -->
 		<a href="http://localhost:8089/withpapa/" onfocus="blur()"
 			target="_self" data-vibrate="5" name="progType"> <img
