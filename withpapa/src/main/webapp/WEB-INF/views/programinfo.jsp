@@ -273,7 +273,7 @@
 
 		<!-- 홈페이지 버튼 -->
 		<button onclick="location.href='${progUrl}'" class="placehomepage">홈페이지 바로가기</button>
-	</div>
+	
 		
 
 

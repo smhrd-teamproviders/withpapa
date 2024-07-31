@@ -113,9 +113,6 @@ input {
 	transform: translate(-247px, -23px);
 }
 
-.categorytype img:hover {
-	transform: scale(1.03)
-}
 
 /** 홈페이지 버튼 */
 .placehomepage {
@@ -131,8 +128,8 @@ input {
 	margin: auto;
 	cursor: pointer;
 	border-radius: 10px;
-    left: -115px;
-    top: -175px;
+    left: -123px;
+    top: -172px;
 	font-weight: bold;
     font-family:'GmarketSansMedium';
 }
@@ -153,7 +150,7 @@ input {
 	margin: auto;
 	justify-content: center;
 	font-family: 'GmarketSansMedium';
-	transform: translate(97px, -148px);
+	transform: translate(10px, -139px);
 }
 
 .place img {
