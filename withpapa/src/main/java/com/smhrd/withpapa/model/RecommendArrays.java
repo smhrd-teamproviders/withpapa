@@ -1,10 +1,8 @@
 package com.smhrd.withpapa.model;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
-@Getter
+
+
 public class RecommendArrays {
 
 	private String[] progRcmdSpring = { "PROG000003", "PROG000043", "PROG000072", "PROG000098", "PROG000115",
