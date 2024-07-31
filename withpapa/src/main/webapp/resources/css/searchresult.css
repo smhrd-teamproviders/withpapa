@@ -31,10 +31,17 @@
 }
 
 .search {
-	position: relative;
-	width: 650px;
-	margin: auto;
-	display: flex;
+    position: relative;
+    width: 515px;
+    display: flex;
+    margin: auto;
+    transform: translate(30px, 10px);
+}
+
+.duckbutton {
+    margin: auto;
+    display: flex;
+    transform: translate(619px, 74px);
 }
 
 .scrollMenu {
@@ -43,19 +50,17 @@
 
 
 .modal-button {
-    position: absolute;
     z-index: auto;
-    top: 8px;
-    left: 573px;
+    transform: translate(-58px, 10px)
 }
 
 input {
-	width: 98%;
-	border: 2px solid #00FF7F;
-	border-radius: 100px;
-	padding: 21px 11px;
-	font-size: 14px;
-	font-family:'GmarketSansMedium';
+    width: 98%;
+    border: 2px solid #00FF7F;
+    border-radius: 100px;
+    padding: 20px 25px;
+    font-size: 20px;
+    font-family: 'GmarketSansMedium';
 }
 
 .magnifer { /* 돋보기 */
