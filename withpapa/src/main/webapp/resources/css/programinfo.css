@@ -131,9 +131,10 @@ input {
 	margin: auto;
 	cursor: pointer;
 	border-radius: 10px;
+    left: -134px;
+    top: -313px;
 	font-weight: bold;
     font-family:'GmarketSansMedium';
-    transform: translate(-154px, -172px);
 }
 
 .placehomepage:hover {
