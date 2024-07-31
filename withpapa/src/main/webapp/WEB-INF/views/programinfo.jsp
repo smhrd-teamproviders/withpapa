@@ -258,7 +258,8 @@
 		</div>
 	</form>
 
-	<div>
+
+		<div class = "mainbox">
 		<!-- 카테고리 유형 -->
 		<div class="categorytype">
 			<img src="data:image/jpg;base64,${progType}" width="50px"
@@ -272,7 +273,7 @@
 
 		<!-- 홈페이지 버튼 -->
 		<button onclick="location.href='${progUrl}'" class="placehomepage">바로가기</button>
-	</div>
+	
 
 
 	<!-- 프로그램 이미지 -->
@@ -382,6 +383,7 @@
 				</tr>
 			</tbody>
 		</table>
+	</div>
 	</div>
 
 
