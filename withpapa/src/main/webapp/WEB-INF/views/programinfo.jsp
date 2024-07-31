@@ -356,27 +356,28 @@
 				<td class="tdright"><img src="http://localhost:8089/withpapa/resources/img/img_type/schedule.png" width="40px"></td>
 				
 				
-				<td class="tdright2">${progPeriod}</td>
+				<td class="tdright2" width="285" height="30">${progPeriod}</td>
 					
 					
 					<td class="tdright"><img src="http://localhost:8089/withpapa/resources/img/img_type/call.png" width="40px"></td>
-					<td class="tdright2">${placePhoneNo}</td>
+					
+					<td class="tdright2" width="285" height="30">${placePhoneNo}</td>
 				</tr>
 				<tr>
 					<td class="tdright"><img src="http://localhost:8089/withpapa/resources/img/img_type/clock.png" width="40px"></td>
-					<td class="tdright2">${progTime}</td>
+					<td class="tdright2" width="285" height="30">${progTime}</td>
 					<td class="tdright"><img src="http://localhost:8089/withpapa/resources/img/img_type/cost.png" width="40px"></td>
 					
-					<td class="tdright2">${progCost}</td>
+					<td class="tdright2" width="285" height="30">${progCost}</td>
 				</tr>
 				<tr>
 					<td class="tdright"><img src="http://localhost:8089/withpapa/resources/img/img_type/place.png" width="40px"></td>
-					<td class="tdright2">${placeNm}</td>
+					<td class="tdright2" width="285" height="30">${placeNm}</td>
 					<td class="tdright"><img src="http://localhost:8089/withpapa/resources/img/img_type/routeinfo.png" width="40px"></td>
-					<td class="tdright2">${placeAddress}</td>
+					<td class="tdright2" width="285" height="30">${placeAddress}</td>
 				</tr>
 				<tr>
-					<td class="tdright1" colspan="4"><img src="http://localhost:8089/withpapa/resources/img/img_type/content.png" width="40px"> ${progContent }
+					<td class="tdright1" colspan="4" width="285" height="30"><img src="http://localhost:8089/withpapa/resources/img/img_type/content.png" width="40px"> ${progContent }
 					</td>
 				</tr>
 			</tbody>
