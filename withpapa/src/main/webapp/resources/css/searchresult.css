@@ -32,16 +32,16 @@
 
 .search {
     position: relative;
-    width: 515px;
+    width: 603px;
     display: flex;
     margin: auto;
-    transform: translate(37px, 10px);
+    transform: translate(37px, -73px);
 }
 
 .duckbutton {
     margin: auto;
     display: flex;
-    transform: translate(652px, 83px);
+    transform: translate(607px, 0px);
 }
 
 .scrollMenu {
