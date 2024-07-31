@@ -111,6 +111,7 @@ a:active {
 	height : 54vh;
 	grid-template-columns: repeat(3 , 1fr);
 	grid-template-rows: repeat(4 , 1fr);
+	transform: translate(10px, 121px);
 }
 
 .place img:hover {
