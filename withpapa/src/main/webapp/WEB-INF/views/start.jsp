@@ -8,35 +8,24 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <script src="https://code.jquery.com/jquery-3.2.1.min.js">
 	window.onload = function() {
-		for (var i = 0; i < document.getElementsByTagName('input').length; i++) {
-			if (document.getElementsByTagName('input')[i].getAttribute('type') == 'checkbox') {
-				document.getElementsByTagName('input')[i].checked = true;
-			}
-		}
-		
-		$.ajax{
-			
-			url:'recommend' // 1. 메인 페이지 접속
-			type: "get"
-			data: JSON.stringify({ // 2. 추천 프로그램 정보 요청(프로그램명,지역명,이미지)
-				"progNm": progNm,
-				"placeNm": placeNm,
-				"progImg": progImg
-				
-			})
-			
-			success:function(result) {
-				console.log(result);
+
+		$.ajax({
+			url : 'recommend', // 1. 메인 페이지 접속
+			type : "get",
+			data : {
+				"progNm" : progNm,
+				"placeNm" : placeNm,
+				"progImg" : progImg
 			},
-			
-			error:function(result){
-				
+			success : function() {
+				alert("통신 성공");
+			},
+			error : function() {
+				alert("통신 실패");
 			}
-			
-		}
-		
+		});
+
 	};
-	
 </script>
 <link rel="stylesheet" href="/resources/css/style.css">
 <link href="${path}/resources/css/start.css" rel="stylesheet" />
@@ -353,57 +342,64 @@
 			<!-- 배너 슬라이드 -->
 			<div class="swiper-slide">
 				<div class="backdrop"></div>
-					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000110"> 
-						<img src="resources/img/img_program/PROG000110_01.png">
-						<h1 class="main_image_box"></h1>
-						<h1 class="main_image_text" style="font-size: 30px">어린이 화재출동</h1>
-						<h1 class="main_image_loc" style="font-size: 16px">합천군</h1>
-					</a>
+				<a
+					href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000110">
+					<img src="resources/img/img_program/PROG000110_01.png">
+					<h1 class="main_image_box"></h1>
+					<h1 class="main_image_text" style="font-size: 30px">어린이 화재출동</h1>
+					<h1 class="main_image_loc" style="font-size: 16px">합천군</h1>
+				</a>
 			</div>
 			<div class="swiper-slide">
 				<div class="backdrop"></div>
-					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000144"> 
-						<img src="resources/img/img_program/PROG000144_01.png">
-						<h1 class="main_image_box"></h1>
-						<h1 class="main_image_text" style="font-size: 30px">쏙잡이 체험</h1>
-						<h1 class="main_image_loc" style="font-size: 16px">남해군</h1>
-					</a>
+				<a
+					href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000144">
+					<img src="resources/img/img_program/PROG000144_01.png">
+					<h1 class="main_image_box"></h1>
+					<h1 class="main_image_text" style="font-size: 30px">쏙잡이 체험</h1>
+					<h1 class="main_image_loc" style="font-size: 16px">남해군</h1>
+				</a>
 			</div>
 			<div class="swiper-slide">
 				<div class="backdrop"></div>
-					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000011"> 
-						<img src="resources/img/img_program/PROG000011_01.png">
-						<h1 class="main_image_box"></h1>
-						<h1 class="main_image_text" style="font-size: 30px">수제도우 사과피자만들기</h1>
-						<h1 class="main_image_loc" style="font-size: 16px">거창군</h1>
-					</a>
+				<a
+					href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000011">
+					<img src="resources/img/img_program/PROG000011_01.png">
+					<h1 class="main_image_box"></h1>
+					<h1 class="main_image_text" style="font-size: 30px">수제도우
+						사과피자만들기</h1>
+					<h1 class="main_image_loc" style="font-size: 16px">거창군</h1>
+				</a>
 			</div>
 			<div class="swiper-slide">
 				<div class="backdrop"></div>
-					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000017"> 
-						<img src="resources/img/img_program/PROG000017_01.png">
-						<h1 class="main_image_box"></h1>
-						<h1 class="main_image_text" style="font-size: 30px">레일 썰매장</h1>
-						<h1 class="main_image_loc" style="font-size: 16px">창녕군</h1>
-					</a>
+				<a
+					href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000017">
+					<img src="resources/img/img_program/PROG000017_01.png">
+					<h1 class="main_image_box"></h1>
+					<h1 class="main_image_text" style="font-size: 30px">레일 썰매장</h1>
+					<h1 class="main_image_loc" style="font-size: 16px">창녕군</h1>
+				</a>
 			</div>
 			<div class="swiper-slide">
 				<div class="backdrop"></div>
-					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000023"> 
-						<img src="resources/img/img_program/PROG000023_01.png">
-						<h1 class="main_image_box"></h1>
-						<h1 class="main_image_text" style="font-size: 30px">로봇 만들기</h1>
-						<h1 class="main_image_loc" style="font-size: 16px">양산시</h1>
-					</a>
+				<a
+					href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000023">
+					<img src="resources/img/img_program/PROG000023_01.png">
+					<h1 class="main_image_box"></h1>
+					<h1 class="main_image_text" style="font-size: 30px">로봇 만들기</h1>
+					<h1 class="main_image_loc" style="font-size: 16px">양산시</h1>
+				</a>
 			</div>
 			<div class="swiper-slide">
 				<div class="backdrop"></div>
-					<a href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000027"> 
-						<img src="resources/img/img_program/PROG000027_01.png">
-						<h1 class="main_image_box"></h1>
-						<h1 class="main_image_text" style="font-size: 30px">스마트 과학교실</h1>
-						<h1 class="main_image_loc" style="font-size: 16px">창원시</h1>
-					</a>
+				<a
+					href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000027">
+					<img src="resources/img/img_program/PROG000027_01.png">
+					<h1 class="main_image_box"></h1>
+					<h1 class="main_image_text" style="font-size: 30px">스마트 과학교실</h1>
+					<h1 class="main_image_loc" style="font-size: 16px">창원시</h1>
+				</a>
 			</div>
 		</div>
 		<!-- 순서 버튼 -->
@@ -423,48 +419,66 @@
 		<a>지역 선택</a>
 	</div>
 
-		<!-- 맵 -->
-		<div class = "colormap">
+	<!-- 맵 -->
+	<div class="colormap">
 		<img src="resources/img/img_district/컬러맵.png" usemap="#image-map">
 		<map name="image-map">
-    		<area target="_blank" alt="거창군"  
-    		href="search/searchresult?progNm=&placeDistrict=거창군&progDayStart=&progDayEnd=" coords="94,12,170,97" shape="rect">
-    		<area target="_blank" alt="합천군"  
-    		href="search/searchresult?progNm=&placeDistrict=합천군&progDayStart=&progDayEnd=" coords="187,60,310,134" shape="rect">
-    		<area target="_blank" alt="창녕군"  
-    		href="search/searchresult?progNm=&placeDistrict=창녕군&progDayStart=&progDayEnd=" coords="334,71,437,140" shape="rect">
-    		<area target="_blank" alt="밀양시"  
-    		href="search/searchresult?progNm=&placeDistrict=밀양시&progDayStart=&progDayEnd=" coords="466,73,587,140" shape="rect">
-    		<area target="_blank" alt="함양군" 
-    		href="search/searchresult?progNm=&placeDistrict=함양군&progDayStart=&progDayEnd=" coords="7,109,83,227" shape="rect">
-    		<area target="_blank" alt="산청군"  
-    		href="search/searchresult?progNm=&placeDistrict=산청군&progDayStart=&progDayEnd=" coords="95,136,172,206" shape="rect">
-   		 	<area target="_blank" alt="의령군" 
-   		 	href="search/searchresult?progNm=&placeDistrict=의령군&progDayStart=&progDayEnd=" coords="188,167,266,221" shape="rect">
-   		 	<area target="_blank" alt="함안군"  
-   		 	href="search/searchresult?progNm=&placeDistrict=함안군&progDayStart=&progDayEnd=" coords="283,168,359,221" shape="rect">
-    		<area target="_blank" alt="창원시" 
-    		href="search/searchresult?progNm=&placeDistrict=창원시&progDayStart=&progDayEnd=" coords="379,183,475,282" shape="rect">
-    		<area target="_blank" alt="김해시"  
-    		href="search/searchresult?progNm=&placeDistrict=김해시&progDayStart=&progDayEnd=" coords="498,174,589,255" shape="rect">
-    		<area target="_blank" alt="양산시"  
-    		href="search/searchresult?progNm=&placeDistrict=양산시&progDayStart=&progDayEnd=" coords="610,118,692,180" shape="rect">
-    		<area target="_blank" alt="하동군"  
-    		href="search/searchresult?progNm=&placeDistrict=하동군&progDayStart=&progDayEnd=" coords="96,257,170,361" shape="rect">
-    		<area target="_blank" alt="진주시"  
-    		href="search/searchresult?progNm=&placeDistrict=진주시&progDayStart=&progDayEnd=" coords="198,241,352,300" shape="rect">
-    		<area target="_blank" alt="사천시" 
-    		href="search/searchresult?progNm=&placeDistrict=사천시&progDayStart=&progDayEnd=" coords="184,316,290,374" shape="rect">
-    		<area target="_blank" alt="고성군"  
-    		href="search/searchresult?progNm=&placeDistrict=고성군&progDayStart=&progDayEnd=" coords="311,316,412,375" shape="rect">
-   		 	<area target="_blank" alt="남해군"  
-   		 	href="search/searchresult?progNm=&placeDistrict=남해군&progDayStart=&progDayEnd=" coords="144,395,230,483" shape="rect">
-    		<area target="_blank" alt="통영시"  
-    		href="search/searchresult?progNm=&placeDistrict=통영시&progDayStart=&progDayEnd=" coords="339,395,418,504" shape="rect">
-   		 	<area target="_blank" alt="거제시" 
-   		 	href="search/searchresult?progNm=&placeDistrict=거제시&progDayStart=&progDayEnd=" coords="432,386,508,492" shape="rect">
-			</map>
-		</div>
+			<area target="_blank" alt="거창군"
+				href="search/searchresult?progNm=&placeDistrict=거창군&progDayStart=&progDayEnd="
+				coords="94,12,170,97" shape="rect">
+			<area target="_blank" alt="합천군"
+				href="search/searchresult?progNm=&placeDistrict=합천군&progDayStart=&progDayEnd="
+				coords="187,60,310,134" shape="rect">
+			<area target="_blank" alt="창녕군"
+				href="search/searchresult?progNm=&placeDistrict=창녕군&progDayStart=&progDayEnd="
+				coords="334,71,437,140" shape="rect">
+			<area target="_blank" alt="밀양시"
+				href="search/searchresult?progNm=&placeDistrict=밀양시&progDayStart=&progDayEnd="
+				coords="466,73,587,140" shape="rect">
+			<area target="_blank" alt="함양군"
+				href="search/searchresult?progNm=&placeDistrict=함양군&progDayStart=&progDayEnd="
+				coords="7,109,83,227" shape="rect">
+			<area target="_blank" alt="산청군"
+				href="search/searchresult?progNm=&placeDistrict=산청군&progDayStart=&progDayEnd="
+				coords="95,136,172,206" shape="rect">
+			<area target="_blank" alt="의령군"
+				href="search/searchresult?progNm=&placeDistrict=의령군&progDayStart=&progDayEnd="
+				coords="188,167,266,221" shape="rect">
+			<area target="_blank" alt="함안군"
+				href="search/searchresult?progNm=&placeDistrict=함안군&progDayStart=&progDayEnd="
+				coords="283,168,359,221" shape="rect">
+			<area target="_blank" alt="창원시"
+				href="search/searchresult?progNm=&placeDistrict=창원시&progDayStart=&progDayEnd="
+				coords="379,183,475,282" shape="rect">
+			<area target="_blank" alt="김해시"
+				href="search/searchresult?progNm=&placeDistrict=김해시&progDayStart=&progDayEnd="
+				coords="498,174,589,255" shape="rect">
+			<area target="_blank" alt="양산시"
+				href="search/searchresult?progNm=&placeDistrict=양산시&progDayStart=&progDayEnd="
+				coords="610,118,692,180" shape="rect">
+			<area target="_blank" alt="하동군"
+				href="search/searchresult?progNm=&placeDistrict=하동군&progDayStart=&progDayEnd="
+				coords="96,257,170,361" shape="rect">
+			<area target="_blank" alt="진주시"
+				href="search/searchresult?progNm=&placeDistrict=진주시&progDayStart=&progDayEnd="
+				coords="198,241,352,300" shape="rect">
+			<area target="_blank" alt="사천시"
+				href="search/searchresult?progNm=&placeDistrict=사천시&progDayStart=&progDayEnd="
+				coords="184,316,290,374" shape="rect">
+			<area target="_blank" alt="고성군"
+				href="search/searchresult?progNm=&placeDistrict=고성군&progDayStart=&progDayEnd="
+				coords="311,316,412,375" shape="rect">
+			<area target="_blank" alt="남해군"
+				href="search/searchresult?progNm=&placeDistrict=남해군&progDayStart=&progDayEnd="
+				coords="144,395,230,483" shape="rect">
+			<area target="_blank" alt="통영시"
+				href="search/searchresult?progNm=&placeDistrict=통영시&progDayStart=&progDayEnd="
+				coords="339,395,418,504" shape="rect">
+			<area target="_blank" alt="거제시"
+				href="search/searchresult?progNm=&placeDistrict=거제시&progDayStart=&progDayEnd="
+				coords="432,386,508,492" shape="rect">
+		</map>
+	</div>
 
 
 	<script type="text/javascript">
@@ -521,12 +535,24 @@
 		});
 	</script>
 	<script>
-			
-	
-	
-	
-	
-	
+	$(document).ready(function() {
+        // AJAX 요청 보내기
+        $.ajax({
+			url : 'recommend', // 1. 메인 페이지 접속
+			type : "get",
+			//data : {
+				//"progNm" : progNm,
+				//"placeNm" : placeNm,
+				//"progImg" : progImg
+			//},
+			success : function() {
+				alert("통신 성공");
+			},
+			error : function() {
+				alert("통신 실패");
+			}
+		});
+    });
 	</script>
 
 
