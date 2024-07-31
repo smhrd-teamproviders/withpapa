@@ -26,7 +26,7 @@
     background-color: white;
     margin: auto;
     display: none;
-    transform: translate(1%, 44%);
+    transform: translate(2%, 259px);
     padding: 45px;
     overflow-y: auto;
 }

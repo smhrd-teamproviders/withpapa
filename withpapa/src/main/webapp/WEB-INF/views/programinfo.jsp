@@ -38,7 +38,7 @@
 /* CSS 코드 */
 #banner_online {
 	height: 502px;
-	width: 379px;
+	width: 463px;
 	border: 1px solid black;
 	box-shadow: 3px 3px 7px 1px rgb(255, 253, 253);
 	background-color: white;

@@ -35,13 +35,13 @@
     width: 515px;
     display: flex;
     margin: auto;
-    transform: translate(30px, 10px);
+    transform: translate(37px, 10px);
 }
 
 .duckbutton {
     margin: auto;
     display: flex;
-    transform: translate(646px, 85px);
+    transform: translate(652px, 83px);
 }
 
 .scrollMenu {
