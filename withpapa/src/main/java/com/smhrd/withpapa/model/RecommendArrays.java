@@ -15,7 +15,7 @@ public class RecommendArrays {
 			"PROG000101", "PROG000110", "PROG000128", "PROG000159", "PROG000176" };
 
 	public RecommendArrays() {
-		super();
+		
 	}
 
 	public String[] getProgRcmdSpring() {
