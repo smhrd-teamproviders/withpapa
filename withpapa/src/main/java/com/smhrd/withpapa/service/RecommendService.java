@@ -20,7 +20,7 @@ public class RecommendService {
 		//System.out.println("오늘은"+todayMonth);
 		
 		RecommendArrays rcmdArrs = new RecommendArrays();
-		System.out.println(rcmdArrs.getProgRcmdSummer());
+//		System.out.println(rcmdArrs.getProgRcmdSummer());
 	}
 	
 }
