@@ -5,8 +5,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="shortcut icon" href="http://localhost:8089/withpapa/resources/img/img_logo/favicon.png"/> 
-    <link rel="apple-touch-icon" href="http://localhost:8089/withpapa/resources/img/img_logo/favicon.png"/>
+    <link rel="icon" href="https://i.imgur.com/BTx1VEw.png"/> 
+    <link rel="apple-touch-icon" href="https://i.imgur.com/BTx1VEw.png"/>
+    <title>WITHPAPA :: 검색 결과</title>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js">
     window.onload = function() {
       for (var i = 0; i < document.getElementsByTagName('input').length; i++) {
