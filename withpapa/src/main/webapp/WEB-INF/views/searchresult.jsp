@@ -4,6 +4,9 @@
 <c:set var="path" value="${pageContext.request.contextPath}" />
 <!DOCTYPE html>
 <html>
+<head>
+    <link rel="shortcut icon" href="http://localhost:8089/withpapa/resources/img/img_logo/favicon.png"/> 
+    <link rel="apple-touch-icon" href="http://localhost:8089/withpapa/resources/img/img_logo/favicon.png"/>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js">
     window.onload = function() {
       for (var i = 0; i < document.getElementsByTagName('input').length; i++) {
@@ -16,7 +19,6 @@
 <meta charset= "UTF-8" />
 <link rel="stylesheet" href="/resources/css/style.css">
 <link href="${path}/resources/css/searchresult.css" rel="stylesheet">
-<head>
 <style type="text/css">
 #banner_online {
     height: 500px;

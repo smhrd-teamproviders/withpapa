@@ -5,6 +5,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="shortcut icon" href="resources\img\img_logo\favicon.png"/> 
+    <link rel="apple-touch-icon" href="resources\img\img_logo\favicon.png"/>
+    <title>WITHPAPA</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <script src="https://code.jquery.com/jquery-3.2.1.min.js">
 	window.onload = function() {

@@ -4,6 +4,10 @@
 <c:set var="path" value="${pageContext.request.contextPath}" />
 <!DOCTYPE html>
 <html>
+<head>
+    <link rel="shortcut icon" href="http://localhost:8089/withpapa/resources/img/img_logo/favicon.png"/> 
+    <link rel="apple-touch-icon" href="http://localhost:8089/withpapa/resources/img/img_logo/favicon.png"/>
+    <title></title>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js">
         window.onload = function() {
             for (var i = 0; i < document.getElementsByTagName('input').length; i++) {
@@ -33,7 +37,6 @@
 
 </style>
 <link href="${path}/resources/css/programinfo.css" rel="stylesheet">
-<head>
 <style type="text/css">
 /* CSS 코드 */
 #banner_online {
