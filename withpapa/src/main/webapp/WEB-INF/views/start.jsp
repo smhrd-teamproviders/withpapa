@@ -5,7 +5,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" href="\resources\img\img_logo\logo_icon.png"/> 
+    <link rel="icon" href="https://i.imgur.com/BTx1VEw.png"/> 
+    <link rel="apple-touch-icon" href="https://i.imgur.com/BTx1VEw.png"/>
     <title>WITHPAPA</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <script src="https://code.jquery.com/jquery-3.2.1.min.js">
@@ -29,6 +30,7 @@
 
 	};
 </script>
+<link rel="stylesheet" href="/resources/css/style.css">
 <link href="${path}/resources/css/start.css" rel="stylesheet" />
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
