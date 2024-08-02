@@ -482,7 +482,6 @@
 		</map>
 	</div>
 
-
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$("#openModalButton").click(function(event) {
