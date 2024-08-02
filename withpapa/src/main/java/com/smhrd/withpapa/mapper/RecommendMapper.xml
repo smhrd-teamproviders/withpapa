@@ -3,20 +3,22 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.smhrd.withpapa.mapper.RecommendMapper">
-	<select id="searchRecommend" resultType="com.smhrd.withpapa.model.SearchResult">
-		select pr.prog_id, pr.prog_nm, img.img_nm
-		from tb_program pr, tb_img img
+	<select id="searchRecommend" parameterType="com.smhrd.withpapa.model.SearchElement" resultType="com.smhrd.withpapa.model.SearchResult">
+		select pr.prog_id, pr.prog_nm, pl.place_district, img.img_nm
+		from tb_program pr, tb_place pl, tb_img img
 		<where>
 			<!-- 테이블 INNER JOIN 조건 -->
-			pr.prog_id = img.prog_id
+			pr.place_id = pl.place_id
+			and pr.prog_id = img.prog_id
+			<!-- Mapper를 통해 전달받은 프로그램ID와 일치하는 프로그램들을 조회 -->
 			and pr.prog_id in (
-				<foreach collection="searchProgId" item="progId" index="i" separator=",">
+				<foreach collection="progIdArr" item="progId" index="i" separator=",">
 					#{progId}
 				</foreach>
 			)
 			<!-- field()를 사용하여 DB에서 임의로 정렬하지 않도록 함. 이렇게 하면 앞의 searchProgId 배열 내의 ID 순서대로 값이 반환됨.-->
 			order by field(pr.prog_id,
-				<foreach collection="searchProgId" item="progId" index="i" separator=",">
+				<foreach collection="progIdArr" item="progId" index="i" separator=",">
 					#{progId}
 				</foreach>
 			)

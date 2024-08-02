@@ -1,6 +1,7 @@
 package com.smhrd.withpapa.service;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,13 +9,15 @@ import org.springframework.stereotype.Service;
 
 import com.smhrd.withpapa.mapper.RecommendMapper;
 import com.smhrd.withpapa.model.RecommendArrays;
+import com.smhrd.withpapa.model.SearchElement;
+import com.smhrd.withpapa.model.SearchResult;
 
 @Service
 public class RecommendService {
 	@Autowired
 	RecommendMapper mapper;
 	
-	public void selectRecommendArray() {
+	public String[] selectRecommendArray() {
 		
 		// 오늘 날짜를 가져온 다음, 그 중 월 값을 int형으로 todayMonth에 대입
 		LocalDate now = LocalDate.now();
@@ -54,9 +57,22 @@ public class RecommendService {
 	        break;
 		}	
 		
-		// 0 ~ 9까지의 정수 중 중복되지 않는 4개의 숫자를 담은 배열 선언
+		// 0 ~ 9까지의 정수 중 중복되지 않는 4개의 숫자를 담을 배열 선언
 		int[] selectedIndex = randomIndex(4, 10);
 		
+		// DB에 조회 요청을 할 프로그램ID를 담을 배열 선언
+		String[] searchProgId = new String[4];
+		
+		// selectedIndex에 담긴 숫자를 가지고 cndProgArray에 인덱싱하여 나온 프로그램ID를 searchProgId 배열에 대입
+		for(int i = 0; i < selectedIndex.length; i++) {
+			searchProgId[i] = cndProgArray[selectedIndex[i]]; 
+		}
+		
+		return searchProgId;
+	}
+	
+	public List<SearchResult> searchRecommend(SearchElement element) {
+		return mapper.searchRecommend(element);
 	}
 	
 	// numCount: 뽑을 수의 개수, numRange: 랜덤으로 나오는 정수의 개수(0부터 numRange-1까지)

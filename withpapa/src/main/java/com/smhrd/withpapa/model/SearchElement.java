@@ -7,6 +7,9 @@ public class SearchElement {
 	private String[] progType;
 	private String progDayStart;
 	private String progDayEnd;
+	private String[] progIdArr;
+	
+	// 체험 프로그램 검색 요청에 사용되는 키워드, 지역명, 유형, 기간 검색의 DTO 생성자
 	public SearchElement(String progNm, String placeDistrict, String[] progType, String progDayStart, String progDayEnd) {
 		super();
 		this.progNm = progNm;
@@ -15,6 +18,13 @@ public class SearchElement {
 		this.progDayStart = progDayStart;
 		this.progDayEnd = progDayEnd;
 	}
+	
+	// 추천 체험 프로그램 정보 요청에 사용되는 progId 조건 검색의 DTO 생성자
+	public SearchElement(String[] progIdArr) {
+		super();
+		this.progIdArr = progIdArr;
+	}
+
 	public SearchElement() {
 
 	}
@@ -47,5 +57,11 @@ public class SearchElement {
 	}
 	public void setProgDayEnd(String progDayEnd) {
 		this.progDayEnd = progDayEnd;
+	}
+	public String[] getProgIdArr() {
+		return progIdArr;
+	}
+	public void setProgIdArr(String[] progIdArr) {
+		this.progIdArr = progIdArr;
 	}
 }
