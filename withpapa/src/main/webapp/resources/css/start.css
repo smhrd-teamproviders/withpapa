@@ -93,10 +93,11 @@ a {
 
 tr {
 	font-family: 'GmarketSansMedium';
+	text-align: center;
 }
 
 p {
-	font-family: 'GmarketSansMedium';
+	font-family: 'yg-jalnan';
 }
 
 .title {
@@ -105,6 +106,7 @@ p {
 	font-family: "Fredoka One";
 	margin: auto;
 	transform: translate(4px, -141px);
+	
 }
 
 .search {
