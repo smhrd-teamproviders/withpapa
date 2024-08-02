@@ -10,25 +10,7 @@
     <title>WITHPAPA</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <script src="https://code.jquery.com/jquery-3.2.1.min.js">
-	window.onload = function() {
 
-		$.ajax({
-			url : 'recommend', // 1. 메인 페이지 접속
-			type : "get",
-			data : {
-				"progNm" : progNm,
-				"placeNm" : placeNm,
-				"progImg" : progImg
-			},
-			success : function() {
-				alert("통신 성공");
-			},
-			error : function() {
-				alert("통신 실패");
-			}
-		});
-
-	};
 </script>
 <link rel="stylesheet" href="/resources/css/style.css">
 <link href="${path}/resources/css/start.css" rel="stylesheet" />
@@ -547,10 +529,8 @@
 				//"progImg" : progImg
 			//},
 			success : function() {
-				alert("통신 성공");
 			},
 			error : function() {
-				alert("통신 실패");
 			}
 		});
     });
