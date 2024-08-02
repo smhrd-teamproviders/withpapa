@@ -10,7 +10,7 @@
 }
 
 tr {
-	font-family: 'CWDangamAsac-Bold';
+	font-family: 'GmarketSansMedium';
 }
 
 td {
@@ -19,11 +19,16 @@ td {
 
 
 b {
-font-family: 'CWDangamAsac-Bold';
+font-family: 'GmarketSansMedium';
 }
 
 
 a {
+	font-family: 'GmarketSansMedium';
+}
+
+p{
+	
 	font-family: 'GmarketSansMedium';
 }
 
@@ -67,6 +72,7 @@ a {
 td {
   border: 1px solid white;
   border-collapse: collapse;
+  
 }
 
 .location {
@@ -86,11 +92,11 @@ td {
 }
 
 input {
-    width: 88%;
+    width: 83%;
     border: 2px solid #00FF7F;
     border-radius: 100px;
-    padding: 22px 24px;
-    font-size: 20px;
+    padding: 20px 26px;
+    font-size: 17px;
     font-family: 'GmarketSansMedium';
 }
 
@@ -123,19 +129,20 @@ input {
 .custom-btn {
 	width: 63px;
 	height: 40px;
-	color: #fff;
-	border-radius: 5px;
+	color: #000000;
+	border-radius: 100px;
 	padding: 10px 25px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'GmarketSansMedium';
 	font-weight: 500;
 	background: transparent;
 	cursor: pointer;
 	transition: all 0.3s ease;
 	position: relative;
 	display: inline-block;
-	box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px
-		0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+	box-shadow: inset 2px 2px 2px 0px rgba(152,251,152, .5), 7px 7px 20px
+		0px rgba(152,251,152 .1), 4px 4px 5px 0px rgba(152,251,152, .1);
 	outline: none;
+	border: #008080;
 }
 
 .btn-5 {
@@ -143,14 +150,14 @@ input {
 	height: 40px;
 	line-height: 42px;
 	padding: 0;
-	border: none;
-	background: rgb(255, 27, 0);
-	background: linear-gradient(0deg, rgba(255, 27, 0, 1) 0%,
-		rgba(251, 75, 2, 1) 100%);
+	border: lawngreen;
+	background: cornsilk;
+	/*background: linear-gradient(0deg, rgba(144,238,144, 1) 0%,
+		rgba(144,238,144, 1) 100%);*/
 }
 
 .btn-5:hover {
-	color: #f0094a;
+	color: 	#008B8B;
 	background: transparent;
 	box-shadow: none;
 }
@@ -162,7 +169,7 @@ input {
 	right: 0;
 	height: 2px;
 	width: 0;
-	background: #f0094a;
+	background: #00FF7F;
 	box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px
 		0px #0002;
 	transition: 400ms ease all;
@@ -178,6 +185,12 @@ input {
 .btn-5:hover:before, .btn-5:hover:after {
 	width: 100%;
 	transition: 800ms ease all;
+}
+
+.submitsearch {
+	width:33%;
+	height:50%;
+	transform: translate(145px, 18px);
 }
 
 

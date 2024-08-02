@@ -270,8 +270,9 @@
 					<a>시작일</a><input type="date" name="progDayStart"> <a>종료일</a>
 					<input type="date" name="progDayEnd">
 				</div>
-
-				<div>
+				
+				<br>
+				<div class = submitsearch>
 					<input type="submit" value="검색">
 				</div>
 			</div>
