@@ -141,8 +141,6 @@
 </head>
 <body>
 
-
-
 	<!-- 상단 화면 -->
 	<div class="ducks">
 		<img src="resources/img/img_logo/logo_duck.png" alt="papaducks">
