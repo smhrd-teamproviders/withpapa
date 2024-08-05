@@ -12,7 +12,6 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js">
 
 </script>
-<link rel="stylesheet" href="/resources/css/style.css">
 <link href="${path}/resources/css/start.css" rel="stylesheet" />
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
