@@ -324,67 +324,7 @@
 	<div class="swiper">
 		<div class="swiper-wrapper">
 			<!-- 배너 슬라이드 -->
-			<div class="swiper-slide">
-				<div class="backdrop"></div>
-				<a
-					href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000110">
-					<img src="resources/img/img_program/PROG000110_01.png">
-					<h1 class="main_image_box"></h1>
-					<h1 class="main_image_text" style="font-size: 30px">어린이 화재출동</h1>
-					<h1 class="main_image_loc" style="font-size: 16px">합천군</h1>
-				</a>
-			</div>
-			<div class="swiper-slide">
-				<div class="backdrop"></div>
-				<a
-					href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000144">
-					<img src="resources/img/img_program/PROG000144_01.png">
-					<h1 class="main_image_box"></h1>
-					<h1 class="main_image_text" style="font-size: 30px">쏙잡이 체험</h1>
-					<h1 class="main_image_loc" style="font-size: 16px">남해군</h1>
-				</a>
-			</div>
-			<div class="swiper-slide">
-				<div class="backdrop"></div>
-				<a
-					href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000011">
-					<img src="resources/img/img_program/PROG000011_01.png">
-					<h1 class="main_image_box"></h1>
-					<h1 class="main_image_text" style="font-size: 30px">수제도우
-						사과피자만들기</h1>
-					<h1 class="main_image_loc" style="font-size: 16px">거창군</h1>
-				</a>
-			</div>
-			<div class="swiper-slide">
-				<div class="backdrop"></div>
-				<a
-					href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000017">
-					<img src="resources/img/img_program/PROG000017_01.png">
-					<h1 class="main_image_box"></h1>
-					<h1 class="main_image_text" style="font-size: 30px">레일 썰매장</h1>
-					<h1 class="main_image_loc" style="font-size: 16px">창녕군</h1>
-				</a>
-			</div>
-			<div class="swiper-slide">
-				<div class="backdrop"></div>
-				<a
-					href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000023">
-					<img src="resources/img/img_program/PROG000023_01.png">
-					<h1 class="main_image_box"></h1>
-					<h1 class="main_image_text" style="font-size: 30px">로봇 만들기</h1>
-					<h1 class="main_image_loc" style="font-size: 16px">양산시</h1>
-				</a>
-			</div>
-			<div class="swiper-slide">
-				<div class="backdrop"></div>
-				<a
-					href="http://localhost:8089/withpapa/search/programinfo?progId=PROG000027">
-					<img src="resources/img/img_program/PROG000027_01.png">
-					<h1 class="main_image_box"></h1>
-					<h1 class="main_image_text" style="font-size: 30px">스마트 과학교실</h1>
-					<h1 class="main_image_loc" style="font-size: 16px">창원시</h1>
-				</a>
-			</div>
+			
 		</div>
 		<!-- 순서 버튼 -->
 		<div class="swiper-button-next"></div>
@@ -409,7 +349,7 @@
 		<map name="image-map">
 			<area alt="거창군"
 				href="search/searchresult?progNm=&placeDistrict=거창군&progDayStart=&progDayEnd="
-				coords="94,12,170,97" shape="rect"></a>
+				coords="94,12,170,97" shape="rect">
 			<area alt="합천군"
 				href="search/searchresult?progNm=&placeDistrict=합천군&progDayStart=&progDayEnd="
 				coords="187,60,310,134" shape="rect">
@@ -490,8 +430,35 @@
 			});
 		});
 	</script>
-
 	<script>
+	$(document).ready(function() {
+	    $.ajax({
+	        url: "recommend",
+	        type: "GET",
+	        dataType: "json",
+	        success: printRcmdProg,
+	        error: function(xhr, status, error) {
+	            
+	        }
+	    });
+	});
+	
+	function printRcmdProg(data) {
+		let htmlRcmdProg = "";
+		
+		for(i in data) {
+			htmlRcmdProg += "<div class='swiper-slide'>";
+			htmlRcmdProg += "<div class='backdrop'></div>";
+			htmlRcmdProg += "<a href='http://localhost:8089/withpapa/search/programinfo?progId="+data[i].progId+"'>";
+			htmlRcmdProg += "<img src='resources/img/img_program/"+data[i].imgNm+".png' alt=''>";
+			htmlRcmdProg += "<h1 class='main_image_box'></h1>";
+			htmlRcmdProg += "<h1 class='main_image_text' style='font-size: 30px'>"+data[i].progNm+"</h1>";
+			htmlRcmdProg += "<h1 class='main_image_loc' style='font-size: 16px'>"+data[i].placeDistrict+"</h1>";
+			htmlRcmdProg += "</a></div>";
+		}
+		
+		$(".swiper-wrapper").append(htmlRcmdProg)
+		
 		const swiper = new Swiper('.swiper', {
 			loop : true,
 			autoplay : { //자동 재생 여부
@@ -516,24 +483,7 @@
 			},
 
 		});
-	</script>
-	<script>
-	$(document).ready(function() {
-        // AJAX 요청 보내기
-        $.ajax({
-			url : 'recommend', // 1. 메인 페이지 접속
-			type : "get",
-			//data : {
-				//"progNm" : progNm,
-				//"placeNm" : placeNm,
-				//"progImg" : progImg
-			//},
-			success : function() {
-			},
-			error : function() {
-			}
-		});
-    });
+	}
 	</script>
 
 </body>

@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.smhrd.withpapa.converter.ImageToBase64;
+import com.smhrd.withpapa.model.ImgPath;
 import com.smhrd.withpapa.model.ProgramInfo;
 import com.smhrd.withpapa.service.InfoService;
 
@@ -98,13 +99,14 @@ public class InfoController {
 			progTime = viewTmStart + " ~ " + viewTmEnd;
 		}
 		
+		// 프로젝트 내 프로그램 이미지 디렉토리 주소 값이 담긴 VO 객체 선언
+		ImgPath imgPath = new ImgPath();
+		
 		// 프로그램 이미지 이름, 유형을 이미지로 변환
 		ImageToBase64 converter = new ImageToBase64();
-		String typePathRoot = "C:\\Users\\smhrd\\git\\withpapa\\withpapa\\src\\main\\webapp\\resources\\img\\img_type\\";
-		String imgPathRoot = "C:\\Users\\smhrd\\git\\withpapa\\withpapa\\src\\main\\webapp\\resources\\img\\img_program\\";
-
-		prog.setProgType(converter.encodeImg(typePathRoot, prog.getProgType(), "png"));
-		prog.setImgNm(converter.encodeImg(imgPathRoot, prog.getImgNm(), "png"));
+		
+		prog.setProgType(converter.encodeImg(imgPath.getImgPathProgType(), prog.getProgType(), "png"));
+		prog.setImgNm(converter.encodeImg(imgPath.getImgPathImgNm(), prog.getImgNm(), "png"));
 
 		//model 
 		model.addAttribute("progNm", prog.getProgNm());

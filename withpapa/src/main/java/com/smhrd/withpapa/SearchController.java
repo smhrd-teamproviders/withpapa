@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.smhrd.withpapa.converter.ImageToBase64;
+import com.smhrd.withpapa.model.ImgPath;
 import com.smhrd.withpapa.model.SearchElement;
 import com.smhrd.withpapa.model.SearchResult;
 import com.smhrd.withpapa.service.SearchService;
@@ -47,17 +48,16 @@ public class SearchController {
 
 		// 위에서 반환된 프로그램 목록 중에서, 시작일과 종료일 사이에 있는 프로그램만을 다시 반환
 		List<SearchResult> result = service.filterToDate(listProg, element);
-		
-		// 프로젝트 내 프로그램 이미지 폴더 주소 입력
-		String imgPathRootImgNm = "C:\\Users\\smhrd\\git\\withpapa\\withpapa\\src\\main\\webapp\\resources\\img\\img_program\\";
-		String imgPathRootProgType = "C:\\Users\\smhrd\\git\\withpapa\\withpapa\\src\\main\\webapp\\resources\\img\\img_type\\";		
+
+		// 프로젝트 내 프로그램 이미지 디렉토리 주소 값이 담긴 VO 객체 선언
+		ImgPath imgPath = new ImgPath();
 		
 		ImageToBase64 converter = new ImageToBase64();
 		
 		// 프로그램 이미지명, 유형에 해당하는 이미지를 인코딩
 		for (SearchResult prog : result) {
-			prog.setImgNm(converter.encodeImg(imgPathRootImgNm, prog.getImgNm(), "png"));
-			prog.setProgType(converter.encodeImg(imgPathRootProgType, prog.getProgType(), "png"));
+			prog.setImgNm(converter.encodeImg(imgPath.getImgPathImgNm(), prog.getImgNm(), "png"));
+			prog.setProgType(converter.encodeImg(imgPath.getImgPathProgType(), prog.getProgType(), "png"));
 		}
 		
 		// model에 List<SearchResult> result 추가
