@@ -109,11 +109,11 @@
 
 .main_image_text {
 	position: absolute;
-	bottom: -12%;
+	bottom: -1%;
 	right: -5px;
 	color: white;
 	width: 600px;
-	height: 100px;
+	transform: translate(2px, -10px);
 	font-family: 'GmarketSansMedium';
 }
 
@@ -450,7 +450,7 @@
 			htmlRcmdProg += "<div class='swiper-slide'>";
 			htmlRcmdProg += "<div class='backdrop'></div>";
 			htmlRcmdProg += "<a href='http://localhost:8089/withpapa/search/programinfo?progId="+data[i].progId+"'>";
-			htmlRcmdProg += "<img src='resources/img/img_program/"+data[i].imgNm+".png' alt=''>";
+			htmlRcmdProg += "<img src='resources/img/img_program/"+data[i].imgNm+".png' height='400' width='600' alt=''>";
 			htmlRcmdProg += "<h1 class='main_image_box'></h1>";
 			htmlRcmdProg += "<h1 class='main_image_text' style='font-size: 30px'>"+data[i].progNm+"</h1>";
 			htmlRcmdProg += "<h1 class='main_image_loc' style='font-size: 16px'>"+data[i].placeDistrict+"</h1>";
