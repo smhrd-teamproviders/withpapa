@@ -171,47 +171,29 @@
 						<table style="text-align: center">
 							<tbody>
 								<tr>
-									<td><button class="custom-btn btn-5" name="placeDistrict"
-											value="거제시">거제시</button></td>
-									<td><button class="custom-btn btn-5" name="placeDistrict"
-											value="거창군">거창군</button></td>
-									<td><button class="custom-btn btn-5" name="placeDistrict"
-											value="고성군">고성군</button></td>
-									<td><button class="custom-btn btn-5" name="placeDistrict"
-											value="김해시">김해시</button></td>
-									<td><button class="custom-btn btn-5" name="placeDistrict"
-											value="남해군">남해군</button></td>
-									<td><button class="custom-btn btn-5" name="placeDistrict"
-											value="밀양시">밀양시</button></td>
+									<td><input type="radio" name="placeDistrict" value="거제시">거제시</td>
+									<td><input type="radio" name="placeDistrict" value="거창군">거창군</td>
+									<td><input type="radio" name="placeDistrict" value="고성군">고성군</td>
+									<td><input type="radio" name="placeDistrict" value="김해시">김해시</td>
+									<td><input type="radio" name="placeDistrict" value="남해군">남해군</td>
+									<td><input type="radio" name="placeDistrict" value="밀양시">밀양시</td>
 								</tr>
 
 								<tr>
-									<td><button class="custom-btn btn-5" name="placeDistrict"
-											value="사천시">사천시</button></td>
-									<td><button class="custom-btn btn-5" name="placeDistrict"
-											value="산청군">산청군</button></td>
-									<td><button class="custom-btn btn-5" name="placeDistrict"
-											value="양산시">양산시</button></td>
-									<td><button class="custom-btn btn-5" name="placeDistrict"
-											value="의령군">의령군</button></td>
-									<td><button class="custom-btn btn-5" name="placeDistrict"
-											value="진주시">진주시</button></td>
-									<td><button class="custom-btn btn-5" name="placeDistrict"
-											value="창녕군">창녕군</button></td>
+									<td><input type="radio" name="placeDistrict" value="사천시">사천시</td>
+									<td><input type="radio" name="placeDistrict" value="산청군">산청군</td>
+									<td><input type="radio" name="placeDistrict" value="양산시">양산시</td>
+									<td><input type="radio" name="placeDistrict" value="의령군">의령군</td>
+									<td><input type="radio" name="placeDistrict" value="진주시">진주시</td>
+									<td><input type="radio" name="placeDistrict" value="창녕군">창녕군</td>
 								</tr>
 								<tr>
-									<td><button class="custom-btn btn-5" name="placeDistrict"
-											value="창원시">창원시</button></td>
-									<td><button class="custom-btn btn-5" name="placeDistrict"
-											value="통영시">통영시</button></td>
-									<td><button class="custom-btn btn-5" name="placeDistrict"
-											value="하동군">하동군</button></td>
-									<td><button class="custom-btn btn-5" name="placeDistrict"
-											value="함안군">함안군</button></td>
-									<td><button class="custom-btn btn-5" name="placeDistrict"
-											value="함양군">함양군</button></td>
-									<td><button class="custom-btn btn-5" name="placeDistrict"
-											value="합천군">합천군</button></td>
+									<td><input type="radio" name="placeDistrict" value="창원시">창원시</td>
+									<td><input type="radio" name="placeDistrict" value="통영시">통영시</td>
+									<td><input type="radio" name="placeDistrict" value="하동군">하동군</td>
+									<td><input type="radio" name="placeDistrict" value="함안군">함안군</td>
+									<td><input type="radio" name="placeDistrict" value="함양군">함양군</td>
+									<td><input type="radio" name="placeDistrict" value="합천군">합천군</td>
 								</tr>
 							</tbody>
 						</table>
