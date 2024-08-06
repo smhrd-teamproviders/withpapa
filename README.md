@@ -65,14 +65,14 @@
 ### :notebook_with_decorative_cover: 시스템 아키텍처
 - MIRO 작업 후 미리캔버스 작업
 
-![시스템 아키텍처_1](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/a1b4273a-f12e-4155-a972-081477b336ce)
+![시스템 아키텍처_WITHPAPA](https://github.com/user-attachments/assets/54228c89-f325-454b-bfa8-869663bb2455)
+
 
 
 
 ### :pushpin: ER 다이어그램
-- MIRO 작업 후 미리캔버스 작업
 
-![ER다이어그램](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/0c061288-a37f-42cc-92f8-0daf50987527)
+![WITHPAPA_ER다이어그램](https://github.com/user-attachments/assets/4852f59e-bc8f-41cb-8f2d-3fc03b64e0d4)
 
 
 
@@ -81,17 +81,21 @@
 
 - 시작 화면
   
-![시작화면](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/ff4674c3-de84-4727-b23c-2727d388ec63)
+![01_시작화면](https://github.com/user-attachments/assets/b4ad5f5c-cf73-46d5-a8e7-0df5a7108e77)
+
+
 
 
 - 상세 검색창 화면
 
-![달력](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/2f2d5c6f-7096-4498-b84b-4c6cf4bb4f36)
+
+![상세검색화면_01](https://github.com/user-attachments/assets/465e4d99-8401-4427-b063-96e18e099278)
 
 
 - 유형별 검색결과 화면
 
-![유형별 검색](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/82ec2a55-0043-48eb-ae7e-88336403f486)
+![02_유형별 검색 결과화면](https://github.com/user-attachments/assets/a29164f4-c4b0-4d82-be50-e69cb3220765)
+
 
 - 지역별 검색결과 화면
   
@@ -100,7 +104,8 @@
 
 - 프로그램 상세 정보 화면
   
-![상세 정보 화면](https://github.com/smhrd-teamproviders/withpapa/assets/167040692/4cabd2ce-c874-4cc2-9700-b1f0f9ce3d3f)
+![03_상세정보화면](https://github.com/user-attachments/assets/2c618020-89d1-4efc-a950-d7b0bb08272a)
+
 
 
 
